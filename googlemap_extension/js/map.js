@@ -3,66 +3,100 @@ document.getElementById("searchboxinput").onclick = function () {
 	alert("ClassName 為 section-result 的物件共有"+result.length+"個");
 
 	for(var i=0; i<result.length; i++) {
-		var element = result[i]
-	// alert("for 第" + i + result[i].getAttribute('aria-label'));
-	result[i].addEventListener("mouseover",function(e){
-		console.log(e); // 傳入function的第一個參數是event物件
-		var eventtype = e.type // this, 目前的元素
-		url = 'https://7fba8f29.ngrok.io/api?storeid=1'
-		alert("第" + this.getAttribute('data-result-index') + '筆,' + this.getAttribute('aria-label'));
-		test_fun(e,url)
-		});
+	   result[i].addEventListener("mouseover",function(e){});
 	};
 };
 /// 做出來了!!  在元素生成之前先幫它加上事件，等它生成後就能直接用了
-$('#pane').on('mouseover', '.section-result', function(e){
-	alert("第" + this.getAttribute('data-result-index') + '筆,' + this.getAttribute('aria-label'));
-    // alert("pane on handler called.");
+var delay=500, setTimeoutConst; 
+// mouseenter、mouseleave，在鼠標滑到該元素時，不會對其子元素也發生監聽
+// mouseover、mouseout，   在鼠標滑到該元素時，會對其子元素也發生監聽
+$('#pane').on('mouseenter', '.section-result', function(e){// 傳入function的第一個參數是event物件
+  // mouseover滑鼠放在上面多久就觸發幾次、改用mouseenter
+  // if (timeout != null) { clearTimeout(timeout); }
+  // var timeoutID = window.setTimeout(( () => alert("Hello!") ), 3000);
+  var data_index = this.getAttribute('data-result-index') // this, 目前的元素
+  var store_name = this.getAttribute('aria-label')
+  setTimeoutConst = window.setTimeout(function(){ 
+       // alert("第" + data_index + '筆,' + store_name);
+       test_fun(e, data_index, store_name)
+       this.tooltip({ 
+        content: '<img src="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo_top_ca79a146.png" />' 
+      });
+     }, delay); 
+     // mouseenter要等500ms後才執行裡面Function
+     // 若在500ms內就將滑鼠移開，就會觸發mouseleave事件，直接將原本設的Timeout清除掉-->不會執行timeout設的function
+     // 效果是"要將滑鼠停在框框內500ms才會觸發function，否則不會"
 });
-// $(document).on('mouseover', '.section-result', function(){
-// 	alert("on handler called.");
-// });
+$('#pane').on('mouseleave', '.section-result', function(e){// 傳入function的第一個參數是event物件
+  clearTimeout(setTimeoutConst);
+});
 
-function test_fun(e,url) {
-	$.ajax({
-  type: "GET",
-  dataType: "json",
-  url: url,
-  headers : {'Access-Control-Allow-Headers:':'*'},
-  success: function(data) {
-    console.log('bbb');
-    var pic = document.getElementById("pic_api")
-    console.log(data);
-  },
-  error: function (jqXHR, textStatus, errorThrown) {  
-       console.log(jqXHR.responseText);  
-   },  
-  complete: function(xhr, textStatus) {
-      console.log(xhr.status);
-  }   
-})
+
+var url_route = 'https://database-api-tibame.herokuapp.com/' // route 沒有設定允許CROS，所以呼叫會錯誤
+var url_api = 'https://database-api-tibame.herokuapp.com/api'
+// var url_local = 'https://bd35a204.ngrok.io'
+// var url_api_local = 'https://bd35a204.ngrok.io/api'
+
+function test_fun(e,storeid, store_name) {
+  $.ajax({
+      type: 'GET',
+      url: url_api,
+      data:"storeid=" + storeid,
+      // dataType: "json", // 若不指定類型，回傳的會是一個string
+      // crossDomain:true,
+      success: function(msg) {
+          s = "第" + storeid + '筆,' + store_name + '\n' + msg
+          // alert("第" + storeid + '筆,' + store_name);
+
+          alert(s); // typeof msg是string
+      },
+      error: function (jqXHR, textStatus, errorThrown) {
+        console.log('get api error，Status：' + textStatus);  
+        console.log(jqXHR.responseText);
+      } 
+  });
 }
-
-var url = 'https://database-api-tibame.herokuapp.com/api?storeid=2'
-$.ajax({
-  type: "GET",
-  dataType: "json",
-  url: url,
-  headers : {'Access-Control-Allow-Headers:':'*'},
-  success: function(data) {
-    console.log('aa');
-    console.log(data);
-  },
-  error: function (jqXHR, textStatus, errorThrown) {
-  		console.log('bb');  
-       console.log('bb'+jqXHR.responseText);  
-   },  
-  complete: function(xhr, textStatus) {
-  		console.log('cc');
-      console.log(xhr.status);
-  }   
-})
-
+function test_return_json(e){
+  $.ajax({
+    type: "GET",
+    dataType: "json",  // 指定為json類型，回傳的會是一個json格式的object
+    url: url_api,
+    data:"storeid=2",
+    // headers : {'Access-Control-Allow-Headers:':'*'}, // server要加，這裡不用加
+    success: function(msg) {
+      console.log('aa');
+      console.log(msg); // object要獨立寫在console.log()裡，才會顯示object內容{id_store: 2, id_category: 1,…}
+      // console.log('msg' + msg); // 若寫console.log(字串+object);--->會顯示'字串'[object Object]
+      alert('return json：' + typeof msg);  // typeof msg是 object，若用alert，無法顯示object內容，會顯示[object Object]
+      alert(msg);
+    },
+    error: function (jqXHR, textStatus, errorThrown) {
+        console.log('get api error');  
+        console.log(jqXHR.responseText);  
+     },  
+    complete: function(xhr, textStatus) {
+        console.log('get api finished status：' + xhr.status.toString());
+    }   
+  })
+}
+function test_notallow_CROSS(e){
+  $.ajax({
+      type: 'GET',
+      url: url_route,
+      // dataType: "json", // 若不指定類型，回傳的會是一個string
+      // crossDomain:true,
+      success: function(msg) {
+          alert('return string：' + msg);
+      },
+      error: function (jqXHR, textStatus, errorThrown) {
+         console.log('get route error，Status：' + textStatus);  
+         console.log(jqXHR.responseText);
+      },  
+      complete: function(xhr, textStatus) {
+        console.log('get route finished status：' + xhr.status.toString());
+      }     
+  });
+}
 // document.getElementById("searchboxinput").addEventListener("change", function(e) {
 //     fun_alert('change_, ' + e);
 // });
