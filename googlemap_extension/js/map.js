@@ -14,14 +14,15 @@ $('#pane').on('mouseenter', '.section-result', function(e){// 傳入function的�
   // mouseover滑鼠放在上面多久就觸發幾次、改用mouseenter
   // if (timeout != null) { clearTimeout(timeout); }
   // var timeoutID = window.setTimeout(( () => alert("Hello!") ), 3000);
-  var data_index = this.getAttribute('data-result-index') // this, 目前的元素
-  var store_name = this.getAttribute('aria-label')
-  setTimeoutConst = window.setTimeout(function(){ 
+  var data_index = this.getAttribute('data-result-index'); // this, 目前的元素
+  var store_name = this.getAttribute('aria-label');
+  this.setAttribute('id', 'storeid_'+data_index);
+  $(this).tooltip({ 
+  content: '<img src="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo_top_ca79a146.png" />' 
+  });
+  setTimeoutConst = window.setTimeout(function(e){ 
        // alert("第" + data_index + '筆,' + store_name);
        test_fun(e, data_index, store_name)
-       this.tooltip({ 
-        content: '<img src="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo_top_ca79a146.png" />' 
-      });
      }, delay); 
      // mouseenter要等500ms後才執行裡面Function
      // 若在500ms內就將滑鼠移開，就會觸發mouseleave事件，直接將原本設的Timeout清除掉-->不會執行timeout設的function

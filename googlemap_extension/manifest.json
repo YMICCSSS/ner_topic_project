@@ -18,7 +18,7 @@
     {
       "matches" : [ "https://www.google.com.tw/maps/*" ],
       "run_at": "document_end",
-      "js" : [ "jquery.min.js","jquery-ui-1.12.1/jquery-ui.js", "js/map.js" ]
+      "js" : [ "1.9.1/jquery.min.js","jquery-ui-1.12.1/jquery-ui.js", "js/map.js" ]
     }  
   ]
 }
