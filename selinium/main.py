@@ -34,7 +34,7 @@ dic_review = {}
 df_reviews = pd.DataFrame()
 bfinal = False
 # ===========================================
-def find_tags(tagName):
+def find_tags(tagName, parent=None):
     print('開始 find_tags:', tagName)
     count = 1
     taglen = 0
@@ -50,7 +50,10 @@ def find_tags(tagName):
             break
 
         time.sleep(1)
-        tags = driver.find_elements_by_class_name(tagName)
+        if parent == None:
+            tags = driver.find_elements_by_class_name(tagName)
+        else:
+            tags = parent.find_elements_by_class_name(tagName)
         print('第' + str(count) + '次重新抓tag:', tagName)
         count += 1
     time.sleep(2)
@@ -68,7 +71,8 @@ dic_tag = {
     'input':'tactile-searchbox-input',
     'stores':'section-result',
     'store_info':'section-info-action-button',
-    'reviews':'widget-pane-link',
+    'reviews_div':'section-rating-term-list',
+    'allreviews':'widget-pane-link',
     'label':'aria-label',
     'ddl':'section-layout-flex-horizontal',
     'sort_item':'action-menu-entry',
@@ -195,116 +199,125 @@ while not bfinal:
                     dic_store['price'] = price
                     dic_store['addr'] = addr
 
-                    reviews = find_tags(dic_tag['reviews'])
-
+                    reviews_div = find_tags(dic_tag['reviews_div']) # 先找到包住"所有評論"tag的框框，再找"所有評論"的tag，若此店家完全無評論就找不到"所有評論的tag"
+                    allreviews = reviews_div[-1].find_elements_by_class_name(dic_tag['allreviews']) # 若此店家完全無評論就找不到"所有評論的tag"
                     print('搜尋"所有評論"這個tag')
                     time.sleep(2)
-                    for j in reviews:
-                        if '評論' in j.get_attribute(dic_tag['label']):
-                            j.click()
-                            print('已點擊"所有評論"，總共有:', j.get_attribute(dic_tag['label']))
-                            sort = find_tags(dic_tag['ddl'])
+                    try:
+                        reviews_test = find_tags(dic_tag['allreviews'])
+                        print('fine~~~~~~~~~~')
+                    except Exception as e:
+                        print('error~~~~~~~~,', type(e), str(e))
+                        traceback.print_exc()
+                    if len(allreviews) > 0:
+                        for j in allreviews:
+                            if '評論' in j.get_attribute(dic_tag['label']):
+                                j.click()
+                                print('已點擊"所有評論"，總共有:', j.get_attribute(dic_tag['label']))
+                                sort = find_tags(dic_tag['ddl'])
 
-                            print('點擊選擇排序的下拉式選單:')
-                            sort[-1].click() # 第0個是"撰寫評論"，所以選第二個
+                                print('點擊選擇排序的下拉式選單:')
+                                sort[-1].click() # 第0個是"撰寫評論"，所以選第二個
 
-                            menuitem = find_tags(dic_tag['sort_item'])
-                            for item in menuitem:
-                                if item.text == '最新':
-                                    item.click()
-                                    print('點擊選擇依時間最新來排序')
-                                    break
+                                menuitem = find_tags(dic_tag['sort_item'])
+                                for item in menuitem:
+                                    if item.text == '最新':
+                                        item.click()
+                                        print('點擊選擇依時間最新來排序')
+                                        break
 
-                            print('開始找section-loading')
-                            time.sleep(3)
-                            loading = driver.find_elements_by_class_name(dic_tag['loading'])
-
-                            loading_count = 0
-                            record_date_count = 0 # 記錄評論筆數
-                            record_time = 0       # 記錄loading次數
-                            while len(loading) != 0:
-                                loading_count += 1
-                                print('loading評論第' + str(loading_count) + '次')
+                                print('開始找section-loading')
                                 time.sleep(3)
                                 loading = driver.find_elements_by_class_name(dic_tag['loading'])
 
-                                lstdate = driver.find_elements_by_class_name(dic_tag['review_date'])
-                                time.sleep(2)
-                                if loading_count - record_time >= 30: # 目前loading次數 與 紀錄loading次數 相差 60次以上
-                                    if len(lstdate) > record_date_count: # 目前評論數 > 紀錄的評論數-->就更新紀錄的評論數
-                                        print('原本紀錄的loading次數:', record_time, ',更新為:', loading_count)
-                                        print('原本紀錄的評論數:',record_date_count, ',更新為:', len(lstdate))
-                                        record_date_count = len(lstdate)
-                                        record_time = loading_count
-                                    else:
-                                        print('無法載入新的評論，Chrome 掛掉了，放棄載入新的評論', name)
-                                        bfinal = True
+                                loading_count = 0
+                                record_date_count = 0 # 記錄評論筆數
+                                record_time = 0       # 記錄loading次數
+                                while len(loading) != 0:
+                                    loading_count += 1
+                                    print('loading評論第' + str(loading_count) + '次')
+                                    time.sleep(3)
+                                    loading = driver.find_elements_by_class_name(dic_tag['loading'])
+
+                                    lstdate = driver.find_elements_by_class_name(dic_tag['review_date'])
+                                    time.sleep(2)
+                                    if loading_count - record_time >= 30: # 目前loading次數 與 紀錄loading次數 相差 60次以上
+                                        if len(lstdate) > record_date_count: # 目前評論數 > 紀錄的評論數-->就更新紀錄的評論數
+                                            print('原本紀錄的loading次數:', record_time, ',更新為:', loading_count)
+                                            print('原本紀錄的評論數:',record_date_count, ',更新為:', len(lstdate))
+                                            record_date_count = len(lstdate)
+                                            record_time = loading_count
+                                        else:
+                                            print('無法載入新的評論，Chrome 掛掉了，放棄載入新的評論', name)
+                                            bfinal = True
+                                            break
+                                    loading_date = lstdate[-1].text
+                                    print('saved_latest_date：',saved_latest_date, 'loading_date：', get_real_date(loading_date), get_real_date(loading_date) < saved_latest_date)
+                                    if '年' in loading_date and  int(loading_date.split(' ')[0]) > 1:
+                                        print('目前最後一個評論已超過二年，不需再往下滑了')
                                         break
-                                loading_date = lstdate[-1].text
-                                print('saved_latest_date：',saved_latest_date, 'loading_date：', get_real_date(loading_date), get_real_date(loading_date) < saved_latest_date)
-                                if '年' in loading_date and  int(loading_date.split(' ')[0]) > 1:
-                                    print('目前最後一個評論已超過二年，不需再往下滑了')
-                                    break
-                                elif saved_latest_date != '' and get_real_date(loading_date) < saved_latest_date:
-                                    print('目前最後一個評論已 < 最新儲存日期:', saved_latest_date, '，不需再往下滑了')
-                                    break
-                                elif len(loading) == 0:
-                                    print('沒有section-loading了，停止往下滑')
-                                    break
-                                loading[-1].click()
+                                    elif saved_latest_date != '' and get_real_date(loading_date) < saved_latest_date:
+                                        print('目前最後一個評論日期', get_real_date(loading_date), '已 < 最新儲存日期:', saved_latest_date, '，不需再往下滑了')
+                                        break
+                                    elif len(loading) == 0:
+                                        print('沒有section-loading了，停止往下滑')
+                                        break
+                                    loading[-1].click()
 
-                            each_review = find_tags(dic_tag['review_text'])
+                                each_review = find_tags(dic_tag['review_text'])
 
-                            print('開始顯示所有評論數量:', len(each_review))
-                            print('=========================================')
+                                print('開始顯示所有評論數量:', len(each_review))
+                                print('=========================================')
 
-                            stars = driver.find_elements_by_class_name(dic_tag['review_star'])
-                            publish_date = driver.find_elements_by_class_name(dic_tag['review_date'])
-                            for k in range(len(each_review)):
-                                word = each_review[k].text.split('(原始評論)')
-                                # ======= 每個評論的字典都要先清空，不然會連動到上一個塞進List的dict  =============
-                                dic_review = {}
-                                review_date = publish_date[k].text
-                                review_star = stars[k].get_attribute(dic_tag['label']).split(' ')[1]
-                                dic_review['tmpid'] = k+1
-                                dic_review['date'] = get_real_date(review_date)
-                                dic_review['star'] = review_star
-                                review_text = ''
-                                if each_review[k].text != "":
-                                    if len(word) > 1:
-                                        review_text = word[0].replace('(由 Google 提供翻譯)', '')
-                                    else:
-                                        review_text = each_review[k].text
+                                stars = driver.find_elements_by_class_name(dic_tag['review_star'])
+                                publish_date = driver.find_elements_by_class_name(dic_tag['review_date'])
+                                for k in range(len(each_review)):
+                                    word = each_review[k].text.split('(原始評論)')
+                                    # ======= 每個評論的字典都要先清空，不然會連動到上一個塞進List的dict  =============
+                                    dic_review = {}
+                                    review_date = publish_date[k].text
+                                    review_star = stars[k].get_attribute(dic_tag['label']).split(' ')[1]
+                                    dic_review['tmpid'] = k+1
+                                    dic_review['date'] = get_real_date(review_date)
+                                    dic_review['star'] = review_star
+                                    review_text = ''
+                                    if each_review[k].text != "":
+                                        if len(word) > 1:
+                                            review_text = word[0].replace('(由 Google 提供翻譯)', '')
+                                        else:
+                                            review_text = each_review[k].text
 
-                                review_text = '"' + review_text.replace('\r', '').replace('\n', '，') + '"'
-                                print('第' + str(k + 1) + '筆:', '日期:', review_date, '星等:', review_star, '評論:',review_text)
-                                dic_review['text'] = review_text
+                                    review_text = '"' + review_text.replace('\r', '').replace('\n', '，') + '"'
+                                    print('第' + str(k + 1) + '筆:', '日期:', review_date, '星等:', review_star, '評論:',review_text)
+                                    dic_review['text'] = review_text
 
-                                if '年' in publish_date[k].text and  int(publish_date[k].text.split(' ')[0]) > 1:
-                                    print('超過二年的評論不使用，擷取評論結束')
-                                    break
-                                elif saved_latest_date != '' and get_real_date(review_date) == saved_latest_date and review_text == saved_latest_review:
-                                    print('這個評論日期 == 最新儲存日期、評論內容 == 最新儲存評論內容，擷取評論結束')
-                                    break
-                                elif saved_latest_date != '' and get_real_date(review_date) < saved_latest_date:
-                                    print('這個評論日期已 < 最新儲存日期:', saved_latest_date, '，擷取評論結束')
-                                    break
-                                elif review_text == '""':
-                                    print('空白評論不儲存！')
-                                    continue
-                                lst_review.append(dic_review)
-                                print('append:',lst_review)
-                            break
-                    # break
-                    print('====== 將該店家的review list放進該店家資訊的dic_store ===============')
-                    print(lst_review)
-                    dic_store['review'] = len(lst_review)  # 將該店家的review list放進該店家資訊的dic_store裡
-                    if not os.path.exists(review_path):
-                        lst_store.append(dic_store)  # 若該店家已存過就不重複
+                                    if '年' in publish_date[k].text and  int(publish_date[k].text.split(' ')[0]) > 1:
+                                        print('超過二年的評論不使用，擷取評論結束')
+                                        break
+                                    elif saved_latest_date != '' and get_real_date(review_date) == saved_latest_date and review_text == saved_latest_review:
+                                        print('這個評論日期 == 最新儲存日期，且評論內容 == 最新儲存評論內容，擷取評論結束')
+                                        break
+                                    elif saved_latest_date != '' and get_real_date(review_date) < saved_latest_date:
+                                        print('這個評論日期', get_real_date(review_date) , '已 < 最新儲存日期:', saved_latest_date, '，擷取評論結束')
+                                        break
+                                    elif review_text == '""':
+                                        print('空白評論不儲存！')
+                                        continue
+                                    lst_review.append(dic_review)
+                                    print('append:',lst_review)
+                                break
 
-                    lst_columns = ['編號', '評論日期', '評論星等', '評論內容']
-                    print('開始儲存review,', review_path)
-                    save_csv(df_reviews, review_path, lst_review)
+                        print('====== 將該店家的review list放進該店家資訊的dic_store ===============')
+                        print(lst_review)
+                        dic_store['review'] = len(lst_review)  # 將該店家的review list放進該店家資訊的dic_store裡
+                        if not os.path.exists(review_path):
+                            lst_store.append(dic_store)  # 若該店家已存過就不重複
+
+                        lst_columns = ['編號', '評論日期', '評論星等', '評論內容']
+                        print('開始儲存review,', review_path)
+                        save_csv(df_reviews, review_path, lst_review)
+                    else:
+                        print('這個店家完全沒有評論, ', name)
 
                     if not bfinal:
                         back_store = find_tags(dic_tag['back_store'])
@@ -328,18 +341,22 @@ while not bfinal:
         if bfinal:
             print('跳出while')
             break
-
-        nextpage = driver.find_element_by_id(dic_tag['next_page'])
-
-        print('已點擊下一頁')
-        print(lst_store)
-        count_store = 0
-        if nextpage.get_attribute('disabled') != 'true':
-            nextpage.click()
-            time.sleep((2))
-        else:
+        try:
+            nextpage = driver.find_element_by_id(dic_tag['next_page'])
+            print('已點擊下一頁')
+            print(lst_store)
+            count_store = 0
+            if nextpage.get_attribute('disabled') != 'true':
+                nextpage.click()
+                time.sleep((2))
+            else:
+                bfinal = True
+                print('最後一頁了')
+        except Exception as e:
             bfinal = True
-            print('最後一頁了')
+            print(e)
+            print('最後一頁了，找不到 next_page tag')
+            # traceback.print_exc()
     except Exception as e:
         print(e)
         print('except')
