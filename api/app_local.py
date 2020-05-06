@@ -13,17 +13,16 @@ import pymysql
 # 設定Server啟用細節
 app = Flask(__name__,static_url_path = "/images" , static_folder = "./images/" )
 # https://medium.com/@charming_rust_oyster_221/flask-%E5%AF%A6%E7%8F%BE-cors-%E8%B7%A8%E5%9F%9F%E8%AB%8B%E6%B1%82%E7%9A%84%E6%96%B9%E6%B3%95-c51b6e49a8b5
-# https://stackoverflow.com/questions/25594893/how-to-enable-cors-in-flask
 # 同源政策(Same-origin policy)限制了程式碼(特別是Ajax)和不同網域資源間的互動，對本地html而言，Web API是跨來源的資源。
 # 若資源是允許被任不同網域資源存取，則需要回傳帶有 Access-Control-Allow-Origin 標頭值
 
-# ========== 加CROSS方法一 CORS(app) =======================
-# cors = CORS(app) # 這裡面所有@app.route()的請求都允許CROSS Origin
-# cors = CORS(app, resources={r"/api/*": {"origins": "*"}}) # 只有路徑為/api/*的請求才允許CROSS Origin
+# =========== 加CROS方法一 CORS(app) =======================
+# cors = CORS(app) # 這裡面所有@app.route()的請求都允許CORS
+# cors = CORS(app, resources={r"/api/*": {"origins": "*"}}) # 只有路徑為/api/*的請求才允許CORS
 # 加了這句只有route是'/api'才允許，route("/")就不接受
 # app.config['CORS_HEADERS'] = 'Content-Type' # 可以不加
 # =========================================================
-# ========== 加CROSS方法二 @cross_origin() =================
+# =========== 加CROS方法二 @cross_origin() =================
 # 在@app.route()下面加上裝飾器 @cross_origin()
 # 只允許特定路徑的請求
 # =========================================================
@@ -102,8 +101,8 @@ def getdata(storeid):
 '''
 啟動Server
 '''
-# if __name__ == "__main__":
-#     app.run(host='0.0.0.0')
+if __name__ == "__main__":
+    app.run(host='0.0.0.0')
 
 
 # In[24]:
@@ -113,9 +112,9 @@ def getdata(storeid):
 Application 運行（heroku版）
 '''
 
-import os
-if __name__ == "__main__":
-    app.run(host='0.0.0.0',port=os.environ['PORT'])
+# import os
+# if __name__ == "__main__":
+#     app.run(host='0.0.0.0',port=os.environ['PORT'])
 
 
 # In[ ]:
