@@ -12,17 +12,20 @@ url = 'https://www.google.com.tw/maps/@25.0422976,121.5238281,17.29z' # 北商�
 
 driver.get(url)
 start_time = time.time()
-time.sleep(3) # 等待3秒
+time.sleep(2) # 等待3秒
 # ================= 搜尋條件 =================
-district = '大同區' # 這個區的餐廳才拿資料
-keyword = '大腸麵線'    # 關鍵字
-totalpage = 1      # 總共要下載到幾頁的資料
+# district = '中山區' # 這個區的餐廳才拿資料
+keyword = '熱炒'    # 關鍵字
+totalpage = 15      # 總共要下載到幾頁的資料
 # ===========================================
 # =========== global 所需變數 =================
-folder = './csv/' + district + keyword + '/'
-stores_path = folder + 'stores.csv'
-if not os.path.exists(folder) :
-    os.mkdir(folder)
+folder = ''
+stores_path = ''
+folder_keyword = './csv/'+ keyword + '/'
+# folder = './csv/' + district + keyword + '/'
+# stores_path = folder + 'stores.csv'
+if not os.path.exists(folder_keyword) :
+    os.mkdir(folder_keyword)
 page = 0
 print('輸入搜尋關鍵字:', keyword)
 lst_store = []
@@ -161,15 +164,9 @@ while not bfinal:
                 price = ''
                 if pricetag != None:
                     price = pricetag.split(' ')[-1][0]
-                review_path = folder + name + '_review.csv'
                 saved_latest_date = ''
                 saved_latest_review = ''
-                if os.path.exists(review_path):
-                    df_cur = pd.read_csv(review_path)
-                    saved_latest_date = df_cur.iloc[-1]['date'] # 最後一列的column'date'的值
-                    saved_latest_review = df_cur.iloc[-1]['text']
-                    print('第'+ str(i+1) + '個店家:', name ,'的評論已經存過，已存的最新評論日期為', saved_latest_date)
-                    # continue
+
                 addr = ''
                 if 'display' not in ad.get_attribute('style') :
                     print('跳過這個廣告店家:', name)
@@ -183,14 +180,34 @@ while not bfinal:
                 for infoline in infolines:
                     addr = infoline.get_attribute(dic_tag['label'])
                     if '地址' in addr:
-                        if district in addr:
-                            addr = addr.split('、')[-1]
-                            print('地址:', addr)
-                            choose = True
-                            break
-                        else:
-                            print('不是',district, '跳過')
+                        addr = addr.split('、')[-1]
+                        # if district in addr:
+                        #     print('地址：', addr)
+                        #     choose = True
+                        #     break
+                        # else:
+                        #     print('不是',district, '跳過')
+                    elif '區 ' in addr:
+                        district = addr.split(' ')[1] # 2GVC+6W 中正區 台北市
+                        choose = True
+                    elif '里 'in addr or '區 ' in addr:
+                        district = addr.split(' ')[-1].replace('台北市', '') # 3G36+P4 永樂里 台北市大同區
+                        choose = True
                 if choose:
+                    folder = './csv/' + keyword + '/' + district + '/'
+                    stores_path = folder + 'stores.csv'
+                    review_path = folder + name + '_review.csv'
+                    if not os.path.exists(folder):
+                        os.mkdir(folder)
+                    print('區：', district, name)
+                    if os.path.exists(review_path):
+                        df_cur = pd.read_csv(review_path)
+                        saved_latest_date = df_cur.iloc[-1]['date']  # 最後一列的column'date'的值
+                        saved_latest_review = df_cur.iloc[-1]['text']
+                        print('第' + str(i + 1) + '個店家:', name, '的評論已經存過，已存的最新評論日期為', saved_latest_date)
+
+                    empty_review = 0 # 紀錄空白評論數
+                    total_review = 0
                     count_store += 1
                     total_store += 1
                     lst_review = [] # 每個店家的所有review存進lst_review
@@ -214,6 +231,7 @@ while not bfinal:
                             if '評論' in j.get_attribute(dic_tag['label']):
                                 j.click()
                                 print('已點擊"所有評論"，總共有:', j.get_attribute(dic_tag['label']))
+                                total_review = int(j.get_attribute(dic_tag['label']).split(' ')[0].replace(',',''))
                                 sort = find_tags(dic_tag['ddl'])
 
                                 print('點擊選擇排序的下拉式選單:')
@@ -227,7 +245,7 @@ while not bfinal:
                                         break
 
                                 print('開始找section-loading')
-                                time.sleep(3)
+                                time.sleep(2)
                                 loading = driver.find_elements_by_class_name(dic_tag['loading'])
 
                                 loading_count = 0
@@ -236,7 +254,7 @@ while not bfinal:
                                 while len(loading) != 0:
                                     loading_count += 1
                                     print('loading評論第' + str(loading_count) + '次')
-                                    time.sleep(3)
+                                    time.sleep(2)
                                     loading = driver.find_elements_by_class_name(dic_tag['loading'])
 
                                     lstdate = driver.find_elements_by_class_name(dic_tag['review_date'])
@@ -253,10 +271,10 @@ while not bfinal:
                                             break
                                     loading_date = lstdate[-1].text
                                     print('saved_latest_date：',saved_latest_date, 'loading_date：', get_real_date(loading_date), get_real_date(loading_date) < saved_latest_date)
-                                    if '年' in loading_date and  int(loading_date.split(' ')[0]) > 1:
-                                        print('目前最後一個評論已超過二年，不需再往下滑了')
+                                    if '年' in loading_date and  int(loading_date.split(' ')[0]) > 4:
+                                        print('目前最後一個評論已超過五年，不需再往下滑了')
                                         break
-                                    elif saved_latest_date != '' and get_real_date(loading_date) < saved_latest_date:
+                                    if saved_latest_date != '' and get_real_date(loading_date) < saved_latest_date:
                                         print('目前最後一個評論日期', get_real_date(loading_date), '已 < 最新儲存日期:', saved_latest_date, '，不需再往下滑了')
                                         break
                                     elif len(loading) == 0:
@@ -291,10 +309,10 @@ while not bfinal:
                                     print('第' + str(k + 1) + '筆:', '日期:', review_date, '星等:', review_star, '評論:',review_text)
                                     dic_review['text'] = review_text
 
-                                    if '年' in publish_date[k].text and  int(publish_date[k].text.split(' ')[0]) > 1:
-                                        print('超過二年的評論不使用，擷取評論結束')
-                                        break
-                                    elif saved_latest_date != '' and get_real_date(review_date) == saved_latest_date and review_text == saved_latest_review:
+                                    # if '年' in publish_date[k].text and  int(publish_date[k].text.split(' ')[0]) > 3:
+                                    #     print('超過四年的評論不使用，擷取評論結束')
+                                    #     break
+                                    if saved_latest_date != '' and get_real_date(review_date) == saved_latest_date and review_text == saved_latest_review:
                                         print('這個評論日期 == 最新儲存日期，且評論內容 == 最新儲存評論內容，擷取評論結束')
                                         break
                                     elif saved_latest_date != '' and get_real_date(review_date) < saved_latest_date:
@@ -302,19 +320,20 @@ while not bfinal:
                                         break
                                     elif review_text == '""':
                                         print('空白評論不儲存！')
+                                        empty_review += 1
                                         continue
                                     lst_review.append(dic_review)
                                     print('append:',lst_review)
                                 break
 
-                        print('====== 將該店家的review list放進該店家資訊的dic_store ===============')
-                        print(lst_review)
+                        # print('====== 將該店家的review list放進該店家資訊的dic_store ===============')
                         dic_store['review'] = len(lst_review)  # 將該店家的review list放進該店家資訊的dic_store裡
+                        dic_store['empty_review'] = empty_review
                         if not os.path.exists(review_path):
                             lst_store.append(dic_store)  # 若該店家已存過就不重複
 
                         lst_columns = ['編號', '評論日期', '評論星等', '評論內容']
-                        print('開始儲存review,', review_path)
+                        print('開始儲存review：', review_path, '，總評論數：', total_review, '，儲存評論筆數：', len(lst_review),'、空白評論筆數：', empty_review)
                         save_csv(df_reviews, review_path, lst_review)
                     else:
                         print('這個店家完全沒有評論, ', name)
@@ -322,7 +341,7 @@ while not bfinal:
                     if not bfinal:
                         back_store = find_tags(dic_tag['back_store'])
                         back_store[0].click()
-                        print('已點擊返回店家資訊:', len(back_store))
+                        print('已點擊返回店家資訊:')
                         time.sleep(2)
 
                 if not bfinal:
