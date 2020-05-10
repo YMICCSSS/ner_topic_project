@@ -2,7 +2,7 @@ import time, datetime
 from dateutil.relativedelta import relativedelta
 import os
 import pandas as pd
-from selenium.webdriver import Chrome
+
 
 def find_tags(driver, tagName, parent=None):
     print('開始 find_tags:', tagName)
@@ -29,10 +29,10 @@ def find_tags(driver, tagName, parent=None):
     time.sleep(2)
     return tags
 
-
+# ==================== 儲存店家清單.csv、店家評論.csv ========================================
 def save_csv(path, lst):
     if len(lst) == 0:
-        return
+        return []
     lst.sort(key=lambda x: x['tmpid'], reverse=True)
     df = pd.DataFrame.from_dict(lst, orient='columns')
     print('df_now:', df)
@@ -52,8 +52,9 @@ def save_csv(path, lst):
     print('儲存 dataframe ->.csv，path:', path)
     print('df_saved:', df)
     df.to_csv(path, index=False, encoding="utf-8")
+    return []
 
-
+# ==================== 將日期由"1 個月前"-->"2020/04/10形式" ====================
 def get_real_date(date):
     now = datetime.datetime.now()
     realdate = now
@@ -69,7 +70,8 @@ def get_real_date(date):
 
     return realdate.strftime('%Y/%m/%d')
 
-
+# ==================== 檢查店家名稱是否有特殊符號 ====================
+# 因為是用店家名稱作為檔案名儲存，若有特殊符號無法存檔，將特殊符號轉換再儲存
 def checkName(name):
     # 檔名不能含有\/:*?"<>| 符號
     dic_mark = {'\\': '[反斜槓]',
@@ -88,73 +90,5 @@ def checkName(name):
     if len(lst_mark) > 0:
         for mark in lst_mark:
             newname = newname.replace(mark, dic_mark[mark])
-
         print('原始店名含有特殊符號：', name, '，修正後店名', newname)
     return newname
-
-def start():
-    driver = Chrome('./chromedriver')
-
-    # url = 'https://www.google.com.tw/maps'
-    # url = 'https://www.google.com.tw/maps/@25.0422976,121.5238281,17.29z' # 中正區北商位置
-    # url = 'https://www.google.com.tw/maps/@25.029295,121.5439541,14.9z' # 信義區北醫位置
-    # url = 'https://www.google.com.tw/maps/@25.0680263,121.5239719,16z' # 中山區中山國小位置
-    url = 'https://www.google.com.tw/maps/@25.0476077,121.5256058,17.02z'  # 中山區長安東路
-
-    driver.get(url)
-    start_time = time.time()
-    time.sleep(2)  # 等待3秒
-    # ================= 搜尋條件 =================
-    # district = '中山區' # 這個區的餐廳才拿資料
-    city = '台北市'
-    keyword = '熱炒'  # 關鍵字
-    totalpage = 10  # 總共要下載到幾頁的資料
-    # ===========================================
-    # =========== global 所需變數 =================
-    district = ''
-    folder = ''
-    stores_path = ''
-    folder_keyword = './csv/' + keyword + '/'
-    # folder = './csv/' + district + keyword + '/'
-    # stores_path = folder + 'stores.csv'
-    if not os.path.exists(folder_keyword):
-        os.mkdir(folder_keyword)
-    page = 0
-    print('輸入搜尋關鍵字:', keyword)
-    lst_store = []
-    dic_store = {}
-    lst_store_csv = []
-    # df_stores = pd.DataFrame()
-
-    lst_review = []
-    dic_review = {}
-    # df_reviews = pd.DataFrame()
-    bfinal = False
-    # ===========================================
-
-    dic_tag = {
-        'input': 'tactile-searchbox-input',
-        'stores': 'section-result',
-        'store_info': 'section-info-action-button',
-        'reviews_div': 'section-rating-term-list',
-        'allreviews': 'widget-pane-link',
-        'label': 'aria-label',
-        'ddl': 'section-layout-flex-horizontal',
-        'sort_item': 'action-menu-entry',
-        'loading': 'section-loading',
-        'review_date': 'section-review-publish-date',
-        'review_star': 'section-review-stars',
-        'review_text': 'section-review-review-content',
-        'price': 'section-result-cost',
-        'back_store': 'ozj7Vb3wnYq__action-button-clickable',
-        'back_list': 'section-back-to-list-button',
-        'next_page': 'n7lv7yjyC35__section-pagination-button-next'
-    }
-
-    # =============== Start =====================
-    input = find_tags(driver, dic_tag['input'])[0]
-    input.send_keys(keyword)
-
-    print('點擊搜尋')
-    driver.find_element_by_id('searchbox-searchbutton').click()
-    time.sleep(5)

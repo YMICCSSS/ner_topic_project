@@ -12,6 +12,7 @@ driver = Chrome('./chromedriver')
 # url = 'https://www.google.com.tw/maps/@25.029295,121.5439541,14.9z' # 信義區北醫位置
 # url = 'https://www.google.com.tw/maps/@25.0680263,121.5239719,16z' # 中山區中山國小位置
 # url = 'https://www.google.com.tw/maps/@25.0476077,121.5256058,17.02z' # 中山區長安東路
+# url = 'https://www.google.com.tw/maps/@25.0193684,121.5260166,15z' # 中正區台電大樓
 
 # ================= 搜尋條件 =================
 # district = '中山區' # 這個區的餐廳才拿資料
@@ -94,12 +95,12 @@ dic_tag = {
 
 # =============== Start =====================
 def start():
-    url = 'https://www.google.com.tw/maps/@25.0476077,121.5256058,17.02z'  # 中山區長安東路
+    url = 'https://www.google.com.tw/maps/@25.0193684,121.5260166,15z' # 中正區台電大樓
     driver.get(url)
-    time.sleep(2)  # 等待3秒
+    time.sleep(2)  # 等待2秒
 
-    input = find_tags(driver, dic_tag['input'])[0]
-    input.send_keys(keyword)
+    input = find_tags(driver, dic_tag['input'])[0] # 找到搜尋欄的tag
+    input.send_keys(keyword) # 寫入要搜尋的字
     print('輸入搜尋關鍵字:', keyword)
     print('點擊搜尋')
     driver.find_element_by_id('searchbox-searchbutton').click()
@@ -107,9 +108,10 @@ def start():
 
 start()
 while True:
-    if bfinal and not bError:
+    if bfinal and not bError: # 若不是error結束跳出的，代表真的搜尋完所有頁面，結束
+        print('bfinal and not bError，結束~~~~~~~~~')
         break
-    elif bfinal and bError:
+    elif bfinal and bError: # 若是error結束跳出的，將瀏覽器關閉、重開、變數reset，重新再搜尋
         if restart > 10:
             break
         driver.close()
@@ -144,7 +146,7 @@ while True:
                 if sessions[i].get_attribute(dic_tag['label']) != '':
                     ad = sessions[i].find_elements_by_class_name('ad-badge')[0] # 會有多個廣告tag，只看第一個
                     name = checkName(sessions[i].get_attribute(dic_tag['label'])) # 若含有特殊符號，無法作為檔名儲存
-                    pricetag = sessions[i].find_elements_by_class_name(dic_tag['price'])[0].get_attribute(dic_tag['label'])
+                    pricetag = sessions[i].find_elements_by_class_name(dic_tag['price'])[0].get_attribute(dic_tag['label']) # 找到價錢tag
                     price = ''
                     if pricetag != None:
                         price = pricetag.split(' ')[-1][0]
@@ -164,13 +166,9 @@ while True:
                     for infoline in infolines:
                         addrinfo = infoline.get_attribute(dic_tag['label'])
                         if '地址' in addrinfo:
-                            addr = addrinfo.split('、')[-1]
-                            # if district in addr:
-                            #     print('地址：', addr)
-                            #     choose = True
-                            #     break
+                            addr = addrinfo.split('、')[-1] # 取得店家完整地址
                             if not city in addr:
-                                print('不是', city, '跳過')
+                                print('不是', city, '跳過') # 不是台北市的店家不要抓
                                 choose = False
                                 break
                         elif '區 ' in addrinfo:
@@ -180,16 +178,18 @@ while True:
                             district = addrinfo.split(' ')[-1].replace('台北市', '') # 3G36+P4 永樂里 台北市大同區
                             choose = True
                     if choose:
-                        folder = './csv/' + keyword + '/' + district + '/'
+                        folder = './csv/' + keyword + '/' + district + '/' # 路徑為./csv/熱炒/stores.csv
                         stores_path = './csv/' + keyword + '/stores.csv'
-                        review_path = folder + name + '_review.csv'
+                        review_path = folder + name + '_review.csv' # 路徑為./csv/熱炒/行政區/店名_review.csv
                         if not os.path.exists(folder):
                             os.mkdir(folder)
                         print('區：', district, name)
+
+                        # ============== 若此店家已儲存過評論，取出目前已存的最後一筆評論日期、評論內容 =======================
                         if os.path.exists(review_path):
                             df_cur = pd.read_csv(review_path)
                             saved_latest_date = df_cur.iloc[-1]['date']  # 最後一列的column'date'的值
-                            saved_latest_review = df_cur.iloc[-1]['text']
+                            saved_latest_review = df_cur.iloc[-1]['text'] # 最後一列的column'text'的值
                             print('第' + str(i + 1) + '個店家:', name, '的評論已經存過，已存的最新評論日期為', saved_latest_date)
 
                         empty_review = 0 # 紀錄空白評論數
@@ -209,20 +209,25 @@ while True:
                             reviews_test = find_tags(driver, dic_tag['allreviews'])
                             print('fine~~~~~~~~~~')
                         except Exception as e:
-                            print('error~~~~~~~~,', type(e), str(e))
+                            print('error~~~~~~~~，except，開始儲存店家list')
+                            print(e)
                             traceback.print_exc()
+                            lst_store = save_csv(stores_path, lst_store)  # 儲存後回傳空的list
+                            bError = True
+                            bfinal = True
+
                         if len(allreviews) > 0:
                             for j in allreviews:
                                 if '評論' in j.get_attribute(dic_tag['label']):
                                     j.click()
                                     print('已點擊"所有評論"，總共有:', j.get_attribute(dic_tag['label']))
-                                    total_review = int(j.get_attribute(dic_tag['label']).split(' ')[0].replace(',',''))
-                                    sort = find_tags(driver, dic_tag['ddl'])
+                                    total_review = int(j.get_attribute(dic_tag['label']).split(' ')[0].replace(',','')) # 總共有幾則評論
+                                    sort = find_tags(driver, dic_tag['ddl']) # 找到能依"最新日期, 相關度..."排序的下拉選單tag
 
                                     print('點擊選擇排序的下拉式選單:', sort[-1].is_displayed())
                                     sort[-1].click() # 第0個是"撰寫評論"，所以選第二個
 
-                                    menuitem = find_tags(driver, dic_tag['sort_item'])
+                                    menuitem = find_tags(driver, dic_tag['sort_item']) # 下拉選單中的所有選項
                                     for item in menuitem:
                                         if item.text == '最新':
                                             item.click()
@@ -231,29 +236,29 @@ while True:
 
                                     print('開始找section-loading')
                                     time.sleep(2)
-                                    loading = driver.find_elements_by_class_name(dic_tag['loading'])
+                                    loading = driver.find_elements_by_class_name(dic_tag['loading']) # 找到loading tag點擊，就等於將滾輪往下滑，可以載入新的評論
                                     time.sleep(2)
-                                    loading_count = 0
-                                    record_date_count = 0 # 記錄評論筆數
-                                    record_time = 0       # 記錄loading次數
+                                    loading_count = 0 # 紀錄目前往下滑的loading次數
+                                    record_time = 0  # 每往下滑loading 30次，就儲存一次loading次數
+                                    record_date_count = 0 # 每往下滑loading 30次，就儲存一次目前取得的評論筆數
                                     while len(loading) != 0:
                                         loading_count += 1
                                         print('loading評論第' + str(loading_count) + '次', end=',')
                                         loading = driver.find_elements_by_class_name(dic_tag['loading'])
                                         time.sleep(2)
-                                        # lstdate = driver.find_elements_by_class_name(dic_tag['review_date'])
-                                        lstdate = find_tags(driver, dic_tag['review_date'])
-                                        if loading_count - record_time >= 30: # 目前loading次數 與 紀錄loading次數 相差 60次以上
-                                            if len(lstdate) > record_date_count: # 目前評論數 > 紀錄的評論數-->就更新紀錄的評論數
+                                        lstdate = find_tags(driver, dic_tag['review_date']) # 取得目前載入的評論數目
+
+                                        if loading_count - record_time >= 30: # 目前loading次數 與 紀錄loading次數 相差 30次以上就更新紀錄
+                                            if len(lstdate) > record_date_count: # 目前載入的評論數 > 紀錄的評論數-->就更新紀錄的評論數
                                                 print('原本紀錄的loading次數:', record_time, ',更新為:', loading_count)
                                                 print('原本紀錄的評論數:',record_date_count, ',更新為:', len(lstdate))
                                                 record_date_count = len(lstdate)
                                                 record_time = loading_count
                                             else:
                                                 print('無法載入新的評論，Chrome 掛掉了，放棄載入新的評論', name)
-                                                bError = True
-                                                bfinal = True
-                                                break
+                                                bError = True # 正常來說，每下滑一次就會取得新的評論，
+                                                bfinal = True # 所以每下滑30次檢查一次，目前載入的評論數目會 > 已記錄的評論數才對
+                                                break         # 若沒大於，代表它一直往下滑，但卻沒有載入新的評論數-->瀏覽器掛掉了
                                         loading_date = lstdate[-1].text
 
                                         print('saved_latest_date：',saved_latest_date, 'loading_date：', get_real_date(loading_date),', len(loading)：' ,len(loading), loading[-1].is_displayed())
@@ -279,27 +284,25 @@ while True:
                                     print('開始顯示所有評論數量:', len(each_review))
                                     print('=========================================')
 
-                                    stars = find_tags(driver, dic_tag['review_star'])
-                                    publish_date = find_tags(driver, dic_tag['review_date'])
-                                    # stars = driver.find_elements_by_class_name(dic_tag['review_star'])
-                                    # publish_date = driver.find_elements_by_class_name(dic_tag['review_date'])
+                                    stars = find_tags(driver, dic_tag['review_star']) # 找到評論的星星數
+                                    publish_date = find_tags(driver, dic_tag['review_date']) # 找到評論發表日期
                                     for k in range(len(each_review)):
                                         word = each_review[k].text.split('(原始評論)')
                                         # ======= 每個評論的字典都要先清空，不然會連動到上一個塞進List的dict  =============
                                         dic_review = {}
-                                        review_date = publish_date[k].text
-                                        review_star = stars[k].get_attribute(dic_tag['label']).split(' ')[1]
+                                        review_date = publish_date[k].text # '1 週前'
+                                        review_star = stars[k].get_attribute(dic_tag['label']).split(' ')[1] #' 5 顆星 '
                                         dic_review['tmpid'] = k+1
                                         dic_review['date'] = get_real_date(review_date)
                                         dic_review['star'] = review_star
                                         review_text = ''
                                         if each_review[k].text != "":
                                             if len(word) > 1:
-                                                review_text = word[0].replace('(由 Google 提供翻譯)', '')
+                                                review_text = word[0].replace('(由 Google 提供翻譯)', '') # 非中文的話只取google翻譯過後的中文
                                             else:
                                                 review_text = each_review[k].text
 
-                                        review_text = '"' + review_text.replace('\r', '').replace('\n', '，') + '"'
+                                        review_text = '"' + review_text.replace('\r', '').replace('\n', '，') + '"' # 評論裡的換行符號改成"，"
                                         print('第' + str(k + 1), end=',')
                                         # print('第' + str(k + 1) + '筆:', '日期:', review_date, '星等:', review_star, '評論:',review_text)
                                         dic_review['text'] = review_text
@@ -321,18 +324,16 @@ while True:
                                             empty_review += 1
                                             continue
                                         lst_review.append(dic_review)
-                                        # print('append:',lst_review)
                                     break
 
                             # print('====== 將該店家的review list放進該店家資訊的dic_store ===============')
-                            dic_store['review'] = len(lst_review)  # 將該店家的review list放進該店家資訊的dic_store裡
-                            dic_store['empty_review'] = empty_review
+                            dic_store['review'] = len(lst_review)  # 紀錄已儲存的評論數
+                            dic_store['empty_review'] = empty_review # 紀錄空白的評論數
                             if not os.path.exists(review_path):
-                                lst_store.append(dic_store)  # 若該店家已存過就不重複
+                                lst_store.append(dic_store)  # 若該店家已存過就不重複更新stores.csv
 
-                            lst_columns = ['編號', '評論日期', '評論星等', '評論內容']
                             print('\n開始儲存review：', review_path, '，總評論數：', total_review, '，儲存評論筆數：', len(lst_review),'、空白評論筆數：', empty_review)
-                            save_csv(review_path, lst_review)
+                            lst_review = save_csv(review_path, lst_review) # 儲存後回傳空的list
                         else:
                             print('這個店家完全沒有評論, ', name)
 
@@ -347,48 +348,46 @@ while True:
                         print('已點擊返回搜尋列表')
                         time.sleep((2))
 
-            print('目前這頁爬完了，換下一頁')
-            print('目前在第', page, '頁，已點過的店家數:', count_store)
-
-            lst_columns = ['店名', '地址', '評論']
+            print('目前這頁爬完了，換下一頁，目前在第', page, '頁，已點過的店家數:', count_store)
             print('開始儲存店家list')
-            save_csv(stores_path, lst_store)
-            lst_store = []
+            lst_store = save_csv(stores_path, lst_store) # 儲存後回傳空的list
 
             if bfinal:
                 print('跳出while')
                 break
             try:
-                nextpage = driver.find_element_by_id(dic_tag['next_page'])
-                print('已點擊下一頁')
-                print(lst_store)
+                nextpage = driver.find_element_by_id(dic_tag['next_page']) # 找到可以點擊下一頁的tag
                 count_store = 0
                 if nextpage.get_attribute('disabled') != 'true':
+                    print('已點擊下一頁')
                     nextpage.click()
-                    time.sleep((2))
+                    time.sleep(2)
                 else:
-                    bfinal = True
-                    print('最後一頁了')
+                    bfinal = True # 若真的是最後一頁，tag的屬性disabled="true"，無法點擊
+                    print('最後一頁了，下一頁disabled="true"')
             except Exception as e:
-                bfinal = True
                 print(e)
-                print('最後一頁了，找不到 next_page tag')
-                # traceback.print_exc()
+                print('最後一頁了，找不到 next_page tag，except，開始儲存店家list')
+                lst_store = save_csv(stores_path, lst_store) # 儲存後回傳空的list
+                traceback.print_exc()
+                bError = True
+                bfinal = True
         except Exception as e:
             print(e)
             print('except，開始儲存店家list')
-            save_csv(stores_path, lst_store)
-            lst_store = []
+            lst_store = save_csv(stores_path, lst_store) # 儲存後回傳空的list
             traceback.print_exc()
+            bError = True
+            bfinal = True
 print('結束了~~~~~~~~~~~~~~~~')
 time.sleep(3)
 end_time = time.time()
 total_time = end_time-start_time
-# print(time.strftime("%H:%M:%S", total_time))
 
 m, s = divmod(total_time, 60)
 h, m = divmod(m, 60)
 print ("花費時間，時:%02d, 分:%02d, 秒:%02d" % (h, m, s))
+# print(time.strftime("%H:%M:%S", total_time))
 # print('{:d}:{:02d}:{:02d}'.format(h, m, s)) # Python 3
 # print(f'{h:d}:{m:02d}:{s:02d}') # Python 3.6+
 # driver.close()
