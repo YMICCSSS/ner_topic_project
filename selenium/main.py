@@ -10,25 +10,29 @@ driver = Chrome('./chromedriver')
 # 緯度0.03跳五次、經度0.05跳三次
 # 西南(25,    121.46)-->(25,   121.61)東南
 # 西北(25.16,,121.46)-->(25.16,121.61)東北
-s = 25
-n = 25.16
-w = 121.46
-e = 121.61
-lst_location = []
-latitude = 25
-longitude = 121.46
-url_base = 'https://www.google.com.tw/maps/'
-lst_location = []
-while latitude < 25.16: # 0, 0.03, 0.06, 0.09, 0.12, 0.15
-	while longitude < 121.62: # 45, 51, 56, 61
-		location = '@' + str(round(latitude,2)) + ',' + str(round(longitude,2)) + ',14z'
-		# print(location)
-		lst_location.append(location)
-		url_new = url_base + location
-		longitude += 0.05
-	# print('======')
-	latitude += 0.03
-	longitude = 121.46
+def geturl():
+    lst_location = []
+    latitude = 25
+    latitude_max = 25.16
+    longitude = 121.46
+    longitude_min = 121.46
+    longitude_max = 121.62
+
+    latitude_step = 0.03
+    longitude_step = 0.05
+    url_base = 'https://www.google.com.tw/maps/'
+    lst_location = []
+    while latitude < latitude_max: # 0, 0.03, 0.06, 0.09, 0.12, 0.15
+        while longitude < longitude_max: # 45, 51, 56, 61
+            location = '@' + str(round(latitude,2)) + ',' + str(round(longitude,2)) + ',14z'
+            print('========= 產生url座標:', location, '===========')
+            lst_location.append(location)
+            url_new = url_base + location
+            longitude += longitude_step
+            yield url_new
+        # print('======')
+        latitude += latitude_step
+        longitude = longitude_min
 # url = 'https://www.google.com.tw/maps'
 # url = 'https://www.google.com.tw/maps/@25.0422976,121.5238281,17.29z' # 中正區北商位置
 # url = 'https://www.google.com.tw/maps/@25.029295,121.5439541,14z' # 信義區北醫位置
@@ -43,6 +47,7 @@ while latitude < 25.16: # 0, 0.03, 0.06, 0.09, 0.12, 0.15
 city = '台北市'
 keyword = '熱炒'    # 關鍵字
 totalpage = 10      # 總共要下載到幾頁的資料
+notcity_count = 0
 # ===========================================
 # =========== global 所需變數 =================
 start_time = time.time()
@@ -60,12 +65,13 @@ restart = 0
 district = ''
 folder = ''
 stores_path = ''
-folder_keyword = './csv/'+ keyword + '/'
-if not os.path.exists(folder_keyword) :
-    os.mkdir(folder_keyword)
+folder_key_city = './csv/'+ keyword + '/' + city + '/'
+if not os.path.exists(folder_key_city) :
+    os.makedirs(folder_key_city)
 # ===========================================
 def reset_paras():
     global page
+    global notcity_count
     global bfinal
     global bError
     global district
@@ -79,6 +85,7 @@ def reset_paras():
     global dic_review
 
     page = 0
+    notcity_count = 0
     bfinal = False
     bError = False
     district = ''
@@ -119,7 +126,8 @@ dic_tag = {
 
 # =============== Start =====================
 def start():
-    url = 'https://www.google.com.tw/maps/@25.1,121.55,14z'
+    # url = 'https://www.google.com.tw/maps/@25.03,121.5,15z'
+    url = next(url_gen)
     driver.get(url)
     time.sleep(2)  # 等待2秒
 
@@ -130,6 +138,7 @@ def start():
     driver.find_element_by_id('searchbox-searchbutton').click()
     time.sleep(5)
 
+url_gen = geturl()
 start()
 while True:
     if bfinal and not bError: # 若不是error結束跳出的，代表真的搜尋完所有頁面，結束
@@ -137,6 +146,7 @@ while True:
         break
     elif bfinal and bError: # 若是error結束跳出的，將瀏覽器關閉、重開、變數reset，重新再搜尋
         if restart > 10:
+            print('restart > 10，結束~~~~~~~~~~~~~')
             break
         driver.close()
         restart += 1
@@ -194,6 +204,7 @@ while True:
                             if not city in addr:
                                 print('不是', city, '跳過') # 不是台北市的店家不要抓
                                 choose = False
+                                notcity_count += 1
                                 break
                         elif '區 ' in addrinfo:
                             district = addrinfo.split(' ')[1] # 2GVC+6W 中正區 台北市
@@ -202,17 +213,19 @@ while True:
                             district = addrinfo.split(' ')[-1].replace('台北市', '') # 3G36+P4 永樂里 台北市大同區
                             choose = True
                     if choose:
-                        folder = './csv/' + keyword + '/' + district + '/' # 路徑為./csv/熱炒/stores.csv
-                        stores_path = './csv/' + keyword + '/stores.csv'
+
+                        folder = folder_key_city + district + '/' # 路徑為./csv/熱炒/stores.csv
+                        stores_path = folder_key_city + 'stores.csv'
                         review_path = folder + name + '_review.csv' # 路徑為./csv/熱炒/行政區/店名_review.csv
                         if not os.path.exists(folder):
-                            os.mkdir(folder)
+                            os.makedirs(folder)
                         print('區：', district, name)
 
                         # ============== 若此店家已儲存過評論，取出目前已存的最後一筆評論日期、評論內容 =======================
+                        df_cur = pd.DataFrame()
                         if os.path.exists(review_path):
-                            df_cur = pd.read_csv(review_path)
-                            if len(df_cur.index) == 0:
+                            df_cur = pd.read_csv(review_path, encoding='utf8', engine='python')
+                            if df_cur.empty:
                                 print('此店家完全無評論，跳下一個店家')
                                 continue
                             else:
@@ -238,8 +251,8 @@ while True:
                             print('店家完全沒有評論，error~~~~~~~~，except，開始儲存店家list')
                             print(e)
                             traceback.print_exc()
-                            with open(review_path, 'w', encoding='utf8') as f: # 無評論店家存空白.csv檔案
-                                f.write('')
+                            df_empty = pd.DataFrame(columns=['id','date','star','text'])
+                            df_empty.to_csv(review_path, index=False, encoding="utf-8") # 無評論店家存空白.csv檔案，仍要有column名稱
                             lst_store = save_csv(stores_path, lst_store)  # 儲存後回傳空的list
                             bError = True
                             bfinal = True
@@ -332,6 +345,7 @@ while True:
 
                                         review_text = '"' + review_text.replace('\r', '').replace('\n', '，') + '"' # 評論裡的換行符號改成"，"
                                         print('第' + str(k + 1), end=',')
+                                        # print('第' + str(k + 1), 'date:', get_real_date(review_date) == saved_latest_date, 'review:', review_text == saved_latest_review)
                                         # print('第' + str(k + 1) + '筆:', '日期:', review_date, '星等:', review_star, '評論:',review_text)
                                         dic_review['text'] = review_text
 
@@ -363,7 +377,12 @@ while True:
                             print('\n開始儲存review：', review_path, '，總評論數：', total_review, '，儲存評論筆數：', len(lst_review),'、空白評論筆數：', empty_review)
                             lst_review = save_csv(review_path, lst_review) # 儲存後回傳空的list
                         else:
-                            print('這個店家完全沒有評論, ', name)
+                            print('這個店家完全沒有評論, 仍要存檔', name, review_path)
+                            df_empty = pd.DataFrame(columns=['id','date','star','text'])
+                            df_empty.to_csv(review_path, index=False, encoding="utf-8") # 無評論店家存空白.csv檔案，仍要有column名稱
+                            lst_store = save_csv(stores_path, lst_store)  # 儲存後回傳空的list
+                            bError = True
+                            bfinal = True
 
                         if not bfinal:
                             back_store = find_tags(driver, dic_tag['back_store'])
@@ -383,6 +402,11 @@ while True:
             if bfinal:
                 print('跳出while')
                 break
+            if notcity_count > 10:
+                bfinal = True
+                bError = True
+                print('此搜尋中心太多非', city, '店家，跳出while')
+                break
             try:
                 nextpage = driver.find_element_by_id(dic_tag['next_page']) # 找到可以點擊下一頁的tag
                 count_store = 0
@@ -398,7 +422,6 @@ while True:
                 print('最後一頁了，找不到 next_page tag，except，開始儲存店家list')
                 lst_store = save_csv(stores_path, lst_store) # 儲存後回傳空的list
                 traceback.print_exc()
-                bError = True
                 bfinal = True
         except Exception as e:
             print(e)
