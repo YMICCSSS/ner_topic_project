@@ -4,8 +4,10 @@ import os
 import pandas as pd
 
 
-def find_tags(driver, tagName, parent=None):
-    print('開始 find_tags:', tagName)
+def find_tags(driver, tagName, parent=None, logger=None):
+    msg = '開始 find_tags:' + tagName
+    # print(msg)
+    logger.info(msg)
     count = 1
     taglen = 0
     time.sleep(2)
@@ -16,21 +18,25 @@ def find_tags(driver, tagName, parent=None):
 
     while not len(tags) > taglen:
         if count > 100:
-            print('已經重新找100次tag了，放棄')
+            msg = '已經重新找100次tag了，放棄'
+            logger.info(msg)
+            # print()
             break
 
         time.sleep(1)
         if parent == None:
             tags = driver.find_elements_by_class_name(tagName)
         else:
-            tags = parent.find_elements_by_class_name(tagName)
-        print('第' + str(count) + '次重新抓tag:', tagName)
+            tags = parent.find_elements_by_class_name(tagName) 
+        msg = '第' + str(count) + '次重新抓tag:' + tagName
+        # print(msg)
+        logger.info(msg)
         count += 1
     time.sleep(2)
     return tags
 
 # ==================== 儲存店家清單.csv、店家評論.csv ========================================
-def save_csv(path, lst):
+def save_csv(path, lst, logger=None):
     if len(lst) == 0:
         return []
     lst.sort(key=lambda x: x['tmpid'], reverse=True)
@@ -48,8 +54,9 @@ def save_csv(path, lst):
         df['id'] = pd.Series(range(saved_latest_id + 1, saved_latest_id + newrows + 1))
         df = pd.concat([df_ori, df], ignore_index=False)
         # 店家清單的評論數量佔無法更新，想直接去更新資料庫
-
-    print('儲存 dataframe ->.csv，path:', path)
+    msg = '儲存 dataframe ->.csv，path:' + path
+    logger.info(msg)
+    # print()
     print('df_saved:', df)
     df.to_csv(path, index=False, encoding="utf-8")
     return []
@@ -72,7 +79,7 @@ def get_real_date(date):
 
 # ==================== 檢查店家名稱是否有特殊符號 ====================
 # 因為是用店家名稱作為檔案名儲存，若有特殊符號無法存檔，將特殊符號轉換再儲存
-def checkName(name):
+def checkName(name, logger=None):
     # 檔名不能含有\/:*?"<>| 符號
     dic_mark = {'\\': '[反斜槓]',
                 '/': '[斜槓]',
@@ -90,5 +97,12 @@ def checkName(name):
     if len(lst_mark) > 0:
         for mark in lst_mark:
             newname = newname.replace(mark, dic_mark[mark])
-        print('原始店名含有特殊符號：', name, '，修正後店名', newname)
+        msg = '原始店名含有特殊符號：' + name + '，修正後店名' + newname
+        logger.info(msg)
+        # print(msg)
     return newname
+    
+def get_road(addr):
+    addr = re.sub(r"\b\d+..市..區", '', addr)
+    addr = re.sub(r"..區..市\d+\b", '', addr)
+    return addr

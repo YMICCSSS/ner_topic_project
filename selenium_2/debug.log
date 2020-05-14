@@ -67,3 +67,21 @@
 [0513/005629.038:ERROR:exception_snapshot_win.cc(98)] thread ID 2076 not found in process
 [0513/005629.038:ERROR:exception_snapshot_win.cc(98)] thread ID 10152 not found in process
 [0513/005629.038:ERROR:exception_snapshot_win.cc(98)] thread ID 13096 not found in process
+[0513/124045.118:ERROR:process_reader_win.cc(123)] NtOpenThread: {拒絕存取} 程序已請求存取一物件，但未被授與存取權。 (0xc0000022)
+[0513/124045.118:ERROR:exception_snapshot_win.cc(98)] thread ID 9516 not found in process
+[0513/124045.162:ERROR:process_reader_win.cc(123)] NtOpenThread: {拒絕存取} 程序已請求存取一物件，但未被授與存取權。 (0xc0000022)
+[0513/124045.162:ERROR:exception_snapshot_win.cc(98)] thread ID 2280 not found in process
+[0513/124952.244:ERROR:process_reader_win.cc(123)] NtOpenThread: {拒絕存取} 程序已請求存取一物件，但未被授與存取權。 (0xc0000022)
+[0513/124952.244:ERROR:exception_snapshot_win.cc(98)] thread ID 5916 not found in process
+[0513/124952.275:ERROR:process_reader_win.cc(123)] NtOpenThread: {拒絕存取} 程序已請求存取一物件，但未被授與存取權。 (0xc0000022)
+[0513/124952.275:ERROR:exception_snapshot_win.cc(98)] thread ID 6588 not found in process
+[0514/110535.123:ERROR:process_reader_win.cc(123)] NtOpenThread: {拒絕存取} 程序已請求存取一物件，但未被授與存取權。 (0xc0000022)
+[0514/110535.125:ERROR:exception_snapshot_win.cc(98)] thread ID 3564 not found in process
+[0514/110535.126:ERROR:process_reader_win.cc(123)] NtOpenThread: {拒絕存取} 程序已請求存取一物件，但未被授與存取權。 (0xc0000022)
+[0514/110535.126:ERROR:exception_snapshot_win.cc(98)] thread ID 1360 not found in process
+[0514/110535.155:ERROR:process_reader_win.cc(123)] NtOpenThread: {拒絕存取} 程序已請求存取一物件，但未被授與存取權。 (0xc0000022)
+[0514/110535.155:ERROR:exception_snapshot_win.cc(98)] thread ID 11760 not found in process
+[0514/134133.227:ERROR:process_reader_win.cc(123)] NtOpenThread: {拒絕存取} 程序已請求存取一物件，但未被授與存取權。 (0xc0000022)
+[0514/134133.229:ERROR:exception_snapshot_win.cc(98)] thread ID 10808 not found in process
+[0514/134133.257:ERROR:process_reader_win.cc(123)] NtOpenThread: {拒絕存取} 程序已請求存取一物件，但未被授與存取權。 (0xc0000022)
+[0514/134133.257:ERROR:exception_snapshot_win.cc(98)] thread ID 11792 not found in process

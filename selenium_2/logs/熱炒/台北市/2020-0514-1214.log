@@ -1,0 +1,2339 @@
+2020-05-14 12:14 | INFO     | 0049 | Start
+2020-05-14 12:14 | INFO     | 0030 | ('========= 產生url座標:', '@25,121.46,15z', '===========')
+2020-05-14 12:14 | INFO     | 0010 | 開始 find_tags:tactile-searchbox-input
+2020-05-14 12:15 | INFO     | 0134 | 輸入搜尋關鍵字:熱炒，點擊搜尋
+2020-05-14 12:15 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:15 | INFO     | 0163 | 進入第1頁, 店家數:20
+2020-05-14 12:15 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:15 | INFO     | 0197 | === 點擊第1個店家: 國泰熱炒 ===
+2020-05-14 12:15 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:15 | INFO     | 0208 | 220新北市板橋區國泰街68巷35號 ，不是 台北市 跳過
+2020-05-14 12:15 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 12:15 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 12:15 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:15 | INFO     | 0197 | === 點擊第2個店家: 紅庄快炒店 ===
+2020-05-14 12:15 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:15 | INFO     | 0208 | 236新北市土城區延平街19號 ，不是 台北市 跳過
+2020-05-14 12:15 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 12:15 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 12:15 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:15 | INFO     | 0197 | === 點擊第3個店家: 番王熱炒 ===
+2020-05-14 12:15 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:15 | INFO     | 0208 | 220新北市板橋區後埔街22號號 ，不是 台北市 跳過
+2020-05-14 12:15 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 12:15 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 12:15 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:15 | INFO     | 0197 | === 點擊第4個店家: 四季海鮮熱炒 ===
+2020-05-14 12:15 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:16 | INFO     | 0208 | 235新北市中和區莒光路141號 ，不是 台北市 跳過
+2020-05-14 12:16 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 12:16 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 12:16 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:16 | INFO     | 0197 | === 點擊第5個店家: 鮮海味生猛海鮮 熱炒100 ===
+2020-05-14 12:16 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:16 | INFO     | 0208 | 235新北市中和區新生街29號 ，不是 台北市 跳過
+2020-05-14 12:16 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 12:16 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 12:16 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:16 | INFO     | 0197 | === 點擊第6個店家: 吳記生炒鱔魚麵 • 熱炒店 ===
+2020-05-14 12:16 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:16 | INFO     | 0208 | 236新北市土城區延平街49號 ，不是 台北市 跳過
+2020-05-14 12:16 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 12:16 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 12:16 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:16 | INFO     | 0197 | === 點擊第7個店家: 民安熱炒 ===
+2020-05-14 12:16 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:16 | INFO     | 0208 | 235新北市中和民民安街35號 ，不是 台北市 跳過
+2020-05-14 12:16 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 12:16 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 12:16 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:16 | INFO     | 0197 | === 點擊第8個店家: 林邊熱炒 ===
+2020-05-14 12:16 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:17 | INFO     | 0208 | 235新北市中和區莒光路64號 ，不是 台北市 跳過
+2020-05-14 12:17 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 12:17 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 12:17 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:17 | INFO     | 0197 | === 點擊第9個店家: 百里香熱炒 ===
+2020-05-14 12:17 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:17 | INFO     | 0208 | 220新北市板橋區大觀路二段187巷25號 ，不是 台北市 跳過
+2020-05-14 12:17 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 12:17 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 12:17 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:17 | INFO     | 0197 | === 點擊第10個店家: 野路子快炒 ===
+2020-05-14 12:17 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:17 | INFO     | 0208 | 235新北市中和區員山路148巷2號 ，不是 台北市 跳過
+2020-05-14 12:17 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 12:17 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 12:17 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:17 | INFO     | 0197 | === 點擊第11個店家: 黑白炒 熱炒 ===
+2020-05-14 12:17 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:17 | INFO     | 0208 | 220新北市板橋區國慶路182巷7號 ，不是 台北市 跳過
+2020-05-14 12:17 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 12:17 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 12:17 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:17 | INFO     | 0197 | === 點擊第12個店家: 勝昱快炒 ===
+2020-05-14 12:17 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:18 | INFO     | 0208 | 220新北市板橋區實踐路51號 ，不是 台北市 跳過
+2020-05-14 12:18 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 12:18 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 12:18 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:18 | INFO     | 0197 | === 點擊第13個店家: 阿榮海鮮熱炒 ===
+2020-05-14 12:18 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:18 | INFO     | 0208 | 236新北市土城區峰廷街3號 ，不是 台北市 跳過
+2020-05-14 12:18 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 12:18 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 12:18 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:18 | INFO     | 0197 | === 點擊第14個店家: 黑白切熱炒80 ===
+2020-05-14 12:18 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:18 | INFO     | 0208 | 235新北市中和區莒光路124號 ，不是 台北市 跳過
+2020-05-14 12:18 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 12:18 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 12:18 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:18 | INFO     | 0197 | === 點擊第15個店家: 阿瘦熱炒 ===
+2020-05-14 12:18 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:18 | INFO     | 0208 | 235新北市中和區員山路號 No. 150-1 ，不是 台北市 跳過
+2020-05-14 12:18 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 12:18 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 12:18 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:18 | INFO     | 0197 | === 點擊第16個店家: 花枝爸熱炒餐廳 ===
+2020-05-14 12:18 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:18 | INFO     | 0208 | 220新北市板橋區莊敬路246號 ，不是 台北市 跳過
+2020-05-14 12:18 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 12:19 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 12:19 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:19 | INFO     | 0197 | === 點擊第17個店家: 傳鴻快炒 ===
+2020-05-14 12:19 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:19 | INFO     | 0208 | 220新北市板橋區仁愛路19號 ，不是 台北市 跳過
+2020-05-14 12:19 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 12:19 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 12:19 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:19 | INFO     | 0197 | === 點擊第18個店家: 嗄嗄叫熱炒 ===
+2020-05-14 12:19 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:19 | INFO     | 0208 | 220新北市板橋區四川路二段83號 ，不是 台北市 跳過
+2020-05-14 12:19 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 12:19 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 12:19 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:19 | INFO     | 0197 | === 點擊第19個店家: 樹鼎天熱炒店 ===
+2020-05-14 12:19 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:19 | INFO     | 0208 | 220新北市板橋區民權路202巷2號 ，不是 台北市 跳過
+2020-05-14 12:19 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 12:19 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 12:19 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:19 | INFO     | 0197 | === 點擊第20個店家: 阿展快炒店 ===
+2020-05-14 12:19 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:19 | INFO     | 0208 | 號, No. 59五權街板橋區新北市220 ，不是 台北市 跳過
+2020-05-14 12:19 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 12:20 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 12:20 | INFO     | 0448 | 目前這頁爬完了，換下一頁，目前在第1頁，已點過的店家數:0開始儲存店家list
+2020-05-14 12:20 | INFO     | 0461 | 此搜尋中心非 台北市 的店家有20筆，跳出while，換個中心點重跑
+2020-05-14 12:20 | INFO     | 0030 | ('========= 產生url座標:', '@25,121.51,15z', '===========')
+2020-05-14 12:20 | INFO     | 0010 | 開始 find_tags:tactile-searchbox-input
+2020-05-14 12:20 | INFO     | 0134 | 輸入搜尋關鍵字:熱炒，點擊搜尋
+2020-05-14 12:20 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:20 | INFO     | 0163 | 進入第1頁, 店家數:20
+2020-05-14 12:20 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:20 | INFO     | 0101 | 原始店名含有特殊符號：味味鮮熱炒/中和熱炒/中和平價熱炒/中和美食/中和家常菜/中和午餐，修正後店名味味鮮熱炒[斜槓]中和熱炒[斜槓]中和平價熱炒[斜槓]中和美食[斜槓]中和家常菜[斜槓]中和午餐
+2020-05-14 12:20 | INFO     | 0197 | === 點擊第1個店家: 味味鮮熱炒[斜槓]中和熱炒[斜槓]中和平價熱炒[斜槓]中和美食[斜槓]中和家常菜[斜槓]中和午餐 ===
+2020-05-14 12:20 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:20 | INFO     | 0208 | 235新北市中和區秀朗路三段175巷11號 ，不是 台北市 跳過
+2020-05-14 12:20 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 12:20 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 12:20 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:20 | INFO     | 0197 | === 點擊第2個店家: 三哥海鮮快炒 ===
+2020-05-14 12:20 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:20 | INFO     | 0208 | 235新北市中和區南華路76號 ，不是 台北市 跳過
+2020-05-14 12:20 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 12:20 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 12:21 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:21 | INFO     | 0197 | === 點擊第3個店家: 聚一聚熱炒 ===
+2020-05-14 12:21 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:21 | INFO     | 0208 | 235新北市中和區中山路二段50號 ，不是 台北市 跳過
+2020-05-14 12:21 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 12:21 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 12:21 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:21 | INFO     | 0197 | === 點擊第4個店家: 上介青海鮮熱炒 ===
+2020-05-14 12:21 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:21 | INFO     | 0208 | 235新北市中和區宜安路174號 ，不是 台北市 跳過
+2020-05-14 12:21 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 12:21 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 12:21 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:21 | INFO     | 0197 | === 點擊第5個店家: 中肯平價熱炒 ===
+2020-05-14 12:21 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:21 | INFO     | 0208 | 234新北市永和區竹林路91巷3號 ，不是 台北市 跳過
+2020-05-14 12:21 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 12:21 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 12:21 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:21 | INFO     | 0197 | === 點擊第6個店家: 呷富哥海鮮熱炒 ===
+2020-05-14 12:21 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:21 | INFO     | 0208 | 23553新北市中和區中山路二段108號 ，不是 台北市 跳過
+2020-05-14 12:21 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 12:21 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 12:22 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:22 | INFO     | 0197 | === 點擊第7個店家: 轟天雷生猛海鮮平價熱炒 ===
+2020-05-14 12:22 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:22 | INFO     | 0208 | 234新北市永和區永貞路24號 ，不是 台北市 跳過
+2020-05-14 12:22 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 12:22 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 12:22 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:22 | INFO     | 0197 | === 點擊第8個店家: 民生熱炒 ===
+2020-05-14 12:22 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:22 | INFO     | 0208 | 234新北市永和區民生路18號 ，不是 台北市 跳過
+2020-05-14 12:22 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 12:22 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 12:22 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:22 | INFO     | 0197 | === 點擊第9個店家: 好菜場現撈生猛海鮮快炒100 ===
+2020-05-14 12:22 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:22 | INFO     | 0208 | 235新北市中和區安平路138號 ，不是 台北市 跳過
+2020-05-14 12:22 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 12:22 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 12:22 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:22 | INFO     | 0197 | === 點擊第10個店家: 林森79熱炒(喫酒夜攤) ===
+2020-05-14 12:22 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:22 | INFO     | 0208 | 234新北市永和區林森路79號 ，不是 台北市 跳過
+2020-05-14 12:22 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 12:22 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 12:22 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:23 | INFO     | 0197 | === 點擊第11個店家: 林記平價快炒 ===
+2020-05-14 12:23 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:23 | INFO     | 0208 | 235新北市中和區捷運路79號 ，不是 台北市 跳過
+2020-05-14 12:23 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 12:23 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 12:23 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:23 | INFO     | 0197 | === 點擊第12個店家: 饕出來援胃燒烤-熱炒 ===
+2020-05-14 12:23 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:23 | INFO     | 0208 | 235新北市中和區景安路景新街交叉口 ，不是 台北市 跳過
+2020-05-14 12:23 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 12:23 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 12:23 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:23 | INFO     | 0197 | === 點擊第13個店家: 山水亭熱炒 ===
+2020-05-14 12:23 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:23 | INFO     | 0208 | 250號 ，不是 台北市 跳過
+2020-05-14 12:23 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 12:23 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 12:23 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:23 | INFO     | 0197 | === 點擊第14個店家: 豪香熱炒 ===
+2020-05-14 12:23 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:23 | INFO     | 0226 | 區：大安區豪香熱炒
+2020-05-14 12:23 | INFO     | 0246 | 第14個店家: 豪香熱炒 的評論已經存過，已存的最新評論日期為2020/05/08
+2020-05-14 12:23 | INFO     | 0010 | 開始 find_tags:section-rating-term-list
+2020-05-14 12:23 | INFO     | 0280 | 已點擊"所有評論"，總共有:568 則評論
+2020-05-14 12:23 | INFO     | 0010 | 開始 find_tags:section-layout-flex-horizontal
+2020-05-14 12:23 | INFO     | 0286 | 點擊選擇排序的下拉式選單:True
+2020-05-14 12:23 | INFO     | 0010 | 開始 find_tags:action-menu-entry
+2020-05-14 12:24 | INFO     | 0298 | 開始找section-loading
+2020-05-14 12:24 | INFO     | 0309 | loading評論第1次
+2020-05-14 12:24 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 12:24 | INFO     | 0335 | 最新已儲存日期：2020/05/08, 目前此筆評論日期：2020/04/14, loading displayed:True
+2020-05-14 12:24 | INFO     | 0340 | 目前最後一個評論日期：2020/04/14已 < 最新儲存日期:2020/05/08，不需再往下滑了
+2020-05-14 12:24 | INFO     | 0010 | 開始 find_tags:section-review-review-content
+2020-05-14 12:24 | INFO     | 0363 | 開始顯示所有評論數量:10
+2020-05-14 12:24 | INFO     | 0010 | 開始 find_tags:section-review-stars
+2020-05-14 12:24 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 12:24 | INFO     | 0402 | 只更新一週內的評論，超過的不更新，這個評論日期：2020/05/14
+2020-05-14 12:24 | INFO     | 0420 | 開始儲存review：./csv/熱炒/台北市/大安區/豪香熱炒_review.csv，總評論數：568，儲存評論筆數：0、空白評論筆數：0
+2020-05-14 12:24 | INFO     | 0010 | 開始 find_tags:ozj7Vb3wnYq__action-button-clickable
+2020-05-14 12:24 | INFO     | 0437 | 已點擊返回店家資訊
+2020-05-14 12:24 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 12:24 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 12:24 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:24 | INFO     | 0197 | === 點擊第15個店家: 櫻花熱炒 ===
+2020-05-14 12:24 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:24 | INFO     | 0208 | 234新北市永和區永貞路257號 ，不是 台北市 跳過
+2020-05-14 12:24 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 12:24 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 12:24 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:24 | INFO     | 0197 | === 點擊第16個店家: 昕霖居熱炒店 ===
+2020-05-14 12:24 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:24 | INFO     | 0208 | 235新北市中和區圓通路14號 ，不是 台北市 跳過
+2020-05-14 12:24 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 12:25 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 12:25 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:25 | INFO     | 0197 | === 點擊第17個店家: 北雲林海鮮熱炒 ===
+2020-05-14 12:25 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:25 | INFO     | 0208 | 235新北市中和區福祥路10號 ，不是 台北市 跳過
+2020-05-14 12:25 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 12:25 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 12:25 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:25 | INFO     | 0197 | === 點擊第18個店家: 四季養生湯品食府 ===
+2020-05-14 12:25 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:25 | INFO     | 0208 | 235新北市中和區自立路58巷1號 ，不是 台北市 跳過
+2020-05-14 12:25 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 12:25 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 12:25 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:25 | INFO     | 0197 | === 點擊第19個店家: 華西街熱炒 ===
+2020-05-14 12:25 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:25 | INFO     | 0208 | 235新北市中和區南華路口號景新街 ，不是 台北市 跳過
+2020-05-14 12:25 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 12:25 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 12:25 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:25 | INFO     | 0197 | === 點擊第20個店家: 鮮海味生猛海鮮 熱炒100 ===
+2020-05-14 12:25 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:25 | INFO     | 0208 | 235新北市中和區新生街29號 ，不是 台北市 跳過
+2020-05-14 12:25 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 12:26 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 12:26 | INFO     | 0448 | 目前這頁爬完了，換下一頁，目前在第1頁，已點過的店家數:1開始儲存店家list
+2020-05-14 12:26 | INFO     | 0461 | 此搜尋中心非 台北市 的店家有19筆，跳出while，換個中心點重跑
+2020-05-14 12:26 | INFO     | 0030 | ('========= 產生url座標:', '@25,121.56,15z', '===========')
+2020-05-14 12:26 | INFO     | 0010 | 開始 find_tags:tactile-searchbox-input
+2020-05-14 12:26 | INFO     | 0134 | 輸入搜尋關鍵字:熱炒，點擊搜尋
+2020-05-14 12:26 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:26 | INFO     | 0163 | 進入第1頁, 店家數:20
+2020-05-14 12:26 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:26 | INFO     | 0197 | === 點擊第1個店家: 萬興熱炒 ===
+2020-05-14 12:26 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:26 | INFO     | 0226 | 區：文山區萬興熱炒
+2020-05-14 12:26 | INFO     | 0246 | 第1個店家: 萬興熱炒 的評論已經存過，已存的最新評論日期為2020/01/10
+2020-05-14 12:26 | INFO     | 0010 | 開始 find_tags:section-rating-term-list
+2020-05-14 12:26 | INFO     | 0280 | 已點擊"所有評論"，總共有:22 則評論
+2020-05-14 12:26 | INFO     | 0010 | 開始 find_tags:section-layout-flex-horizontal
+2020-05-14 12:26 | INFO     | 0286 | 點擊選擇排序的下拉式選單:True
+2020-05-14 12:26 | INFO     | 0010 | 開始 find_tags:action-menu-entry
+2020-05-14 12:26 | INFO     | 0298 | 開始找section-loading
+2020-05-14 12:26 | INFO     | 0309 | loading評論第1次
+2020-05-14 12:26 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 12:27 | INFO     | 0335 | 最新已儲存日期：2020/01/10, 目前此筆評論日期：2019/06/14, loading displayed:True
+2020-05-14 12:27 | INFO     | 0340 | 目前最後一個評論日期：2019/06/14已 < 最新儲存日期:2020/01/10，不需再往下滑了
+2020-05-14 12:27 | INFO     | 0010 | 開始 find_tags:section-review-review-content
+2020-05-14 12:27 | INFO     | 0363 | 開始顯示所有評論數量:10
+2020-05-14 12:27 | INFO     | 0010 | 開始 find_tags:section-review-stars
+2020-05-14 12:27 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 12:27 | INFO     | 0402 | 只更新一週內的評論，超過的不更新，這個評論日期：2020/02/14
+2020-05-14 12:27 | INFO     | 0420 | 開始儲存review：./csv/熱炒/台北市/文山區/萬興熱炒_review.csv，總評論數：22，儲存評論筆數：0、空白評論筆數：0
+2020-05-14 12:27 | INFO     | 0010 | 開始 find_tags:ozj7Vb3wnYq__action-button-clickable
+2020-05-14 12:27 | INFO     | 0437 | 已點擊返回店家資訊
+2020-05-14 12:27 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 12:27 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 12:27 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:27 | INFO     | 0197 | === 點擊第2個店家: 新味珍復古熱炒 ===
+2020-05-14 12:27 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:27 | INFO     | 0226 | 區：文山區新味珍復古熱炒
+2020-05-14 12:27 | INFO     | 0246 | 第2個店家: 新味珍復古熱炒 的評論已經存過，已存的最新評論日期為2020/04/09
+2020-05-14 12:27 | INFO     | 0010 | 開始 find_tags:section-rating-term-list
+2020-05-14 12:27 | INFO     | 0280 | 已點擊"所有評論"，總共有:332 則評論
+2020-05-14 12:27 | INFO     | 0010 | 開始 find_tags:section-layout-flex-horizontal
+2020-05-14 12:27 | INFO     | 0286 | 點擊選擇排序的下拉式選單:True
+2020-05-14 12:27 | INFO     | 0010 | 開始 find_tags:action-menu-entry
+2020-05-14 12:27 | INFO     | 0298 | 開始找section-loading
+2020-05-14 12:27 | INFO     | 0309 | loading評論第1次
+2020-05-14 12:27 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 12:27 | INFO     | 0335 | 最新已儲存日期：2020/04/09, 目前此筆評論日期：2020/03/14, loading displayed:True
+2020-05-14 12:27 | INFO     | 0340 | 目前最後一個評論日期：2020/03/14已 < 最新儲存日期:2020/04/09，不需再往下滑了
+2020-05-14 12:27 | INFO     | 0010 | 開始 find_tags:section-review-review-content
+2020-05-14 12:28 | INFO     | 0363 | 開始顯示所有評論數量:10
+2020-05-14 12:28 | INFO     | 0010 | 開始 find_tags:section-review-stars
+2020-05-14 12:28 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 12:28 | INFO     | 0402 | 只更新一週內的評論，超過的不更新，這個評論日期：2020/04/16
+2020-05-14 12:28 | INFO     | 0420 | 開始儲存review：./csv/熱炒/台北市/文山區/新味珍復古熱炒_review.csv，總評論數：332，儲存評論筆數：0、空白評論筆數：0
+2020-05-14 12:28 | INFO     | 0010 | 開始 find_tags:ozj7Vb3wnYq__action-button-clickable
+2020-05-14 12:28 | INFO     | 0437 | 已點擊返回店家資訊
+2020-05-14 12:28 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 12:28 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 12:28 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:28 | INFO     | 0197 | === 點擊第3個店家: 豪香熱炒 ===
+2020-05-14 12:28 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:28 | INFO     | 0226 | 區：大安區豪香熱炒
+2020-05-14 12:28 | INFO     | 0246 | 第3個店家: 豪香熱炒 的評論已經存過，已存的最新評論日期為2020/05/08
+2020-05-14 12:28 | INFO     | 0010 | 開始 find_tags:section-rating-term-list
+2020-05-14 12:28 | INFO     | 0280 | 已點擊"所有評論"，總共有:568 則評論
+2020-05-14 12:28 | INFO     | 0010 | 開始 find_tags:section-layout-flex-horizontal
+2020-05-14 12:28 | INFO     | 0286 | 點擊選擇排序的下拉式選單:True
+2020-05-14 12:28 | INFO     | 0010 | 開始 find_tags:action-menu-entry
+2020-05-14 12:28 | INFO     | 0298 | 開始找section-loading
+2020-05-14 12:28 | INFO     | 0309 | loading評論第1次
+2020-05-14 12:28 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 12:28 | INFO     | 0335 | 最新已儲存日期：2020/05/08, 目前此筆評論日期：2020/04/14, loading displayed:True
+2020-05-14 12:28 | INFO     | 0340 | 目前最後一個評論日期：2020/04/14已 < 最新儲存日期:2020/05/08，不需再往下滑了
+2020-05-14 12:28 | INFO     | 0010 | 開始 find_tags:section-review-review-content
+2020-05-14 12:28 | INFO     | 0363 | 開始顯示所有評論數量:10
+2020-05-14 12:28 | INFO     | 0010 | 開始 find_tags:section-review-stars
+2020-05-14 12:28 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 12:29 | INFO     | 0402 | 只更新一週內的評論，超過的不更新，這個評論日期：2020/05/14
+2020-05-14 12:29 | INFO     | 0420 | 開始儲存review：./csv/熱炒/台北市/大安區/豪香熱炒_review.csv，總評論數：568，儲存評論筆數：0、空白評論筆數：0
+2020-05-14 12:29 | INFO     | 0010 | 開始 find_tags:ozj7Vb3wnYq__action-button-clickable
+2020-05-14 12:29 | INFO     | 0437 | 已點擊返回店家資訊
+2020-05-14 12:29 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 12:29 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 12:29 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:29 | INFO     | 0197 | === 點擊第4個店家: 酒鮮平價熱炒 ===
+2020-05-14 12:29 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:29 | INFO     | 0208 | 231新北市新店區民權路83號 ，不是 台北市 跳過
+2020-05-14 12:29 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 12:29 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 12:29 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:29 | INFO     | 0197 | === 點擊第5個店家: 景美熱炒 ===
+2020-05-14 12:29 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:29 | INFO     | 0226 | 區：文山區景美熱炒
+2020-05-14 12:29 | INFO     | 0246 | 第5個店家: 景美熱炒 的評論已經存過，已存的最新評論日期為2020/01/13
+2020-05-14 12:29 | INFO     | 0010 | 開始 find_tags:section-rating-term-list
+2020-05-14 12:29 | INFO     | 0280 | 已點擊"所有評論"，總共有:6 則評論
+2020-05-14 12:29 | INFO     | 0010 | 開始 find_tags:section-layout-flex-horizontal
+2020-05-14 12:29 | INFO     | 0286 | 點擊選擇排序的下拉式選單:True
+2020-05-14 12:29 | INFO     | 0010 | 開始 find_tags:action-menu-entry
+2020-05-14 12:29 | INFO     | 0298 | 開始找section-loading
+2020-05-14 12:29 | INFO     | 0010 | 開始 find_tags:section-review-review-content
+2020-05-14 12:29 | INFO     | 0363 | 開始顯示所有評論數量:6
+2020-05-14 12:29 | INFO     | 0010 | 開始 find_tags:section-review-stars
+2020-05-14 12:30 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 12:30 | INFO     | 0402 | 只更新一週內的評論，超過的不更新，這個評論日期：2020/01/14
+2020-05-14 12:30 | INFO     | 0420 | 開始儲存review：./csv/熱炒/台北市/文山區/景美熱炒_review.csv，總評論數：6，儲存評論筆數：0、空白評論筆數：0
+2020-05-14 12:30 | INFO     | 0010 | 開始 find_tags:ozj7Vb3wnYq__action-button-clickable
+2020-05-14 12:30 | INFO     | 0437 | 已點擊返回店家資訊
+2020-05-14 12:30 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 12:30 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 12:30 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:30 | INFO     | 0197 | === 點擊第6個店家: 驛站熱炒 ===
+2020-05-14 12:30 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:30 | INFO     | 0226 | 區：文山區驛站熱炒
+2020-05-14 12:30 | INFO     | 0246 | 第6個店家: 驛站熱炒 的評論已經存過，已存的最新評論日期為2020/05/05
+2020-05-14 12:30 | INFO     | 0010 | 開始 find_tags:section-rating-term-list
+2020-05-14 12:30 | INFO     | 0280 | 已點擊"所有評論"，總共有:86 則評論
+2020-05-14 12:30 | INFO     | 0010 | 開始 find_tags:section-layout-flex-horizontal
+2020-05-14 12:30 | INFO     | 0286 | 點擊選擇排序的下拉式選單:True
+2020-05-14 12:30 | INFO     | 0010 | 開始 find_tags:action-menu-entry
+2020-05-14 12:30 | INFO     | 0298 | 開始找section-loading
+2020-05-14 12:30 | INFO     | 0309 | loading評論第1次
+2020-05-14 12:30 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 12:30 | INFO     | 0335 | 最新已儲存日期：2020/05/05, 目前此筆評論日期：2020/03/14, loading displayed:True
+2020-05-14 12:30 | INFO     | 0340 | 目前最後一個評論日期：2020/03/14已 < 最新儲存日期:2020/05/05，不需再往下滑了
+2020-05-14 12:30 | INFO     | 0010 | 開始 find_tags:section-review-review-content
+2020-05-14 12:30 | INFO     | 0363 | 開始顯示所有評論數量:10
+2020-05-14 12:30 | INFO     | 0010 | 開始 find_tags:section-review-stars
+2020-05-14 12:30 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 12:30 | INFO     | 0402 | 只更新一週內的評論，超過的不更新，這個評論日期：2020/05/07
+2020-05-14 12:30 | INFO     | 0420 | 開始儲存review：./csv/熱炒/台北市/文山區/驛站熱炒_review.csv，總評論數：86，儲存評論筆數：0、空白評論筆數：0
+2020-05-14 12:30 | INFO     | 0010 | 開始 find_tags:ozj7Vb3wnYq__action-button-clickable
+2020-05-14 12:31 | INFO     | 0437 | 已點擊返回店家資訊
+2020-05-14 12:31 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 12:31 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 12:31 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:31 | INFO     | 0197 | === 點擊第7個店家: 豪香熱炒 ===
+2020-05-14 12:31 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:31 | INFO     | 0226 | 區：大安區豪香熱炒
+2020-05-14 12:31 | INFO     | 0246 | 第7個店家: 豪香熱炒 的評論已經存過，已存的最新評論日期為2020/05/08
+2020-05-14 12:31 | INFO     | 0010 | 開始 find_tags:section-rating-term-list
+2020-05-14 12:31 | INFO     | 0280 | 已點擊"所有評論"，總共有:301 則評論
+2020-05-14 12:31 | INFO     | 0010 | 開始 find_tags:section-layout-flex-horizontal
+2020-05-14 12:31 | INFO     | 0286 | 點擊選擇排序的下拉式選單:True
+2020-05-14 12:31 | INFO     | 0010 | 開始 find_tags:action-menu-entry
+2020-05-14 12:31 | INFO     | 0298 | 開始找section-loading
+2020-05-14 12:31 | INFO     | 0309 | loading評論第1次
+2020-05-14 12:31 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 12:31 | INFO     | 0335 | 最新已儲存日期：2020/05/08, 目前此筆評論日期：2020/03/14, loading displayed:True
+2020-05-14 12:31 | INFO     | 0340 | 目前最後一個評論日期：2020/03/14已 < 最新儲存日期:2020/05/08，不需再往下滑了
+2020-05-14 12:31 | INFO     | 0010 | 開始 find_tags:section-review-review-content
+2020-05-14 12:31 | INFO     | 0363 | 開始顯示所有評論數量:10
+2020-05-14 12:31 | INFO     | 0010 | 開始 find_tags:section-review-stars
+2020-05-14 12:31 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 12:31 | INFO     | 0397 | 這個評論日期：2020/05/07已 < 最新儲存日期：2020/05/08，擷取評論結束
+2020-05-14 12:31 | INFO     | 0420 | 開始儲存review：./csv/熱炒/台北市/大安區/豪香熱炒_review.csv，總評論數：301，儲存評論筆數：0、空白評論筆數：0
+2020-05-14 12:31 | INFO     | 0010 | 開始 find_tags:ozj7Vb3wnYq__action-button-clickable
+2020-05-14 12:31 | INFO     | 0437 | 已點擊返回店家資訊
+2020-05-14 12:31 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 12:32 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 12:32 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:32 | INFO     | 0197 | === 點擊第8個店家: 平價快炒 ===
+2020-05-14 12:32 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:32 | INFO     | 0226 | 區：大安區平價快炒
+2020-05-14 12:32 | INFO     | 0246 | 第8個店家: 平價快炒 的評論已經存過，已存的最新評論日期為2020/05/07
+2020-05-14 12:32 | INFO     | 0010 | 開始 find_tags:section-rating-term-list
+2020-05-14 12:32 | INFO     | 0280 | 已點擊"所有評論"，總共有:1,006 則評論
+2020-05-14 12:32 | INFO     | 0010 | 開始 find_tags:section-layout-flex-horizontal
+2020-05-14 12:32 | INFO     | 0286 | 點擊選擇排序的下拉式選單:True
+2020-05-14 12:32 | INFO     | 0010 | 開始 find_tags:action-menu-entry
+2020-05-14 12:32 | INFO     | 0298 | 開始找section-loading
+2020-05-14 12:32 | INFO     | 0309 | loading評論第1次
+2020-05-14 12:32 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 12:32 | INFO     | 0335 | 最新已儲存日期：2020/05/07, 目前此筆評論日期：2020/04/14, loading displayed:True
+2020-05-14 12:32 | INFO     | 0340 | 目前最後一個評論日期：2020/04/14已 < 最新儲存日期:2020/05/07，不需再往下滑了
+2020-05-14 12:32 | INFO     | 0010 | 開始 find_tags:section-review-review-content
+2020-05-14 12:32 | INFO     | 0363 | 開始顯示所有評論數量:10
+2020-05-14 12:32 | INFO     | 0010 | 開始 find_tags:section-review-stars
+2020-05-14 12:32 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 12:32 | INFO     | 0392 | 這個評論日期 == 最新儲存日期，且評論內容 == 最新儲存評論內容，擷取評論結束
+2020-05-14 12:32 | INFO     | 0420 | 開始儲存review：./csv/熱炒/台北市/大安區/平價快炒_review.csv，總評論數：1006，儲存評論筆數：0、空白評論筆數：0
+2020-05-14 12:32 | INFO     | 0010 | 開始 find_tags:ozj7Vb3wnYq__action-button-clickable
+2020-05-14 12:32 | INFO     | 0437 | 已點擊返回店家資訊
+2020-05-14 12:32 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 12:32 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 12:32 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:33 | INFO     | 0197 | === 點擊第9個店家: 中肯平價熱炒 ===
+2020-05-14 12:33 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:33 | INFO     | 0208 | 234新北市永和區竹林路91巷3號 ，不是 台北市 跳過
+2020-05-14 12:33 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 12:33 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 12:33 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:33 | INFO     | 0197 | === 點擊第10個店家: 33區熱炒 ===
+2020-05-14 12:33 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:33 | INFO     | 0226 | 區：中山區33區熱炒
+2020-05-14 12:33 | INFO     | 0246 | 第10個店家: 33區熱炒 的評論已經存過，已存的最新評論日期為2020/05/06
+2020-05-14 12:33 | INFO     | 0010 | 開始 find_tags:section-rating-term-list
+2020-05-14 12:33 | INFO     | 0280 | 已點擊"所有評論"，總共有:1,212 則評論
+2020-05-14 12:33 | INFO     | 0010 | 開始 find_tags:section-layout-flex-horizontal
+2020-05-14 12:33 | INFO     | 0286 | 點擊選擇排序的下拉式選單:True
+2020-05-14 12:33 | INFO     | 0010 | 開始 find_tags:action-menu-entry
+2020-05-14 12:33 | INFO     | 0298 | 開始找section-loading
+2020-05-14 12:33 | INFO     | 0309 | loading評論第1次
+2020-05-14 12:33 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 12:33 | INFO     | 0335 | 最新已儲存日期：2020/05/06, 目前此筆評論日期：2020/04/14, loading displayed:True
+2020-05-14 12:33 | INFO     | 0340 | 目前最後一個評論日期：2020/04/14已 < 最新儲存日期:2020/05/06，不需再往下滑了
+2020-05-14 12:33 | INFO     | 0010 | 開始 find_tags:section-review-review-content
+2020-05-14 12:33 | INFO     | 0363 | 開始顯示所有評論數量:10
+2020-05-14 12:33 | INFO     | 0010 | 開始 find_tags:section-review-stars
+2020-05-14 12:33 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 12:33 | INFO     | 0402 | 只更新一週內的評論，超過的不更新，這個評論日期：2020/05/07
+2020-05-14 12:33 | INFO     | 0420 | 開始儲存review：./csv/熱炒/台北市/中山區/33區熱炒_review.csv，總評論數：1212，儲存評論筆數：0、空白評論筆數：0
+2020-05-14 12:33 | INFO     | 0010 | 開始 find_tags:ozj7Vb3wnYq__action-button-clickable
+2020-05-14 12:33 | INFO     | 0437 | 已點擊返回店家資訊
+2020-05-14 12:33 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 12:34 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 12:34 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:34 | INFO     | 0197 | === 點擊第11個店家: 霸王熱炒 ===
+2020-05-14 12:34 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:34 | INFO     | 0208 | 號, No. 81大豐路新店區新北市231 ，不是 台北市 跳過
+2020-05-14 12:34 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 12:34 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 12:34 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:34 | INFO     | 0197 | === 點擊第12個店家: 土狗幫熱炒燒烤餐廳 ===
+2020-05-14 12:34 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:34 | INFO     | 0226 | 區：大安區土狗幫熱炒燒烤餐廳
+2020-05-14 12:34 | INFO     | 0246 | 第12個店家: 土狗幫熱炒燒烤餐廳 的評論已經存過，已存的最新評論日期為2020/04/09
+2020-05-14 12:34 | INFO     | 0010 | 開始 find_tags:section-rating-term-list
+2020-05-14 12:34 | INFO     | 0280 | 已點擊"所有評論"，總共有:275 則評論
+2020-05-14 12:34 | INFO     | 0010 | 開始 find_tags:section-layout-flex-horizontal
+2020-05-14 12:34 | INFO     | 0286 | 點擊選擇排序的下拉式選單:True
+2020-05-14 12:34 | INFO     | 0010 | 開始 find_tags:action-menu-entry
+2020-05-14 12:34 | INFO     | 0298 | 開始找section-loading
+2020-05-14 12:34 | INFO     | 0309 | loading評論第1次
+2020-05-14 12:34 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 12:34 | INFO     | 0335 | 最新已儲存日期：2020/04/09, 目前此筆評論日期：2020/03/14, loading displayed:True
+2020-05-14 12:34 | INFO     | 0340 | 目前最後一個評論日期：2020/03/14已 < 最新儲存日期:2020/04/09，不需再往下滑了
+2020-05-14 12:34 | INFO     | 0010 | 開始 find_tags:section-review-review-content
+2020-05-14 12:34 | INFO     | 0363 | 開始顯示所有評論數量:10
+2020-05-14 12:34 | INFO     | 0010 | 開始 find_tags:section-review-stars
+2020-05-14 12:34 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 12:35 | INFO     | 0402 | 只更新一週內的評論，超過的不更新，這個評論日期：2020/04/14
+2020-05-14 12:35 | INFO     | 0420 | 開始儲存review：./csv/熱炒/台北市/大安區/土狗幫熱炒燒烤餐廳_review.csv，總評論數：275，儲存評論筆數：1、空白評論筆數：1
+2020-05-14 12:35 | INFO     | 0058 | 儲存 dataframe ->.csv，path:./csv/熱炒/台北市/大安區/土狗幫熱炒燒烤餐廳_review.csv
+2020-05-14 12:35 | INFO     | 0010 | 開始 find_tags:ozj7Vb3wnYq__action-button-clickable
+2020-05-14 12:35 | INFO     | 0437 | 已點擊返回店家資訊
+2020-05-14 12:35 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 12:35 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 12:35 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:35 | INFO     | 0101 | 原始店名含有特殊符號：味味鮮熱炒/中和熱炒/中和平價熱炒/中和美食/中和家常菜/中和午餐，修正後店名味味鮮熱炒[斜槓]中和熱炒[斜槓]中和平價熱炒[斜槓]中和美食[斜槓]中和家常菜[斜槓]中和午餐
+2020-05-14 12:35 | INFO     | 0197 | === 點擊第13個店家: 味味鮮熱炒[斜槓]中和熱炒[斜槓]中和平價熱炒[斜槓]中和美食[斜槓]中和家常菜[斜槓]中和午餐 ===
+2020-05-14 12:35 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:35 | INFO     | 0208 | 235新北市中和區秀朗路三段175巷11號 ，不是 台北市 跳過
+2020-05-14 12:35 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 12:35 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 12:35 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:35 | INFO     | 0197 | === 點擊第14個店家: 九三熱炒 ===
+2020-05-14 12:35 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:35 | INFO     | 0226 | 區：大安區九三熱炒
+2020-05-14 12:35 | INFO     | 0246 | 第14個店家: 九三熱炒 的評論已經存過，已存的最新評論日期為2020/05/09
+2020-05-14 12:35 | INFO     | 0010 | 開始 find_tags:section-rating-term-list
+2020-05-14 12:35 | INFO     | 0280 | 已點擊"所有評論"，總共有:121 則評論
+2020-05-14 12:35 | INFO     | 0010 | 開始 find_tags:section-layout-flex-horizontal
+2020-05-14 12:35 | INFO     | 0286 | 點擊選擇排序的下拉式選單:True
+2020-05-14 12:35 | INFO     | 0010 | 開始 find_tags:action-menu-entry
+2020-05-14 12:35 | INFO     | 0298 | 開始找section-loading
+2020-05-14 12:35 | INFO     | 0309 | loading評論第1次
+2020-05-14 12:35 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 12:36 | INFO     | 0335 | 最新已儲存日期：2020/05/09, 目前此筆評論日期：2020/02/14, loading displayed:True
+2020-05-14 12:36 | INFO     | 0340 | 目前最後一個評論日期：2020/02/14已 < 最新儲存日期:2020/05/09，不需再往下滑了
+2020-05-14 12:36 | INFO     | 0010 | 開始 find_tags:section-review-review-content
+2020-05-14 12:36 | INFO     | 0363 | 開始顯示所有評論數量:10
+2020-05-14 12:36 | INFO     | 0010 | 開始 find_tags:section-review-stars
+2020-05-14 12:36 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 12:36 | INFO     | 0397 | 這個評論日期：2020/05/07已 < 最新儲存日期：2020/05/09，擷取評論結束
+2020-05-14 12:36 | INFO     | 0420 | 開始儲存review：./csv/熱炒/台北市/大安區/九三熱炒_review.csv，總評論數：121，儲存評論筆數：0、空白評論筆數：0
+2020-05-14 12:36 | INFO     | 0010 | 開始 find_tags:ozj7Vb3wnYq__action-button-clickable
+2020-05-14 12:36 | INFO     | 0437 | 已點擊返回店家資訊
+2020-05-14 12:36 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 12:36 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 12:36 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:36 | INFO     | 0197 | === 點擊第15個店家: 滿漢熱炒 ===
+2020-05-14 12:36 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:36 | INFO     | 0226 | 區：信義區滿漢熱炒
+2020-05-14 12:36 | INFO     | 0246 | 第15個店家: 滿漢熱炒 的評論已經存過，已存的最新評論日期為2020/05/03
+2020-05-14 12:36 | INFO     | 0010 | 開始 find_tags:section-rating-term-list
+2020-05-14 12:36 | INFO     | 0280 | 已點擊"所有評論"，總共有:248 則評論
+2020-05-14 12:36 | INFO     | 0010 | 開始 find_tags:section-layout-flex-horizontal
+2020-05-14 12:36 | INFO     | 0286 | 點擊選擇排序的下拉式選單:True
+2020-05-14 12:36 | INFO     | 0010 | 開始 find_tags:action-menu-entry
+2020-05-14 12:36 | INFO     | 0298 | 開始找section-loading
+2020-05-14 12:36 | INFO     | 0309 | loading評論第1次
+2020-05-14 12:36 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 12:36 | INFO     | 0335 | 最新已儲存日期：2020/05/03, 目前此筆評論日期：2020/03/14, loading displayed:True
+2020-05-14 12:36 | INFO     | 0340 | 目前最後一個評論日期：2020/03/14已 < 最新儲存日期:2020/05/03，不需再往下滑了
+2020-05-14 12:36 | INFO     | 0010 | 開始 find_tags:section-review-review-content
+2020-05-14 12:36 | INFO     | 0363 | 開始顯示所有評論數量:10
+2020-05-14 12:36 | INFO     | 0010 | 開始 find_tags:section-review-stars
+2020-05-14 12:37 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 12:37 | INFO     | 0402 | 只更新一週內的評論，超過的不更新，這個評論日期：2020/05/07
+2020-05-14 12:37 | INFO     | 0420 | 開始儲存review：./csv/熱炒/台北市/信義區/滿漢熱炒_review.csv，總評論數：248，儲存評論筆數：0、空白評論筆數：0
+2020-05-14 12:37 | INFO     | 0010 | 開始 find_tags:ozj7Vb3wnYq__action-button-clickable
+2020-05-14 12:37 | INFO     | 0437 | 已點擊返回店家資訊
+2020-05-14 12:37 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 12:37 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 12:37 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:37 | INFO     | 0197 | === 點擊第16個店家: 品鱻100元熱炒 ===
+2020-05-14 12:37 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:37 | INFO     | 0226 | 區：大安區品鱻100元熱炒
+2020-05-14 12:37 | INFO     | 0246 | 第16個店家: 品鱻100元熱炒 的評論已經存過，已存的最新評論日期為2020/05/09
+2020-05-14 12:37 | INFO     | 0010 | 開始 find_tags:section-rating-term-list
+2020-05-14 12:37 | INFO     | 0280 | 已點擊"所有評論"，總共有:3,010 則評論
+2020-05-14 12:37 | INFO     | 0010 | 開始 find_tags:section-layout-flex-horizontal
+2020-05-14 12:37 | INFO     | 0286 | 點擊選擇排序的下拉式選單:True
+2020-05-14 12:37 | INFO     | 0010 | 開始 find_tags:action-menu-entry
+2020-05-14 12:37 | INFO     | 0298 | 開始找section-loading
+2020-05-14 12:37 | INFO     | 0309 | loading評論第1次
+2020-05-14 12:37 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 12:37 | INFO     | 0335 | 最新已儲存日期：2020/05/09, 目前此筆評論日期：2020/04/30, loading displayed:True
+2020-05-14 12:37 | INFO     | 0340 | 目前最後一個評論日期：2020/04/30已 < 最新儲存日期:2020/05/09，不需再往下滑了
+2020-05-14 12:37 | INFO     | 0010 | 開始 find_tags:section-review-review-content
+2020-05-14 12:37 | INFO     | 0363 | 開始顯示所有評論數量:10
+2020-05-14 12:37 | INFO     | 0010 | 開始 find_tags:section-review-stars
+2020-05-14 12:37 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 12:38 | INFO     | 0397 | 這個評論日期：2020/05/07已 < 最新儲存日期：2020/05/09，擷取評論結束
+2020-05-14 12:38 | INFO     | 0420 | 開始儲存review：./csv/熱炒/台北市/大安區/品鱻100元熱炒_review.csv，總評論數：3010，儲存評論筆數：1、空白評論筆數：4
+2020-05-14 12:38 | INFO     | 0058 | 儲存 dataframe ->.csv，path:./csv/熱炒/台北市/大安區/品鱻100元熱炒_review.csv
+2020-05-14 12:38 | INFO     | 0010 | 開始 find_tags:ozj7Vb3wnYq__action-button-clickable
+2020-05-14 12:38 | INFO     | 0437 | 已點擊返回店家資訊
+2020-05-14 12:38 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 12:38 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 12:38 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:38 | INFO     | 0197 | === 點擊第17個店家: 新榮平價熱炒 ===
+2020-05-14 12:38 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:38 | INFO     | 0226 | 區：文山區新榮平價熱炒
+2020-05-14 12:38 | INFO     | 0246 | 第17個店家: 新榮平價熱炒 的評論已經存過，已存的最新評論日期為2020/04/12
+2020-05-14 12:38 | INFO     | 0010 | 開始 find_tags:section-rating-term-list
+2020-05-14 12:38 | INFO     | 0280 | 已點擊"所有評論"，總共有:76 則評論
+2020-05-14 12:38 | INFO     | 0010 | 開始 find_tags:section-layout-flex-horizontal
+2020-05-14 12:38 | INFO     | 0286 | 點擊選擇排序的下拉式選單:True
+2020-05-14 12:38 | INFO     | 0010 | 開始 find_tags:action-menu-entry
+2020-05-14 12:38 | INFO     | 0298 | 開始找section-loading
+2020-05-14 12:38 | INFO     | 0309 | loading評論第1次
+2020-05-14 12:38 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 12:38 | INFO     | 0335 | 最新已儲存日期：2020/04/12, 目前此筆評論日期：2019/11/14, loading displayed:True
+2020-05-14 12:38 | INFO     | 0340 | 目前最後一個評論日期：2019/11/14已 < 最新儲存日期:2020/04/12，不需再往下滑了
+2020-05-14 12:38 | INFO     | 0010 | 開始 find_tags:section-review-review-content
+2020-05-14 12:38 | INFO     | 0363 | 開始顯示所有評論數量:10
+2020-05-14 12:38 | INFO     | 0010 | 開始 find_tags:section-review-stars
+2020-05-14 12:38 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 12:38 | INFO     | 0402 | 只更新一週內的評論，超過的不更新，這個評論日期：2020/04/14
+2020-05-14 12:38 | INFO     | 0420 | 開始儲存review：./csv/熱炒/台北市/文山區/新榮平價熱炒_review.csv，總評論數：76，儲存評論筆數：0、空白評論筆數：0
+2020-05-14 12:38 | INFO     | 0010 | 開始 find_tags:ozj7Vb3wnYq__action-button-clickable
+2020-05-14 12:38 | INFO     | 0437 | 已點擊返回店家資訊
+2020-05-14 12:38 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 12:39 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 12:39 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:39 | INFO     | 0197 | === 點擊第18個店家: 旺達熱炒 ===
+2020-05-14 12:39 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:39 | INFO     | 0208 | 231新北市新店區明德路9號 ，不是 台北市 跳過
+2020-05-14 12:39 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 12:39 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 12:39 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:39 | INFO     | 0197 | === 點擊第19個店家: 好棒棒平價快炒 ===
+2020-05-14 12:39 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:39 | INFO     | 0226 | 區：大安區好棒棒平價快炒
+2020-05-14 12:39 | INFO     | 0246 | 第19個店家: 好棒棒平價快炒 的評論已經存過，已存的最新評論日期為2020/05/04
+2020-05-14 12:39 | INFO     | 0010 | 開始 find_tags:section-rating-term-list
+2020-05-14 12:39 | INFO     | 0280 | 已點擊"所有評論"，總共有:492 則評論
+2020-05-14 12:39 | INFO     | 0010 | 開始 find_tags:section-layout-flex-horizontal
+2020-05-14 12:39 | INFO     | 0286 | 點擊選擇排序的下拉式選單:True
+2020-05-14 12:39 | INFO     | 0010 | 開始 find_tags:action-menu-entry
+2020-05-14 12:39 | INFO     | 0298 | 開始找section-loading
+2020-05-14 12:39 | INFO     | 0309 | loading評論第1次
+2020-05-14 12:39 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 12:39 | INFO     | 0335 | 最新已儲存日期：2020/05/04, 目前此筆評論日期：2020/03/14, loading displayed:True
+2020-05-14 12:39 | INFO     | 0340 | 目前最後一個評論日期：2020/03/14已 < 最新儲存日期:2020/05/04，不需再往下滑了
+2020-05-14 12:39 | INFO     | 0010 | 開始 find_tags:section-review-review-content
+2020-05-14 12:39 | INFO     | 0363 | 開始顯示所有評論數量:10
+2020-05-14 12:39 | INFO     | 0010 | 開始 find_tags:section-review-stars
+2020-05-14 12:39 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 12:40 | INFO     | 0402 | 只更新一週內的評論，超過的不更新，這個評論日期：2020/05/07
+2020-05-14 12:40 | INFO     | 0420 | 開始儲存review：./csv/熱炒/台北市/大安區/好棒棒平價快炒_review.csv，總評論數：492，儲存評論筆數：1、空白評論筆數：0
+2020-05-14 12:40 | INFO     | 0058 | 儲存 dataframe ->.csv，path:./csv/熱炒/台北市/大安區/好棒棒平價快炒_review.csv
+2020-05-14 12:40 | INFO     | 0010 | 開始 find_tags:ozj7Vb3wnYq__action-button-clickable
+2020-05-14 12:40 | INFO     | 0437 | 已點擊返回店家資訊
+2020-05-14 12:40 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 12:40 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 12:40 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:40 | INFO     | 0101 | 原始店名含有特殊符號：鱻味屋 活海鮮/燒烤/熱炒，修正後店名鱻味屋 活海鮮[斜槓]燒烤[斜槓]熱炒
+2020-05-14 12:40 | INFO     | 0197 | === 點擊第20個店家: 鱻味屋 活海鮮[斜槓]燒烤[斜槓]熱炒 ===
+2020-05-14 12:40 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:40 | INFO     | 0208 | 231新北市新店區寶慶街84號號 ，不是 台北市 跳過
+2020-05-14 12:40 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 12:40 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 12:40 | INFO     | 0448 | 目前這頁爬完了，換下一頁，目前在第1頁，已點過的店家數:14開始儲存店家list
+2020-05-14 12:40 | INFO     | 0469 | 已點擊下一頁
+2020-05-14 12:40 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:40 | INFO     | 0163 | 進入第2頁, 店家數:20
+2020-05-14 12:40 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:40 | INFO     | 0101 | 原始店名含有特殊符號：鱻味屋 活海鮮/燒烤/熱炒，修正後店名鱻味屋 活海鮮[斜槓]燒烤[斜槓]熱炒
+2020-05-14 12:40 | INFO     | 0197 | === 點擊第1個店家: 鱻味屋 活海鮮[斜槓]燒烤[斜槓]熱炒 ===
+2020-05-14 12:40 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:40 | INFO     | 0208 | 231新北市新店區寶慶街84號號 ，不是 台北市 跳過
+2020-05-14 12:40 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 12:40 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 12:40 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:40 | INFO     | 0197 | === 點擊第2個店家: Pocha 韓式熱炒 ===
+2020-05-14 12:40 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:40 | INFO     | 0226 | 區：大安區Pocha 韓式熱炒
+2020-05-14 12:40 | INFO     | 0246 | 第2個店家: Pocha 韓式熱炒 的評論已經存過，已存的最新評論日期為2020/05/05
+2020-05-14 12:40 | INFO     | 0010 | 開始 find_tags:section-rating-term-list
+2020-05-14 12:41 | INFO     | 0280 | 已點擊"所有評論"，總共有:947 則評論
+2020-05-14 12:41 | INFO     | 0010 | 開始 find_tags:section-layout-flex-horizontal
+2020-05-14 12:41 | INFO     | 0286 | 點擊選擇排序的下拉式選單:True
+2020-05-14 12:41 | INFO     | 0010 | 開始 find_tags:action-menu-entry
+2020-05-14 12:41 | INFO     | 0298 | 開始找section-loading
+2020-05-14 12:41 | INFO     | 0309 | loading評論第1次
+2020-05-14 12:41 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 12:41 | INFO     | 0335 | 最新已儲存日期：2020/05/05, 目前此筆評論日期：2020/04/23, loading displayed:True
+2020-05-14 12:41 | INFO     | 0340 | 目前最後一個評論日期：2020/04/23已 < 最新儲存日期:2020/05/05，不需再往下滑了
+2020-05-14 12:41 | INFO     | 0010 | 開始 find_tags:section-review-review-content
+2020-05-14 12:41 | INFO     | 0363 | 開始顯示所有評論數量:10
+2020-05-14 12:41 | INFO     | 0010 | 開始 find_tags:section-review-stars
+2020-05-14 12:41 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 12:41 | INFO     | 0402 | 只更新一週內的評論，超過的不更新，這個評論日期：2020/05/07
+2020-05-14 12:41 | INFO     | 0420 | 開始儲存review：./csv/熱炒/台北市/大安區/Pocha 韓式熱炒_review.csv，總評論數：947，儲存評論筆數：3、空白評論筆數：0
+2020-05-14 12:41 | INFO     | 0058 | 儲存 dataframe ->.csv，path:./csv/熱炒/台北市/大安區/Pocha 韓式熱炒_review.csv
+2020-05-14 12:41 | INFO     | 0010 | 開始 find_tags:ozj7Vb3wnYq__action-button-clickable
+2020-05-14 12:41 | INFO     | 0437 | 已點擊返回店家資訊
+2020-05-14 12:41 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 12:41 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 12:41 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:41 | INFO     | 0197 | === 點擊第3個店家: 擱再來海鮮快炒店 ===
+2020-05-14 12:41 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:41 | INFO     | 0033 | 第1次重新抓tag:section-info-action-button
+2020-05-14 12:41 | INFO     | 0226 | 區：中正區擱再來海鮮快炒店
+2020-05-14 12:41 | INFO     | 0246 | 第3個店家: 擱再來海鮮快炒店 的評論已經存過，已存的最新評論日期為2020/03/10
+2020-05-14 12:41 | INFO     | 0010 | 開始 find_tags:section-rating-term-list
+2020-05-14 12:41 | INFO     | 0280 | 已點擊"所有評論"，總共有:190 則評論
+2020-05-14 12:41 | INFO     | 0010 | 開始 find_tags:section-layout-flex-horizontal
+2020-05-14 12:42 | INFO     | 0286 | 點擊選擇排序的下拉式選單:True
+2020-05-14 12:42 | INFO     | 0010 | 開始 find_tags:action-menu-entry
+2020-05-14 12:42 | INFO     | 0298 | 開始找section-loading
+2020-05-14 12:42 | INFO     | 0309 | loading評論第1次
+2020-05-14 12:42 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 12:42 | INFO     | 0335 | 最新已儲存日期：2020/03/10, 目前此筆評論日期：2020/02/14, loading displayed:True
+2020-05-14 12:42 | INFO     | 0340 | 目前最後一個評論日期：2020/02/14已 < 最新儲存日期:2020/03/10，不需再往下滑了
+2020-05-14 12:42 | INFO     | 0010 | 開始 find_tags:section-review-review-content
+2020-05-14 12:42 | INFO     | 0363 | 開始顯示所有評論數量:10
+2020-05-14 12:42 | INFO     | 0010 | 開始 find_tags:section-review-stars
+2020-05-14 12:42 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 12:42 | INFO     | 0402 | 只更新一週內的評論，超過的不更新，這個評論日期：2020/04/14
+2020-05-14 12:42 | INFO     | 0420 | 開始儲存review：./csv/熱炒/台北市/中正區/擱再來海鮮快炒店_review.csv，總評論數：190，儲存評論筆數：0、空白評論筆數：0
+2020-05-14 12:42 | INFO     | 0010 | 開始 find_tags:ozj7Vb3wnYq__action-button-clickable
+2020-05-14 12:42 | INFO     | 0437 | 已點擊返回店家資訊
+2020-05-14 12:42 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 12:42 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 12:42 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:42 | INFO     | 0197 | === 點擊第4個店家: 尊王活海鮮 ===
+2020-05-14 12:42 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:42 | INFO     | 0226 | 區：大安區尊王活海鮮
+2020-05-14 12:42 | INFO     | 0246 | 第4個店家: 尊王活海鮮 的評論已經存過，已存的最新評論日期為2020/05/04
+2020-05-14 12:42 | INFO     | 0010 | 開始 find_tags:section-rating-term-list
+2020-05-14 12:42 | INFO     | 0280 | 已點擊"所有評論"，總共有:713 則評論
+2020-05-14 12:42 | INFO     | 0010 | 開始 find_tags:section-layout-flex-horizontal
+2020-05-14 12:42 | INFO     | 0286 | 點擊選擇排序的下拉式選單:True
+2020-05-14 12:42 | INFO     | 0010 | 開始 find_tags:action-menu-entry
+2020-05-14 12:42 | INFO     | 0298 | 開始找section-loading
+2020-05-14 12:43 | INFO     | 0309 | loading評論第1次
+2020-05-14 12:43 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 12:43 | INFO     | 0335 | 最新已儲存日期：2020/05/04, 目前此筆評論日期：2020/04/14, loading displayed:True
+2020-05-14 12:43 | INFO     | 0340 | 目前最後一個評論日期：2020/04/14已 < 最新儲存日期:2020/05/04，不需再往下滑了
+2020-05-14 12:43 | INFO     | 0010 | 開始 find_tags:section-review-review-content
+2020-05-14 12:43 | INFO     | 0363 | 開始顯示所有評論數量:10
+2020-05-14 12:43 | INFO     | 0010 | 開始 find_tags:section-review-stars
+2020-05-14 12:43 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 12:43 | INFO     | 0402 | 只更新一週內的評論，超過的不更新，這個評論日期：2020/05/07
+2020-05-14 12:43 | INFO     | 0420 | 開始儲存review：./csv/熱炒/台北市/大安區/尊王活海鮮_review.csv，總評論數：713，儲存評論筆數：0、空白評論筆數：0
+2020-05-14 12:43 | INFO     | 0010 | 開始 find_tags:ozj7Vb3wnYq__action-button-clickable
+2020-05-14 12:43 | INFO     | 0437 | 已點擊返回店家資訊
+2020-05-14 12:43 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 12:43 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 12:43 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:43 | INFO     | 0197 | === 點擊第5個店家: 阿美熱炒 ===
+2020-05-14 12:43 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:43 | INFO     | 0208 | 231新北市新店區大豐路65號 ，不是 台北市 跳過
+2020-05-14 12:43 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 12:43 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 12:43 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:43 | INFO     | 0197 | === 點擊第6個店家: 好菜場生猛海鮮 ===
+2020-05-14 12:43 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:43 | INFO     | 0226 | 區：文山區好菜場生猛海鮮
+2020-05-14 12:43 | INFO     | 0246 | 第6個店家: 好菜場生猛海鮮 的評論已經存過，已存的最新評論日期為2020/04/13
+2020-05-14 12:43 | INFO     | 0010 | 開始 find_tags:section-rating-term-list
+2020-05-14 12:43 | INFO     | 0280 | 已點擊"所有評論"，總共有:331 則評論
+2020-05-14 12:43 | INFO     | 0010 | 開始 find_tags:section-layout-flex-horizontal
+2020-05-14 12:44 | INFO     | 0286 | 點擊選擇排序的下拉式選單:True
+2020-05-14 12:44 | INFO     | 0010 | 開始 find_tags:action-menu-entry
+2020-05-14 12:44 | INFO     | 0298 | 開始找section-loading
+2020-05-14 12:44 | INFO     | 0309 | loading評論第1次
+2020-05-14 12:44 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 12:44 | INFO     | 0335 | 最新已儲存日期：2020/04/13, 目前此筆評論日期：2020/03/14, loading displayed:True
+2020-05-14 12:44 | INFO     | 0340 | 目前最後一個評論日期：2020/03/14已 < 最新儲存日期:2020/04/13，不需再往下滑了
+2020-05-14 12:44 | INFO     | 0010 | 開始 find_tags:section-review-review-content
+2020-05-14 12:44 | INFO     | 0363 | 開始顯示所有評論數量:10
+2020-05-14 12:44 | INFO     | 0010 | 開始 find_tags:section-review-stars
+2020-05-14 12:44 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 12:44 | INFO     | 0402 | 只更新一週內的評論，超過的不更新，這個評論日期：2020/04/14
+2020-05-14 12:44 | INFO     | 0420 | 開始儲存review：./csv/熱炒/台北市/文山區/好菜場生猛海鮮_review.csv，總評論數：331，儲存評論筆數：0、空白評論筆數：0
+2020-05-14 12:44 | INFO     | 0010 | 開始 find_tags:ozj7Vb3wnYq__action-button-clickable
+2020-05-14 12:44 | INFO     | 0437 | 已點擊返回店家資訊
+2020-05-14 12:44 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 12:44 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 12:44 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:44 | INFO     | 0197 | === 點擊第7個店家: 炒天下熱炒 ===
+2020-05-14 12:44 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:44 | INFO     | 0226 | 區：大安區炒天下熱炒
+2020-05-14 12:44 | INFO     | 0246 | 第7個店家: 炒天下熱炒 的評論已經存過，已存的最新評論日期為2020/05/10
+2020-05-14 12:44 | INFO     | 0010 | 開始 find_tags:section-rating-term-list
+2020-05-14 12:44 | INFO     | 0280 | 已點擊"所有評論"，總共有:241 則評論
+2020-05-14 12:44 | INFO     | 0010 | 開始 find_tags:section-layout-flex-horizontal
+2020-05-14 12:44 | INFO     | 0286 | 點擊選擇排序的下拉式選單:True
+2020-05-14 12:44 | INFO     | 0010 | 開始 find_tags:action-menu-entry
+2020-05-14 12:45 | INFO     | 0298 | 開始找section-loading
+2020-05-14 12:45 | INFO     | 0309 | loading評論第1次
+2020-05-14 12:45 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 12:45 | INFO     | 0335 | 最新已儲存日期：2020/05/10, 目前此筆評論日期：2020/03/14, loading displayed:True
+2020-05-14 12:45 | INFO     | 0340 | 目前最後一個評論日期：2020/03/14已 < 最新儲存日期:2020/05/10，不需再往下滑了
+2020-05-14 12:45 | INFO     | 0010 | 開始 find_tags:section-review-review-content
+2020-05-14 12:45 | INFO     | 0363 | 開始顯示所有評論數量:10
+2020-05-14 12:45 | INFO     | 0010 | 開始 find_tags:section-review-stars
+2020-05-14 12:45 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 12:45 | INFO     | 0392 | 這個評論日期 == 最新儲存日期，且評論內容 == 最新儲存評論內容，擷取評論結束
+2020-05-14 12:45 | INFO     | 0420 | 開始儲存review：./csv/熱炒/台北市/大安區/炒天下熱炒_review.csv，總評論數：241，儲存評論筆數：0、空白評論筆數：0
+2020-05-14 12:45 | INFO     | 0010 | 開始 find_tags:ozj7Vb3wnYq__action-button-clickable
+2020-05-14 12:45 | INFO     | 0437 | 已點擊返回店家資訊
+2020-05-14 12:45 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 12:45 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 12:45 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:45 | INFO     | 0197 | === 點擊第8個店家: 嚐鮮樓精緻熱炒 ===
+2020-05-14 12:45 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:45 | INFO     | 0226 | 區：信義區嚐鮮樓精緻熱炒
+2020-05-14 12:45 | INFO     | 0246 | 第8個店家: 嚐鮮樓精緻熱炒 的評論已經存過，已存的最新評論日期為2020/04/09
+2020-05-14 12:45 | INFO     | 0010 | 開始 find_tags:section-rating-term-list
+2020-05-14 12:45 | INFO     | 0280 | 已點擊"所有評論"，總共有:204 則評論
+2020-05-14 12:45 | INFO     | 0010 | 開始 find_tags:section-layout-flex-horizontal
+2020-05-14 12:45 | INFO     | 0286 | 點擊選擇排序的下拉式選單:True
+2020-05-14 12:45 | INFO     | 0010 | 開始 find_tags:action-menu-entry
+2020-05-14 12:45 | INFO     | 0298 | 開始找section-loading
+2020-05-14 12:46 | INFO     | 0309 | loading評論第1次
+2020-05-14 12:46 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 12:46 | INFO     | 0335 | 最新已儲存日期：2020/04/09, 目前此筆評論日期：2020/03/14, loading displayed:True
+2020-05-14 12:46 | INFO     | 0340 | 目前最後一個評論日期：2020/03/14已 < 最新儲存日期:2020/04/09，不需再往下滑了
+2020-05-14 12:46 | INFO     | 0010 | 開始 find_tags:section-review-review-content
+2020-05-14 12:46 | INFO     | 0363 | 開始顯示所有評論數量:10
+2020-05-14 12:46 | INFO     | 0010 | 開始 find_tags:section-review-stars
+2020-05-14 12:46 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 12:46 | INFO     | 0402 | 只更新一週內的評論，超過的不更新，這個評論日期：2020/05/07
+2020-05-14 12:46 | INFO     | 0420 | 開始儲存review：./csv/熱炒/台北市/信義區/嚐鮮樓精緻熱炒_review.csv，總評論數：204，儲存評論筆數：0、空白評論筆數：1
+2020-05-14 12:46 | INFO     | 0010 | 開始 find_tags:ozj7Vb3wnYq__action-button-clickable
+2020-05-14 12:46 | INFO     | 0437 | 已點擊返回店家資訊
+2020-05-14 12:46 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 12:46 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 12:46 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:46 | INFO     | 0197 | === 點擊第9個店家: 天一熱炒 ===
+2020-05-14 12:46 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:46 | INFO     | 0226 | 區：中山區天一熱炒
+2020-05-14 12:46 | INFO     | 0246 | 第9個店家: 天一熱炒 的評論已經存過，已存的最新評論日期為2020/05/09
+2020-05-14 12:46 | INFO     | 0010 | 開始 find_tags:section-rating-term-list
+2020-05-14 12:46 | INFO     | 0280 | 已點擊"所有評論"，總共有:115 則評論
+2020-05-14 12:46 | INFO     | 0010 | 開始 find_tags:section-layout-flex-horizontal
+2020-05-14 12:46 | INFO     | 0286 | 點擊選擇排序的下拉式選單:True
+2020-05-14 12:46 | INFO     | 0010 | 開始 find_tags:action-menu-entry
+2020-05-14 12:46 | INFO     | 0298 | 開始找section-loading
+2020-05-14 12:46 | INFO     | 0309 | loading評論第1次
+2020-05-14 12:46 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 12:47 | INFO     | 0335 | 最新已儲存日期：2020/05/09, 目前此筆評論日期：2020/03/14, loading displayed:True
+2020-05-14 12:47 | INFO     | 0340 | 目前最後一個評論日期：2020/03/14已 < 最新儲存日期:2020/05/09，不需再往下滑了
+2020-05-14 12:47 | INFO     | 0010 | 開始 find_tags:section-review-review-content
+2020-05-14 12:47 | INFO     | 0363 | 開始顯示所有評論數量:10
+2020-05-14 12:47 | INFO     | 0010 | 開始 find_tags:section-review-stars
+2020-05-14 12:47 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 12:47 | INFO     | 0397 | 這個評論日期：2020/04/30已 < 最新儲存日期：2020/05/09，擷取評論結束
+2020-05-14 12:47 | INFO     | 0420 | 開始儲存review：./csv/熱炒/台北市/中山區/天一熱炒_review.csv，總評論數：115，儲存評論筆數：0、空白評論筆數：0
+2020-05-14 12:47 | INFO     | 0010 | 開始 find_tags:ozj7Vb3wnYq__action-button-clickable
+2020-05-14 12:47 | INFO     | 0437 | 已點擊返回店家資訊
+2020-05-14 12:47 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 12:47 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 12:47 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:47 | INFO     | 0197 | === 點擊第10個店家: 謝師父海產 ===
+2020-05-14 12:47 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:47 | INFO     | 0226 | 區：文山區謝師父海產
+2020-05-14 12:47 | INFO     | 0246 | 第10個店家: 謝師父海產 的評論已經存過，已存的最新評論日期為2020/04/13
+2020-05-14 12:47 | INFO     | 0010 | 開始 find_tags:section-rating-term-list
+2020-05-14 12:47 | INFO     | 0280 | 已點擊"所有評論"，總共有:243 則評論
+2020-05-14 12:47 | INFO     | 0010 | 開始 find_tags:section-layout-flex-horizontal
+2020-05-14 12:47 | INFO     | 0286 | 點擊選擇排序的下拉式選單:True
+2020-05-14 12:47 | INFO     | 0010 | 開始 find_tags:action-menu-entry
+2020-05-14 12:47 | INFO     | 0298 | 開始找section-loading
+2020-05-14 12:47 | INFO     | 0309 | loading評論第1次
+2020-05-14 12:47 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 12:47 | INFO     | 0335 | 最新已儲存日期：2020/04/13, 目前此筆評論日期：2020/03/14, loading displayed:True
+2020-05-14 12:47 | INFO     | 0340 | 目前最後一個評論日期：2020/03/14已 < 最新儲存日期:2020/04/13，不需再往下滑了
+2020-05-14 12:47 | INFO     | 0010 | 開始 find_tags:section-review-review-content
+2020-05-14 12:47 | INFO     | 0363 | 開始顯示所有評論數量:10
+2020-05-14 12:47 | INFO     | 0010 | 開始 find_tags:section-review-stars
+2020-05-14 12:48 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 12:48 | INFO     | 0402 | 只更新一週內的評論，超過的不更新，這個評論日期：2020/04/14
+2020-05-14 12:48 | INFO     | 0420 | 開始儲存review：./csv/熱炒/台北市/文山區/謝師父海產_review.csv，總評論數：243，儲存評論筆數：0、空白評論筆數：0
+2020-05-14 12:48 | INFO     | 0010 | 開始 find_tags:ozj7Vb3wnYq__action-button-clickable
+2020-05-14 12:48 | INFO     | 0437 | 已點擊返回店家資訊
+2020-05-14 12:48 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 12:48 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 12:48 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:48 | INFO     | 0197 | === 點擊第11個店家: 海派熱炒海鮮 ===
+2020-05-14 12:48 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:48 | INFO     | 0208 | 231新北市新店區三民路165號 ，不是 台北市 跳過
+2020-05-14 12:48 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 12:48 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 12:48 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:48 | INFO     | 0197 | === 點擊第12個店家: 水中鮮100元快炒 ===
+2020-05-14 12:48 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:48 | INFO     | 0226 | 區：松山區水中鮮100元快炒
+2020-05-14 12:48 | INFO     | 0246 | 第12個店家: 水中鮮100元快炒 的評論已經存過，已存的最新評論日期為2020/05/09
+2020-05-14 12:48 | INFO     | 0010 | 開始 find_tags:section-rating-term-list
+2020-05-14 12:48 | INFO     | 0280 | 已點擊"所有評論"，總共有:238 則評論
+2020-05-14 12:48 | INFO     | 0010 | 開始 find_tags:section-layout-flex-horizontal
+2020-05-14 12:48 | INFO     | 0286 | 點擊選擇排序的下拉式選單:True
+2020-05-14 12:48 | INFO     | 0010 | 開始 find_tags:action-menu-entry
+2020-05-14 12:48 | INFO     | 0298 | 開始找section-loading
+2020-05-14 12:48 | INFO     | 0309 | loading評論第1次
+2020-05-14 12:49 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 12:49 | INFO     | 0335 | 最新已儲存日期：2020/05/09, 目前此筆評論日期：2020/03/14, loading displayed:True
+2020-05-14 12:49 | INFO     | 0340 | 目前最後一個評論日期：2020/03/14已 < 最新儲存日期:2020/05/09，不需再往下滑了
+2020-05-14 12:49 | INFO     | 0010 | 開始 find_tags:section-review-review-content
+2020-05-14 12:49 | INFO     | 0363 | 開始顯示所有評論數量:10
+2020-05-14 12:49 | INFO     | 0010 | 開始 find_tags:section-review-stars
+2020-05-14 12:49 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 12:49 | INFO     | 0397 | 這個評論日期：2020/04/30已 < 最新儲存日期：2020/05/09，擷取評論結束
+2020-05-14 12:49 | INFO     | 0420 | 開始儲存review：./csv/熱炒/台北市/松山區/水中鮮100元快炒_review.csv，總評論數：238，儲存評論筆數：0、空白評論筆數：0
+2020-05-14 12:49 | INFO     | 0010 | 開始 find_tags:ozj7Vb3wnYq__action-button-clickable
+2020-05-14 12:49 | INFO     | 0437 | 已點擊返回店家資訊
+2020-05-14 12:49 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 12:49 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 12:49 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:49 | INFO     | 0197 | === 點擊第13個店家: 豪香熱炒 ===
+2020-05-14 12:49 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:49 | INFO     | 0226 | 區：松山區豪香熱炒
+2020-05-14 12:49 | INFO     | 0246 | 第13個店家: 豪香熱炒 的評論已經存過，已存的最新評論日期為2020/04/09
+2020-05-14 12:49 | INFO     | 0010 | 開始 find_tags:section-rating-term-list
+2020-05-14 12:49 | INFO     | 0280 | 已點擊"所有評論"，總共有:205 則評論
+2020-05-14 12:49 | INFO     | 0010 | 開始 find_tags:section-layout-flex-horizontal
+2020-05-14 12:49 | INFO     | 0286 | 點擊選擇排序的下拉式選單:True
+2020-05-14 12:49 | INFO     | 0010 | 開始 find_tags:action-menu-entry
+2020-05-14 12:49 | INFO     | 0298 | 開始找section-loading
+2020-05-14 12:49 | INFO     | 0309 | loading評論第1次
+2020-05-14 12:49 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 12:49 | INFO     | 0335 | 最新已儲存日期：2020/04/09, 目前此筆評論日期：2020/03/14, loading displayed:True
+2020-05-14 12:49 | INFO     | 0340 | 目前最後一個評論日期：2020/03/14已 < 最新儲存日期:2020/04/09，不需再往下滑了
+2020-05-14 12:49 | INFO     | 0010 | 開始 find_tags:section-review-review-content
+2020-05-14 12:50 | INFO     | 0363 | 開始顯示所有評論數量:10
+2020-05-14 12:50 | INFO     | 0010 | 開始 find_tags:section-review-stars
+2020-05-14 12:50 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 12:50 | INFO     | 0402 | 只更新一週內的評論，超過的不更新，這個評論日期：2020/04/14
+2020-05-14 12:50 | INFO     | 0420 | 開始儲存review：./csv/熱炒/台北市/松山區/豪香熱炒_review.csv，總評論數：205，儲存評論筆數：0、空白評論筆數：0
+2020-05-14 12:50 | INFO     | 0010 | 開始 find_tags:ozj7Vb3wnYq__action-button-clickable
+2020-05-14 12:50 | INFO     | 0437 | 已點擊返回店家資訊
+2020-05-14 12:50 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 12:50 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 12:50 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:50 | INFO     | 0197 | === 點擊第14個店家: 水上鮮美食樓 ===
+2020-05-14 12:50 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:50 | INFO     | 0208 | 231新北市新店區民權路108號 ，不是 台北市 跳過
+2020-05-14 12:50 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 12:50 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 12:50 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:50 | INFO     | 0101 | 原始店名含有特殊符號：東山快炒(炒飯/炒麵/平價熱炒專售)，修正後店名東山快炒(炒飯[斜槓]炒麵[斜槓]平價熱炒專售)
+2020-05-14 12:50 | INFO     | 0197 | === 點擊第15個店家: 東山快炒(炒飯[斜槓]炒麵[斜槓]平價熱炒專售) ===
+2020-05-14 12:50 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:50 | INFO     | 0226 | 區：萬華區東山快炒(炒飯[斜槓]炒麵[斜槓]平價熱炒專售)
+2020-05-14 12:50 | INFO     | 0246 | 第15個店家: 東山快炒(炒飯[斜槓]炒麵[斜槓]平價熱炒專售) 的評論已經存過，已存的最新評論日期為2020/03/09
+2020-05-14 12:50 | INFO     | 0010 | 開始 find_tags:section-rating-term-list
+2020-05-14 12:50 | INFO     | 0280 | 已點擊"所有評論"，總共有:70 則評論
+2020-05-14 12:50 | INFO     | 0010 | 開始 find_tags:section-layout-flex-horizontal
+2020-05-14 12:50 | INFO     | 0286 | 點擊選擇排序的下拉式選單:True
+2020-05-14 12:50 | INFO     | 0010 | 開始 find_tags:action-menu-entry
+2020-05-14 12:50 | INFO     | 0298 | 開始找section-loading
+2020-05-14 12:51 | INFO     | 0309 | loading評論第1次
+2020-05-14 12:51 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 12:51 | INFO     | 0335 | 最新已儲存日期：2020/03/09, 目前此筆評論日期：2019/12/14, loading displayed:True
+2020-05-14 12:51 | INFO     | 0340 | 目前最後一個評論日期：2019/12/14已 < 最新儲存日期:2020/03/09，不需再往下滑了
+2020-05-14 12:51 | INFO     | 0010 | 開始 find_tags:section-review-review-content
+2020-05-14 12:51 | INFO     | 0363 | 開始顯示所有評論數量:10
+2020-05-14 12:51 | INFO     | 0010 | 開始 find_tags:section-review-stars
+2020-05-14 12:51 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 12:51 | INFO     | 0402 | 只更新一週內的評論，超過的不更新，這個評論日期：2020/03/14
+2020-05-14 12:51 | INFO     | 0420 | 開始儲存review：./csv/熱炒/台北市/萬華區/東山快炒(炒飯[斜槓]炒麵[斜槓]平價熱炒專售)_review.csv，總評論數：70，儲存評論筆數：0、空白評論筆數：0
+2020-05-14 12:51 | INFO     | 0010 | 開始 find_tags:ozj7Vb3wnYq__action-button-clickable
+2020-05-14 12:51 | INFO     | 0437 | 已點擊返回店家資訊
+2020-05-14 12:51 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 12:51 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 12:51 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:51 | INFO     | 0197 | === 點擊第16個店家: 熱翻天生猛海鮮 ===
+2020-05-14 12:51 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:51 | INFO     | 0226 | 區：大安區熱翻天生猛海鮮
+2020-05-14 12:51 | INFO     | 0246 | 第16個店家: 熱翻天生猛海鮮 的評論已經存過，已存的最新評論日期為2020/05/07
+2020-05-14 12:51 | INFO     | 0010 | 開始 find_tags:section-rating-term-list
+2020-05-14 12:51 | INFO     | 0280 | 已點擊"所有評論"，總共有:556 則評論
+2020-05-14 12:51 | INFO     | 0010 | 開始 find_tags:section-layout-flex-horizontal
+2020-05-14 12:51 | INFO     | 0286 | 點擊選擇排序的下拉式選單:True
+2020-05-14 12:51 | INFO     | 0010 | 開始 find_tags:action-menu-entry
+2020-05-14 12:51 | INFO     | 0298 | 開始找section-loading
+2020-05-14 12:51 | INFO     | 0309 | loading評論第1次
+2020-05-14 12:52 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 12:52 | INFO     | 0335 | 最新已儲存日期：2020/05/07, 目前此筆評論日期：2020/03/14, loading displayed:True
+2020-05-14 12:52 | INFO     | 0340 | 目前最後一個評論日期：2020/03/14已 < 最新儲存日期:2020/05/07，不需再往下滑了
+2020-05-14 12:52 | INFO     | 0010 | 開始 find_tags:section-review-review-content
+2020-05-14 12:52 | INFO     | 0363 | 開始顯示所有評論數量:10
+2020-05-14 12:52 | INFO     | 0010 | 開始 find_tags:section-review-stars
+2020-05-14 12:52 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 12:52 | INFO     | 0402 | 只更新一週內的評論，超過的不更新，這個評論日期：2020/05/07
+2020-05-14 12:52 | INFO     | 0420 | 開始儲存review：./csv/熱炒/台北市/大安區/熱翻天生猛海鮮_review.csv，總評論數：556，儲存評論筆數：0、空白評論筆數：1
+2020-05-14 12:52 | INFO     | 0010 | 開始 find_tags:ozj7Vb3wnYq__action-button-clickable
+2020-05-14 12:52 | INFO     | 0437 | 已點擊返回店家資訊
+2020-05-14 12:52 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 12:52 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 12:52 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:52 | INFO     | 0197 | === 點擊第17個店家: 蕃薯の店生猛活海鮮 ===
+2020-05-14 12:52 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:52 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 12:52 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 12:52 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:52 | INFO     | 0197 | === 點擊第18個店家: 天金海鮮熱炒 ===
+2020-05-14 12:52 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:52 | INFO     | 0226 | 區：大同區天金海鮮熱炒
+2020-05-14 12:52 | INFO     | 0246 | 第18個店家: 天金海鮮熱炒 的評論已經存過，已存的最新評論日期為2020/05/09
+2020-05-14 12:52 | INFO     | 0010 | 開始 find_tags:section-rating-term-list
+2020-05-14 12:52 | INFO     | 0280 | 已點擊"所有評論"，總共有:228 則評論
+2020-05-14 12:52 | INFO     | 0010 | 開始 find_tags:section-layout-flex-horizontal
+2020-05-14 12:52 | INFO     | 0286 | 點擊選擇排序的下拉式選單:True
+2020-05-14 12:52 | INFO     | 0010 | 開始 find_tags:action-menu-entry
+2020-05-14 12:53 | INFO     | 0298 | 開始找section-loading
+2020-05-14 12:53 | INFO     | 0309 | loading評論第1次
+2020-05-14 12:53 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 12:53 | INFO     | 0335 | 最新已儲存日期：2020/05/09, 目前此筆評論日期：2020/03/14, loading displayed:True
+2020-05-14 12:53 | INFO     | 0340 | 目前最後一個評論日期：2020/03/14已 < 最新儲存日期:2020/05/09，不需再往下滑了
+2020-05-14 12:53 | INFO     | 0010 | 開始 find_tags:section-review-review-content
+2020-05-14 12:53 | INFO     | 0363 | 開始顯示所有評論數量:10
+2020-05-14 12:53 | INFO     | 0010 | 開始 find_tags:section-review-stars
+2020-05-14 12:53 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 12:53 | INFO     | 0397 | 這個評論日期：2020/04/23已 < 最新儲存日期：2020/05/09，擷取評論結束
+2020-05-14 12:53 | INFO     | 0420 | 開始儲存review：./csv/熱炒/台北市/大同區/天金海鮮熱炒_review.csv，總評論數：228，儲存評論筆數：0、空白評論筆數：0
+2020-05-14 12:53 | INFO     | 0010 | 開始 find_tags:ozj7Vb3wnYq__action-button-clickable
+2020-05-14 12:53 | INFO     | 0437 | 已點擊返回店家資訊
+2020-05-14 12:53 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 12:53 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 12:53 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:53 | INFO     | 0197 | === 點擊第19個店家: 鮮魚熱炒 ===
+2020-05-14 12:53 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:53 | INFO     | 0226 | 區：大安區鮮魚熱炒
+2020-05-14 12:53 | INFO     | 0234 | 此店家完全無評論，跳下一個店家
+2020-05-14 12:53 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 12:53 | INFO     | 0238 | 已點擊返回搜尋列表
+2020-05-14 12:53 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:53 | INFO     | 0197 | === 點擊第20個店家: 萬芳廉美牛排 ===
+2020-05-14 12:53 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:53 | INFO     | 0226 | 區：文山區萬芳廉美牛排
+2020-05-14 12:53 | INFO     | 0010 | 開始 find_tags:section-rating-term-list
+2020-05-14 12:54 | INFO     | 0280 | 已點擊"所有評論"，總共有:122 則評論
+2020-05-14 12:54 | INFO     | 0010 | 開始 find_tags:section-layout-flex-horizontal
+2020-05-14 12:54 | INFO     | 0286 | 點擊選擇排序的下拉式選單:True
+2020-05-14 12:54 | INFO     | 0010 | 開始 find_tags:action-menu-entry
+2020-05-14 12:54 | INFO     | 0298 | 開始找section-loading
+2020-05-14 12:54 | INFO     | 0309 | loading評論第1次
+2020-05-14 12:54 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 12:54 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2020/02/14, loading displayed:True
+2020-05-14 12:54 | INFO     | 0309 | loading評論第2次
+2020-05-14 12:54 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 12:54 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2020/02/14, loading displayed:True
+2020-05-14 12:54 | INFO     | 0309 | loading評論第3次
+2020-05-14 12:54 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 12:54 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2020/01/14, loading displayed:True
+2020-05-14 12:54 | INFO     | 0309 | loading評論第4次
+2020-05-14 12:54 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 12:54 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2019/12/14, loading displayed:True
+2020-05-14 12:54 | INFO     | 0309 | loading評論第5次
+2020-05-14 12:54 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 12:54 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2019/08/14, loading displayed:True
+2020-05-14 12:54 | INFO     | 0309 | loading評論第6次
+2020-05-14 12:54 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 12:54 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2019/06/14, loading displayed:True
+2020-05-14 12:54 | INFO     | 0309 | loading評論第7次
+2020-05-14 12:54 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 12:55 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2019/05/14, loading displayed:True
+2020-05-14 12:55 | INFO     | 0309 | loading評論第8次
+2020-05-14 12:55 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 12:55 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2019/05/14, loading displayed:True
+2020-05-14 12:55 | INFO     | 0309 | loading評論第9次
+2020-05-14 12:55 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 12:55 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2018/05/14, loading displayed:True
+2020-05-14 12:55 | INFO     | 0309 | loading評論第10次
+2020-05-14 12:55 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 12:55 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2018/05/14, loading displayed:True
+2020-05-14 12:55 | INFO     | 0309 | loading評論第11次
+2020-05-14 12:55 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 12:55 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2018/05/14, loading displayed:True
+2020-05-14 12:55 | INFO     | 0309 | loading評論第12次
+2020-05-14 12:55 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 12:55 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2017/05/14, loading displayed:True
+2020-05-14 12:55 | INFO     | 0309 | loading評論第13次
+2020-05-14 12:55 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 12:55 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2017/05/14, loading displayed:False
+2020-05-14 12:55 | INFO     | 0349 | loading[-1]還沒出現，等2秒
+2020-05-14 12:55 | INFO     | 0355 | loading[-1]沒有顯示，放棄載入新的評論 萬芳廉美牛排
+2020-05-14 12:55 | INFO     | 0010 | 開始 find_tags:section-review-review-content
+2020-05-14 12:55 | INFO     | 0363 | 開始顯示所有評論數量:122
+2020-05-14 12:55 | INFO     | 0010 | 開始 find_tags:section-review-stars
+2020-05-14 12:55 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 12:55 | INFO     | 0420 | 開始儲存review：./csv/熱炒/台北市/文山區/萬芳廉美牛排_review.csv，總評論數：122，儲存評論筆數：73、空白評論筆數：49
+2020-05-14 12:55 | INFO     | 0058 | 儲存 dataframe ->.csv，path:./csv/熱炒/台北市/文山區/萬芳廉美牛排_review.csv
+2020-05-14 12:55 | INFO     | 0010 | 開始 find_tags:ozj7Vb3wnYq__action-button-clickable
+2020-05-14 12:56 | INFO     | 0437 | 已點擊返回店家資訊
+2020-05-14 12:56 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 12:56 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 12:56 | INFO     | 0448 | 目前這頁爬完了，換下一頁，目前在第2頁，已點過的店家數:14開始儲存店家list
+2020-05-14 12:56 | INFO     | 0058 | 儲存 dataframe ->.csv，path:./csv/熱炒/台北市/stores.csv
+2020-05-14 12:56 | INFO     | 0469 | 已點擊下一頁
+2020-05-14 12:56 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:56 | INFO     | 0163 | 進入第3頁, 店家數:20
+2020-05-14 12:56 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:56 | INFO     | 0197 | === 點擊第1個店家: 品麟生猛活海鮮-平價快熱炒料理 團體聚餐推薦(人氣必吃) ===
+2020-05-14 12:56 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:56 | INFO     | 0226 | 區：松山區品麟生猛活海鮮-平價快熱炒料理 團體聚餐推薦(人氣必吃)
+2020-05-14 12:56 | INFO     | 0246 | 第1個店家: 品麟生猛活海鮮-平價快熱炒料理 團體聚餐推薦(人氣必吃) 的評論已經存過，已存的最新評論日期為2020/05/03
+2020-05-14 12:56 | INFO     | 0010 | 開始 find_tags:section-rating-term-list
+2020-05-14 12:56 | INFO     | 0280 | 已點擊"所有評論"，總共有:290 則評論
+2020-05-14 12:56 | INFO     | 0010 | 開始 find_tags:section-layout-flex-horizontal
+2020-05-14 12:56 | INFO     | 0286 | 點擊選擇排序的下拉式選單:True
+2020-05-14 12:56 | INFO     | 0010 | 開始 find_tags:action-menu-entry
+2020-05-14 12:56 | INFO     | 0298 | 開始找section-loading
+2020-05-14 12:56 | INFO     | 0309 | loading評論第1次
+2020-05-14 12:56 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 12:56 | INFO     | 0335 | 最新已儲存日期：2020/05/03, 目前此筆評論日期：2020/02/14, loading displayed:True
+2020-05-14 12:56 | INFO     | 0340 | 目前最後一個評論日期：2020/02/14已 < 最新儲存日期:2020/05/03，不需再往下滑了
+2020-05-14 12:56 | INFO     | 0010 | 開始 find_tags:section-review-review-content
+2020-05-14 12:56 | INFO     | 0363 | 開始顯示所有評論數量:10
+2020-05-14 12:56 | INFO     | 0010 | 開始 find_tags:section-review-stars
+2020-05-14 12:56 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 12:56 | INFO     | 0402 | 只更新一週內的評論，超過的不更新，這個評論日期：2020/05/07
+2020-05-14 12:56 | INFO     | 0420 | 開始儲存review：./csv/熱炒/台北市/松山區/品麟生猛活海鮮-平價快熱炒料理 團體聚餐推薦(人氣必吃)_review.csv，總評論數：290，儲存評論筆數：0、空白評論筆數：0
+2020-05-14 12:56 | INFO     | 0010 | 開始 find_tags:ozj7Vb3wnYq__action-button-clickable
+2020-05-14 12:57 | INFO     | 0437 | 已點擊返回店家資訊
+2020-05-14 12:57 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 12:57 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 12:57 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:57 | INFO     | 0197 | === 點擊第2個店家: 漁聚蚌熱炒.海鮮.燒烤 ===
+2020-05-14 12:57 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:57 | INFO     | 0226 | 區：松山區漁聚蚌熱炒.海鮮.燒烤
+2020-05-14 12:57 | INFO     | 0246 | 第2個店家: 漁聚蚌熱炒.海鮮.燒烤 的評論已經存過，已存的最新評論日期為2020/05/03
+2020-05-14 12:57 | INFO     | 0010 | 開始 find_tags:section-rating-term-list
+2020-05-14 12:57 | INFO     | 0280 | 已點擊"所有評論"，總共有:91 則評論
+2020-05-14 12:57 | INFO     | 0010 | 開始 find_tags:section-layout-flex-horizontal
+2020-05-14 12:57 | INFO     | 0286 | 點擊選擇排序的下拉式選單:True
+2020-05-14 12:57 | INFO     | 0010 | 開始 find_tags:action-menu-entry
+2020-05-14 12:57 | INFO     | 0298 | 開始找section-loading
+2020-05-14 12:57 | INFO     | 0309 | loading評論第1次
+2020-05-14 12:57 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 12:57 | INFO     | 0335 | 最新已儲存日期：2020/05/03, 目前此筆評論日期：2019/11/14, loading displayed:True
+2020-05-14 12:57 | INFO     | 0340 | 目前最後一個評論日期：2019/11/14已 < 最新儲存日期:2020/05/03，不需再往下滑了
+2020-05-14 12:57 | INFO     | 0010 | 開始 find_tags:section-review-review-content
+2020-05-14 12:57 | INFO     | 0363 | 開始顯示所有評論數量:10
+2020-05-14 12:57 | INFO     | 0010 | 開始 find_tags:section-review-stars
+2020-05-14 12:57 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 12:57 | INFO     | 0402 | 只更新一週內的評論，超過的不更新，這個評論日期：2020/05/07
+2020-05-14 12:57 | INFO     | 0420 | 開始儲存review：./csv/熱炒/台北市/松山區/漁聚蚌熱炒.海鮮.燒烤_review.csv，總評論數：91，儲存評論筆數：0、空白評論筆數：0
+2020-05-14 12:57 | INFO     | 0010 | 開始 find_tags:ozj7Vb3wnYq__action-button-clickable
+2020-05-14 12:57 | INFO     | 0437 | 已點擊返回店家資訊
+2020-05-14 12:57 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 12:58 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 12:58 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:58 | INFO     | 0197 | === 點擊第3個店家: 老朋友小酌熱炒 ===
+2020-05-14 12:58 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:58 | INFO     | 0226 | 區：大安區老朋友小酌熱炒
+2020-05-14 12:58 | INFO     | 0246 | 第3個店家: 老朋友小酌熱炒 的評論已經存過，已存的最新評論日期為2020/05/09
+2020-05-14 12:58 | INFO     | 0010 | 開始 find_tags:section-rating-term-list
+2020-05-14 12:58 | INFO     | 0280 | 已點擊"所有評論"，總共有:787 則評論
+2020-05-14 12:58 | INFO     | 0010 | 開始 find_tags:section-layout-flex-horizontal
+2020-05-14 12:58 | INFO     | 0286 | 點擊選擇排序的下拉式選單:True
+2020-05-14 12:58 | INFO     | 0010 | 開始 find_tags:action-menu-entry
+2020-05-14 12:58 | INFO     | 0298 | 開始找section-loading
+2020-05-14 12:58 | INFO     | 0309 | loading評論第1次
+2020-05-14 12:58 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 12:58 | INFO     | 0335 | 最新已儲存日期：2020/05/09, 目前此筆評論日期：2020/05/09, loading displayed:True
+2020-05-14 12:58 | INFO     | 0309 | loading評論第2次
+2020-05-14 12:58 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 12:58 | INFO     | 0335 | 最新已儲存日期：2020/05/09, 目前此筆評論日期：2020/04/30, loading displayed:True
+2020-05-14 12:58 | INFO     | 0340 | 目前最後一個評論日期：2020/04/30已 < 最新儲存日期:2020/05/09，不需再往下滑了
+2020-05-14 12:58 | INFO     | 0010 | 開始 find_tags:section-review-review-content
+2020-05-14 12:58 | INFO     | 0363 | 開始顯示所有評論數量:20
+2020-05-14 12:58 | INFO     | 0010 | 開始 find_tags:section-review-stars
+2020-05-14 12:58 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 12:58 | INFO     | 0402 | 只更新一週內的評論，超過的不更新，這個評論日期：2020/05/14
+2020-05-14 12:58 | INFO     | 0420 | 開始儲存review：./csv/熱炒/台北市/大安區/老朋友小酌熱炒_review.csv，總評論數：787，儲存評論筆數：0、空白評論筆數：0
+2020-05-14 12:58 | INFO     | 0010 | 開始 find_tags:ozj7Vb3wnYq__action-button-clickable
+2020-05-14 12:58 | INFO     | 0437 | 已點擊返回店家資訊
+2020-05-14 12:58 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 12:59 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 12:59 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 12:59 | INFO     | 0197 | === 點擊第4個店家: 熊饍堂 ===
+2020-05-14 12:59 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 12:59 | INFO     | 0226 | 區：文山區熊饍堂
+2020-05-14 12:59 | INFO     | 0010 | 開始 find_tags:section-rating-term-list
+2020-05-14 12:59 | INFO     | 0280 | 已點擊"所有評論"，總共有:81 則評論
+2020-05-14 12:59 | INFO     | 0010 | 開始 find_tags:section-layout-flex-horizontal
+2020-05-14 12:59 | INFO     | 0286 | 點擊選擇排序的下拉式選單:True
+2020-05-14 12:59 | INFO     | 0010 | 開始 find_tags:action-menu-entry
+2020-05-14 12:59 | INFO     | 0298 | 開始找section-loading
+2020-05-14 12:59 | INFO     | 0309 | loading評論第1次
+2020-05-14 12:59 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 12:59 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2019/12/14, loading displayed:True
+2020-05-14 12:59 | INFO     | 0309 | loading評論第2次
+2020-05-14 12:59 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 12:59 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2019/07/14, loading displayed:True
+2020-05-14 12:59 | INFO     | 0309 | loading評論第3次
+2020-05-14 12:59 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 12:59 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2019/07/14, loading displayed:True
+2020-05-14 12:59 | INFO     | 0309 | loading評論第4次
+2020-05-14 12:59 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 12:59 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2019/05/14, loading displayed:True
+2020-05-14 12:59 | INFO     | 0309 | loading評論第5次
+2020-05-14 12:59 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:00 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2019/05/14, loading displayed:True
+2020-05-14 13:00 | INFO     | 0309 | loading評論第6次
+2020-05-14 13:00 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:00 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2019/05/14, loading displayed:True
+2020-05-14 13:00 | INFO     | 0309 | loading評論第7次
+2020-05-14 13:00 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:00 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2018/05/14, loading displayed:True
+2020-05-14 13:00 | INFO     | 0309 | loading評論第8次
+2020-05-14 13:00 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:00 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2017/05/14, loading displayed:True
+2020-05-14 13:00 | INFO     | 0309 | loading評論第9次
+2020-05-14 13:00 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:00 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2017/05/14, loading displayed:False
+2020-05-14 13:00 | INFO     | 0349 | loading[-1]還沒出現，等2秒
+2020-05-14 13:00 | INFO     | 0355 | loading[-1]沒有顯示，放棄載入新的評論 熊饍堂
+2020-05-14 13:00 | INFO     | 0010 | 開始 find_tags:section-review-review-content
+2020-05-14 13:00 | INFO     | 0363 | 開始顯示所有評論數量:81
+2020-05-14 13:00 | INFO     | 0010 | 開始 find_tags:section-review-stars
+2020-05-14 13:00 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:00 | INFO     | 0420 | 開始儲存review：./csv/熱炒/台北市/文山區/熊饍堂_review.csv，總評論數：81，儲存評論筆數：43、空白評論筆數：38
+2020-05-14 13:00 | INFO     | 0058 | 儲存 dataframe ->.csv，path:./csv/熱炒/台北市/文山區/熊饍堂_review.csv
+2020-05-14 13:00 | INFO     | 0010 | 開始 find_tags:ozj7Vb3wnYq__action-button-clickable
+2020-05-14 13:00 | INFO     | 0437 | 已點擊返回店家資訊
+2020-05-14 13:00 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 13:00 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 13:00 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 13:00 | INFO     | 0197 | === 點擊第5個店家: 阿珍熱炒 ===
+2020-05-14 13:00 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 13:01 | INFO     | 0226 | 區：大安區阿珍熱炒
+2020-05-14 13:01 | INFO     | 0246 | 第5個店家: 阿珍熱炒 的評論已經存過，已存的最新評論日期為2020/02/11
+2020-05-14 13:01 | INFO     | 0010 | 開始 find_tags:section-rating-term-list
+2020-05-14 13:01 | INFO     | 0280 | 已點擊"所有評論"，總共有:36 則評論
+2020-05-14 13:01 | INFO     | 0010 | 開始 find_tags:section-layout-flex-horizontal
+2020-05-14 13:01 | INFO     | 0286 | 點擊選擇排序的下拉式選單:True
+2020-05-14 13:01 | INFO     | 0010 | 開始 find_tags:action-menu-entry
+2020-05-14 13:01 | INFO     | 0298 | 開始找section-loading
+2020-05-14 13:01 | INFO     | 0309 | loading評論第1次
+2020-05-14 13:01 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:01 | INFO     | 0335 | 最新已儲存日期：2020/02/11, 目前此筆評論日期：2019/10/14, loading displayed:True
+2020-05-14 13:01 | INFO     | 0340 | 目前最後一個評論日期：2019/10/14已 < 最新儲存日期:2020/02/11，不需再往下滑了
+2020-05-14 13:01 | INFO     | 0010 | 開始 find_tags:section-review-review-content
+2020-05-14 13:01 | INFO     | 0363 | 開始顯示所有評論數量:10
+2020-05-14 13:01 | INFO     | 0010 | 開始 find_tags:section-review-stars
+2020-05-14 13:01 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:01 | INFO     | 0402 | 只更新一週內的評論，超過的不更新，這個評論日期：2020/02/14
+2020-05-14 13:01 | INFO     | 0420 | 開始儲存review：./csv/熱炒/台北市/大安區/阿珍熱炒_review.csv，總評論數：36，儲存評論筆數：0、空白評論筆數：0
+2020-05-14 13:01 | INFO     | 0010 | 開始 find_tags:ozj7Vb3wnYq__action-button-clickable
+2020-05-14 13:01 | INFO     | 0437 | 已點擊返回店家資訊
+2020-05-14 13:01 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 13:01 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 13:01 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 13:01 | INFO     | 0197 | === 點擊第6個店家: 林森79熱炒(喫酒夜攤) ===
+2020-05-14 13:01 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 13:01 | INFO     | 0208 | 234新北市永和區林森路79號 ，不是 台北市 跳過
+2020-05-14 13:01 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 13:02 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 13:02 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 13:02 | INFO     | 0197 | === 點擊第7個店家: 民生熱炒 ===
+2020-05-14 13:02 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 13:02 | INFO     | 0208 | 234新北市永和區民生路18號 ，不是 台北市 跳過
+2020-05-14 13:02 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 13:02 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 13:02 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 13:02 | INFO     | 0197 | === 點擊第8個店家: 土角厝懷舊小吃店 ===
+2020-05-14 13:02 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 13:02 | INFO     | 0226 | 區：文山區土角厝懷舊小吃店
+2020-05-14 13:02 | INFO     | 0010 | 開始 find_tags:section-rating-term-list
+2020-05-14 13:02 | INFO     | 0280 | 已點擊"所有評論"，總共有:688 則評論
+2020-05-14 13:02 | INFO     | 0010 | 開始 find_tags:section-layout-flex-horizontal
+2020-05-14 13:02 | INFO     | 0286 | 點擊選擇排序的下拉式選單:True
+2020-05-14 13:02 | INFO     | 0010 | 開始 find_tags:action-menu-entry
+2020-05-14 13:02 | INFO     | 0298 | 開始找section-loading
+2020-05-14 13:02 | INFO     | 0309 | loading評論第1次
+2020-05-14 13:02 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:02 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2020/04/14, loading displayed:True
+2020-05-14 13:02 | INFO     | 0309 | loading評論第2次
+2020-05-14 13:02 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:02 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2020/03/14, loading displayed:True
+2020-05-14 13:02 | INFO     | 0309 | loading評論第3次
+2020-05-14 13:02 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:03 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2020/03/14, loading displayed:True
+2020-05-14 13:03 | INFO     | 0309 | loading評論第4次
+2020-05-14 13:03 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:03 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2020/02/14, loading displayed:True
+2020-05-14 13:03 | INFO     | 0309 | loading評論第5次
+2020-05-14 13:03 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:03 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2020/02/14, loading displayed:True
+2020-05-14 13:03 | INFO     | 0309 | loading評論第6次
+2020-05-14 13:03 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:03 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2020/01/14, loading displayed:True
+2020-05-14 13:03 | INFO     | 0309 | loading評論第7次
+2020-05-14 13:03 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:03 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2020/01/14, loading displayed:True
+2020-05-14 13:03 | INFO     | 0309 | loading評論第8次
+2020-05-14 13:03 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:03 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2020/01/14, loading displayed:True
+2020-05-14 13:03 | INFO     | 0309 | loading評論第9次
+2020-05-14 13:03 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:03 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2019/12/14, loading displayed:True
+2020-05-14 13:03 | INFO     | 0309 | loading評論第10次
+2020-05-14 13:03 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:03 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2019/11/14, loading displayed:True
+2020-05-14 13:03 | INFO     | 0309 | loading評論第11次
+2020-05-14 13:03 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:03 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2019/11/14, loading displayed:True
+2020-05-14 13:03 | INFO     | 0309 | loading評論第12次
+2020-05-14 13:03 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:03 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2019/10/14, loading displayed:True
+2020-05-14 13:03 | INFO     | 0309 | loading評論第13次
+2020-05-14 13:04 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:04 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2019/10/14, loading displayed:True
+2020-05-14 13:04 | INFO     | 0309 | loading評論第14次
+2020-05-14 13:04 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:04 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2019/09/14, loading displayed:True
+2020-05-14 13:04 | INFO     | 0309 | loading評論第15次
+2020-05-14 13:04 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:04 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2019/09/14, loading displayed:True
+2020-05-14 13:04 | INFO     | 0309 | loading評論第16次
+2020-05-14 13:04 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:04 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2019/09/14, loading displayed:True
+2020-05-14 13:04 | INFO     | 0309 | loading評論第17次
+2020-05-14 13:04 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:04 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2019/08/14, loading displayed:True
+2020-05-14 13:04 | INFO     | 0309 | loading評論第18次
+2020-05-14 13:04 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:04 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2019/08/14, loading displayed:True
+2020-05-14 13:04 | INFO     | 0309 | loading評論第19次
+2020-05-14 13:04 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:04 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2019/08/14, loading displayed:True
+2020-05-14 13:04 | INFO     | 0309 | loading評論第20次
+2020-05-14 13:04 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:04 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2019/08/14, loading displayed:True
+2020-05-14 13:04 | INFO     | 0309 | loading評論第21次
+2020-05-14 13:04 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:04 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2019/08/14, loading displayed:True
+2020-05-14 13:04 | INFO     | 0309 | loading評論第22次
+2020-05-14 13:04 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:05 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2019/08/14, loading displayed:True
+2020-05-14 13:05 | INFO     | 0309 | loading評論第23次
+2020-05-14 13:05 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:05 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2019/08/14, loading displayed:True
+2020-05-14 13:05 | INFO     | 0309 | loading評論第24次
+2020-05-14 13:05 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:05 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2019/08/14, loading displayed:True
+2020-05-14 13:05 | INFO     | 0309 | loading評論第25次
+2020-05-14 13:05 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:05 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2019/07/14, loading displayed:True
+2020-05-14 13:05 | INFO     | 0309 | loading評論第26次
+2020-05-14 13:05 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:05 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2019/07/14, loading displayed:True
+2020-05-14 13:05 | INFO     | 0309 | loading評論第27次
+2020-05-14 13:05 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:05 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2019/07/14, loading displayed:True
+2020-05-14 13:05 | INFO     | 0309 | loading評論第28次
+2020-05-14 13:05 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:05 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2019/06/14, loading displayed:True
+2020-05-14 13:05 | INFO     | 0309 | loading評論第29次
+2020-05-14 13:05 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:05 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2019/06/14, loading displayed:True
+2020-05-14 13:05 | INFO     | 0309 | loading評論第30次
+2020-05-14 13:05 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:05 | INFO     | 0318 | 原本紀錄的loading次數:0,更新為:30
+2020-05-14 13:05 | INFO     | 0321 | 原本紀錄的評論數:0,更新為:250
+2020-05-14 13:05 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2019/06/14, loading displayed:True
+2020-05-14 13:05 | INFO     | 0309 | loading評論第31次
+2020-05-14 13:05 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:05 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2019/05/14, loading displayed:True
+2020-05-14 13:05 | INFO     | 0309 | loading評論第32次
+2020-05-14 13:05 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:06 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2019/05/14, loading displayed:True
+2020-05-14 13:06 | INFO     | 0309 | loading評論第33次
+2020-05-14 13:06 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:06 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2019/05/14, loading displayed:True
+2020-05-14 13:06 | INFO     | 0309 | loading評論第34次
+2020-05-14 13:06 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:06 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2019/05/14, loading displayed:True
+2020-05-14 13:06 | INFO     | 0309 | loading評論第35次
+2020-05-14 13:06 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:06 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2019/05/14, loading displayed:True
+2020-05-14 13:06 | INFO     | 0309 | loading評論第36次
+2020-05-14 13:06 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:06 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2019/05/14, loading displayed:True
+2020-05-14 13:06 | INFO     | 0309 | loading評論第37次
+2020-05-14 13:06 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:06 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2019/05/14, loading displayed:True
+2020-05-14 13:06 | INFO     | 0309 | loading評論第38次
+2020-05-14 13:06 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:06 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2019/05/14, loading displayed:True
+2020-05-14 13:06 | INFO     | 0309 | loading評論第39次
+2020-05-14 13:06 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:06 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2019/05/14, loading displayed:True
+2020-05-14 13:06 | INFO     | 0309 | loading評論第40次
+2020-05-14 13:06 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:06 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2019/05/14, loading displayed:True
+2020-05-14 13:06 | INFO     | 0309 | loading評論第41次
+2020-05-14 13:06 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:06 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2019/05/14, loading displayed:True
+2020-05-14 13:06 | INFO     | 0309 | loading評論第42次
+2020-05-14 13:07 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:07 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2019/05/14, loading displayed:True
+2020-05-14 13:07 | INFO     | 0309 | loading評論第43次
+2020-05-14 13:07 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:07 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2019/05/14, loading displayed:True
+2020-05-14 13:07 | INFO     | 0309 | loading評論第44次
+2020-05-14 13:07 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:07 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2019/05/14, loading displayed:True
+2020-05-14 13:07 | INFO     | 0309 | loading評論第45次
+2020-05-14 13:07 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:07 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2019/05/14, loading displayed:True
+2020-05-14 13:07 | INFO     | 0309 | loading評論第46次
+2020-05-14 13:07 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:07 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2019/05/14, loading displayed:True
+2020-05-14 13:07 | INFO     | 0309 | loading評論第47次
+2020-05-14 13:07 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:07 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2019/05/14, loading displayed:True
+2020-05-14 13:07 | INFO     | 0309 | loading評論第48次
+2020-05-14 13:07 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:07 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2019/05/14, loading displayed:True
+2020-05-14 13:07 | INFO     | 0309 | loading評論第49次
+2020-05-14 13:07 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:07 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2019/05/14, loading displayed:True
+2020-05-14 13:07 | INFO     | 0309 | loading評論第50次
+2020-05-14 13:07 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:07 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2019/05/14, loading displayed:True
+2020-05-14 13:07 | INFO     | 0309 | loading評論第51次
+2020-05-14 13:08 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:08 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2019/05/14, loading displayed:True
+2020-05-14 13:08 | INFO     | 0309 | loading評論第52次
+2020-05-14 13:08 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:08 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2019/05/14, loading displayed:True
+2020-05-14 13:08 | INFO     | 0309 | loading評論第53次
+2020-05-14 13:08 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:08 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2018/05/14, loading displayed:True
+2020-05-14 13:08 | INFO     | 0309 | loading評論第54次
+2020-05-14 13:08 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:08 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2018/05/14, loading displayed:True
+2020-05-14 13:08 | INFO     | 0309 | loading評論第55次
+2020-05-14 13:08 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:08 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2018/05/14, loading displayed:True
+2020-05-14 13:08 | INFO     | 0309 | loading評論第56次
+2020-05-14 13:08 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:08 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2018/05/14, loading displayed:True
+2020-05-14 13:08 | INFO     | 0309 | loading評論第57次
+2020-05-14 13:08 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:08 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2018/05/14, loading displayed:True
+2020-05-14 13:08 | INFO     | 0309 | loading評論第58次
+2020-05-14 13:08 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:08 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2018/05/14, loading displayed:True
+2020-05-14 13:08 | INFO     | 0309 | loading評論第59次
+2020-05-14 13:08 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:08 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2018/05/14, loading displayed:True
+2020-05-14 13:08 | INFO     | 0309 | loading評論第60次
+2020-05-14 13:08 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:09 | INFO     | 0318 | 原本紀錄的loading次數:30,更新為:60
+2020-05-14 13:09 | INFO     | 0321 | 原本紀錄的評論數:250,更新為:550
+2020-05-14 13:09 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2018/05/14, loading displayed:True
+2020-05-14 13:09 | INFO     | 0309 | loading評論第61次
+2020-05-14 13:09 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:09 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2018/05/14, loading displayed:True
+2020-05-14 13:09 | INFO     | 0309 | loading評論第62次
+2020-05-14 13:09 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:09 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2018/05/14, loading displayed:True
+2020-05-14 13:09 | INFO     | 0309 | loading評論第63次
+2020-05-14 13:09 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:09 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2018/05/14, loading displayed:True
+2020-05-14 13:09 | INFO     | 0309 | loading評論第64次
+2020-05-14 13:09 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:09 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2018/05/14, loading displayed:True
+2020-05-14 13:09 | INFO     | 0309 | loading評論第65次
+2020-05-14 13:09 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:09 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2018/05/14, loading displayed:True
+2020-05-14 13:09 | INFO     | 0309 | loading評論第66次
+2020-05-14 13:09 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:09 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2018/05/14, loading displayed:True
+2020-05-14 13:09 | INFO     | 0309 | loading評論第67次
+2020-05-14 13:09 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:09 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2018/05/14, loading displayed:True
+2020-05-14 13:09 | INFO     | 0309 | loading評論第68次
+2020-05-14 13:09 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:09 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2018/05/14, loading displayed:True
+2020-05-14 13:09 | INFO     | 0309 | loading評論第69次
+2020-05-14 13:09 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:10 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2017/05/14, loading displayed:True
+2020-05-14 13:10 | INFO     | 0309 | loading評論第70次
+2020-05-14 13:10 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:10 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2017/05/14, loading displayed:True
+2020-05-14 13:10 | INFO     | 0309 | loading評論第71次
+2020-05-14 13:10 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:10 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2017/05/14, loading displayed:True
+2020-05-14 13:10 | INFO     | 0309 | loading評論第72次
+2020-05-14 13:10 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:10 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2017/05/14, loading displayed:True
+2020-05-14 13:10 | INFO     | 0309 | loading評論第73次
+2020-05-14 13:10 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:10 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2017/05/14, loading displayed:True
+2020-05-14 13:10 | INFO     | 0309 | loading評論第74次
+2020-05-14 13:10 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:10 | INFO     | 0335 | 最新已儲存日期：, 目前此筆評論日期：2017/05/14, loading displayed:False
+2020-05-14 13:10 | INFO     | 0349 | loading[-1]還沒出現，等2秒
+2020-05-14 13:10 | INFO     | 0355 | loading[-1]沒有顯示，放棄載入新的評論 土角厝懷舊小吃店
+2020-05-14 13:10 | INFO     | 0010 | 開始 find_tags:section-review-review-content
+2020-05-14 13:10 | INFO     | 0363 | 開始顯示所有評論數量:688
+2020-05-14 13:10 | INFO     | 0010 | 開始 find_tags:section-review-stars
+2020-05-14 13:10 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:11 | INFO     | 0420 | 開始儲存review：./csv/熱炒/台北市/文山區/土角厝懷舊小吃店_review.csv，總評論數：688，儲存評論筆數：332、空白評論筆數：356
+2020-05-14 13:11 | INFO     | 0058 | 儲存 dataframe ->.csv，path:./csv/熱炒/台北市/文山區/土角厝懷舊小吃店_review.csv
+2020-05-14 13:11 | INFO     | 0010 | 開始 find_tags:ozj7Vb3wnYq__action-button-clickable
+2020-05-14 13:12 | INFO     | 0437 | 已點擊返回店家資訊
+2020-05-14 13:12 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 13:12 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 13:12 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 13:12 | INFO     | 0197 | === 點擊第9個店家: 鑫鱻熱炒店 ===
+2020-05-14 13:12 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 13:12 | INFO     | 0226 | 區：內湖區鑫鱻熱炒店
+2020-05-14 13:12 | INFO     | 0246 | 第9個店家: 鑫鱻熱炒店 的評論已經存過，已存的最新評論日期為2020/05/03
+2020-05-14 13:12 | INFO     | 0010 | 開始 find_tags:section-rating-term-list
+2020-05-14 13:12 | INFO     | 0280 | 已點擊"所有評論"，總共有:1,037 則評論
+2020-05-14 13:12 | INFO     | 0010 | 開始 find_tags:section-layout-flex-horizontal
+2020-05-14 13:12 | INFO     | 0286 | 點擊選擇排序的下拉式選單:True
+2020-05-14 13:12 | INFO     | 0010 | 開始 find_tags:action-menu-entry
+2020-05-14 13:12 | INFO     | 0298 | 開始找section-loading
+2020-05-14 13:12 | INFO     | 0309 | loading評論第1次
+2020-05-14 13:12 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:12 | INFO     | 0335 | 最新已儲存日期：2020/05/03, 目前此筆評論日期：2020/04/14, loading displayed:True
+2020-05-14 13:12 | INFO     | 0340 | 目前最後一個評論日期：2020/04/14已 < 最新儲存日期:2020/05/03，不需再往下滑了
+2020-05-14 13:12 | INFO     | 0010 | 開始 find_tags:section-review-review-content
+2020-05-14 13:12 | INFO     | 0363 | 開始顯示所有評論數量:10
+2020-05-14 13:12 | INFO     | 0010 | 開始 find_tags:section-review-stars
+2020-05-14 13:12 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:12 | INFO     | 0402 | 只更新一週內的評論，超過的不更新，這個評論日期：2020/05/07
+2020-05-14 13:12 | INFO     | 0420 | 開始儲存review：./csv/熱炒/台北市/內湖區/鑫鱻熱炒店_review.csv，總評論數：1037，儲存評論筆數：0、空白評論筆數：0
+2020-05-14 13:12 | INFO     | 0010 | 開始 find_tags:ozj7Vb3wnYq__action-button-clickable
+2020-05-14 13:12 | INFO     | 0437 | 已點擊返回店家資訊
+2020-05-14 13:12 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 13:13 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 13:13 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 13:13 | INFO     | 0197 | === 點擊第10個店家: 轟天雷生猛海鮮平價熱炒 ===
+2020-05-14 13:13 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 13:13 | INFO     | 0208 | 234新北市永和區永貞路24號 ，不是 台北市 跳過
+2020-05-14 13:13 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 13:13 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 13:13 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 13:13 | INFO     | 0197 | === 點擊第11個店家: 李家榕樹下快炒 ===
+2020-05-14 13:13 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 13:13 | INFO     | 0226 | 區：大安區李家榕樹下快炒
+2020-05-14 13:13 | INFO     | 0246 | 第11個店家: 李家榕樹下快炒 的評論已經存過，已存的最新評論日期為2020/05/08
+2020-05-14 13:13 | INFO     | 0010 | 開始 find_tags:section-rating-term-list
+2020-05-14 13:13 | INFO     | 0280 | 已點擊"所有評論"，總共有:309 則評論
+2020-05-14 13:13 | INFO     | 0010 | 開始 find_tags:section-layout-flex-horizontal
+2020-05-14 13:13 | INFO     | 0286 | 點擊選擇排序的下拉式選單:True
+2020-05-14 13:13 | INFO     | 0010 | 開始 find_tags:action-menu-entry
+2020-05-14 13:13 | INFO     | 0298 | 開始找section-loading
+2020-05-14 13:13 | INFO     | 0309 | loading評論第1次
+2020-05-14 13:13 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:13 | INFO     | 0033 | 第1次重新抓tag:section-review-publish-date
+2020-05-14 13:13 | INFO     | 0033 | 第2次重新抓tag:section-review-publish-date
+2020-05-14 13:13 | INFO     | 0033 | 第3次重新抓tag:section-review-publish-date
+2020-05-14 13:13 | INFO     | 0033 | 第4次重新抓tag:section-review-publish-date
+2020-05-14 13:13 | INFO     | 0033 | 第5次重新抓tag:section-review-publish-date
+2020-05-14 13:13 | INFO     | 0033 | 第6次重新抓tag:section-review-publish-date
+2020-05-14 13:13 | INFO     | 0335 | 最新已儲存日期：2020/05/08, 目前此筆評論日期：2020/03/14, loading displayed:True
+2020-05-14 13:13 | INFO     | 0340 | 目前最後一個評論日期：2020/03/14已 < 最新儲存日期:2020/05/08，不需再往下滑了
+2020-05-14 13:13 | INFO     | 0010 | 開始 find_tags:section-review-review-content
+2020-05-14 13:14 | INFO     | 0363 | 開始顯示所有評論數量:10
+2020-05-14 13:14 | INFO     | 0010 | 開始 find_tags:section-review-stars
+2020-05-14 13:14 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:14 | INFO     | 0392 | 這個評論日期 == 最新儲存日期，且評論內容 == 最新儲存評論內容，擷取評論結束
+2020-05-14 13:14 | INFO     | 0420 | 開始儲存review：./csv/熱炒/台北市/大安區/李家榕樹下快炒_review.csv，總評論數：309，儲存評論筆數：0、空白評論筆數：0
+2020-05-14 13:14 | INFO     | 0010 | 開始 find_tags:ozj7Vb3wnYq__action-button-clickable
+2020-05-14 13:14 | INFO     | 0437 | 已點擊返回店家資訊
+2020-05-14 13:14 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 13:14 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 13:14 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 13:14 | INFO     | 0197 | === 點擊第12個店家: 阿文熱炒 ===
+2020-05-14 13:14 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 13:14 | INFO     | 0226 | 區：大同區阿文熱炒
+2020-05-14 13:14 | INFO     | 0246 | 第12個店家: 阿文熱炒 的評論已經存過，已存的最新評論日期為2020/05/12
+2020-05-14 13:14 | INFO     | 0010 | 開始 find_tags:section-rating-term-list
+2020-05-14 13:14 | INFO     | 0280 | 已點擊"所有評論"，總共有:97 則評論
+2020-05-14 13:14 | INFO     | 0010 | 開始 find_tags:section-layout-flex-horizontal
+2020-05-14 13:14 | INFO     | 0286 | 點擊選擇排序的下拉式選單:True
+2020-05-14 13:14 | INFO     | 0010 | 開始 find_tags:action-menu-entry
+2020-05-14 13:14 | INFO     | 0298 | 開始找section-loading
+2020-05-14 13:14 | INFO     | 0309 | loading評論第1次
+2020-05-14 13:14 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:14 | INFO     | 0033 | 第1次重新抓tag:section-review-publish-date
+2020-05-14 13:14 | INFO     | 0033 | 第2次重新抓tag:section-review-publish-date
+2020-05-14 13:14 | INFO     | 0033 | 第3次重新抓tag:section-review-publish-date
+2020-05-14 13:14 | INFO     | 0033 | 第4次重新抓tag:section-review-publish-date
+2020-05-14 13:14 | INFO     | 0033 | 第5次重新抓tag:section-review-publish-date
+2020-05-14 13:14 | INFO     | 0033 | 第6次重新抓tag:section-review-publish-date
+2020-05-14 13:14 | INFO     | 0033 | 第7次重新抓tag:section-review-publish-date
+2020-05-14 13:14 | INFO     | 0335 | 最新已儲存日期：2020/05/12, 目前此筆評論日期：2020/02/14, loading displayed:True
+2020-05-14 13:14 | INFO     | 0340 | 目前最後一個評論日期：2020/02/14已 < 最新儲存日期:2020/05/12，不需再往下滑了
+2020-05-14 13:14 | INFO     | 0010 | 開始 find_tags:section-review-review-content
+2020-05-14 13:15 | INFO     | 0363 | 開始顯示所有評論數量:10
+2020-05-14 13:15 | INFO     | 0010 | 開始 find_tags:section-review-stars
+2020-05-14 13:15 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:15 | INFO     | 0397 | 這個評論日期：2020/05/11已 < 最新儲存日期：2020/05/12，擷取評論結束
+2020-05-14 13:15 | INFO     | 0420 | 開始儲存review：./csv/熱炒/台北市/大同區/阿文熱炒_review.csv，總評論數：97，儲存評論筆數：0、空白評論筆數：0
+2020-05-14 13:15 | INFO     | 0010 | 開始 find_tags:ozj7Vb3wnYq__action-button-clickable
+2020-05-14 13:15 | INFO     | 0437 | 已點擊返回店家資訊
+2020-05-14 13:15 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 13:15 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 13:15 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 13:15 | INFO     | 0197 | === 點擊第13個店家: 金霸王熱炒・快炒100 健康店 ===
+2020-05-14 13:15 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 13:15 | INFO     | 0226 | 區：松山區金霸王熱炒・快炒100 健康店
+2020-05-14 13:15 | INFO     | 0246 | 第13個店家: 金霸王熱炒・快炒100 健康店 的評論已經存過，已存的最新評論日期為2020/05/10
+2020-05-14 13:15 | INFO     | 0010 | 開始 find_tags:section-rating-term-list
+2020-05-14 13:15 | INFO     | 0280 | 已點擊"所有評論"，總共有:350 則評論
+2020-05-14 13:15 | INFO     | 0010 | 開始 find_tags:section-layout-flex-horizontal
+2020-05-14 13:15 | INFO     | 0286 | 點擊選擇排序的下拉式選單:True
+2020-05-14 13:15 | INFO     | 0010 | 開始 find_tags:action-menu-entry
+2020-05-14 13:15 | INFO     | 0298 | 開始找section-loading
+2020-05-14 13:15 | INFO     | 0309 | loading評論第1次
+2020-05-14 13:15 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:15 | INFO     | 0335 | 最新已儲存日期：2020/05/10, 目前此筆評論日期：2020/03/14, loading displayed:True
+2020-05-14 13:15 | INFO     | 0340 | 目前最後一個評論日期：2020/03/14已 < 最新儲存日期:2020/05/10，不需再往下滑了
+2020-05-14 13:15 | INFO     | 0010 | 開始 find_tags:section-review-review-content
+2020-05-14 13:15 | INFO     | 0363 | 開始顯示所有評論數量:10
+2020-05-14 13:15 | INFO     | 0010 | 開始 find_tags:section-review-stars
+2020-05-14 13:16 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:16 | INFO     | 0397 | 這個評論日期：2020/05/09已 < 最新儲存日期：2020/05/10，擷取評論結束
+2020-05-14 13:16 | INFO     | 0420 | 開始儲存review：./csv/熱炒/台北市/松山區/金霸王熱炒・快炒100 健康店_review.csv，總評論數：350，儲存評論筆數：0、空白評論筆數：0
+2020-05-14 13:16 | INFO     | 0010 | 開始 find_tags:ozj7Vb3wnYq__action-button-clickable
+2020-05-14 13:16 | INFO     | 0437 | 已點擊返回店家資訊
+2020-05-14 13:16 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 13:16 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 13:16 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 13:16 | INFO     | 0197 | === 點擊第14個店家: 大道18號精緻熱炒 ===
+2020-05-14 13:16 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 13:16 | INFO     | 0226 | 區：大安區大道18號精緻熱炒
+2020-05-14 13:16 | INFO     | 0246 | 第14個店家: 大道18號精緻熱炒 的評論已經存過，已存的最新評論日期為2020/05/08
+2020-05-14 13:16 | INFO     | 0010 | 開始 find_tags:section-rating-term-list
+2020-05-14 13:16 | INFO     | 0280 | 已點擊"所有評論"，總共有:581 則評論
+2020-05-14 13:16 | INFO     | 0010 | 開始 find_tags:section-layout-flex-horizontal
+2020-05-14 13:16 | INFO     | 0286 | 點擊選擇排序的下拉式選單:True
+2020-05-14 13:16 | INFO     | 0010 | 開始 find_tags:action-menu-entry
+2020-05-14 13:16 | INFO     | 0298 | 開始找section-loading
+2020-05-14 13:16 | INFO     | 0309 | loading評論第1次
+2020-05-14 13:16 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:16 | INFO     | 0335 | 最新已儲存日期：2020/05/08, 目前此筆評論日期：2020/04/14, loading displayed:True
+2020-05-14 13:16 | INFO     | 0340 | 目前最後一個評論日期：2020/04/14已 < 最新儲存日期:2020/05/08，不需再往下滑了
+2020-05-14 13:16 | INFO     | 0010 | 開始 find_tags:section-review-review-content
+2020-05-14 13:16 | INFO     | 0363 | 開始顯示所有評論數量:10
+2020-05-14 13:16 | INFO     | 0010 | 開始 find_tags:section-review-stars
+2020-05-14 13:16 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:16 | INFO     | 0392 | 這個評論日期 == 最新儲存日期，且評論內容 == 最新儲存評論內容，擷取評論結束
+2020-05-14 13:16 | INFO     | 0420 | 開始儲存review：./csv/熱炒/台北市/大安區/大道18號精緻熱炒_review.csv，總評論數：581，儲存評論筆數：0、空白評論筆數：1
+2020-05-14 13:16 | INFO     | 0010 | 開始 find_tags:ozj7Vb3wnYq__action-button-clickable
+2020-05-14 13:17 | INFO     | 0437 | 已點擊返回店家資訊
+2020-05-14 13:17 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 13:17 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 13:17 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 13:17 | INFO     | 0197 | === 點擊第15個店家: 珍美味海鮮熱炒100-清燉羊肉爐 砂鍋魚頭 多人聚餐廳(人氣必吃推薦) ===
+2020-05-14 13:17 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 13:17 | INFO     | 0226 | 區：大安區珍美味海鮮熱炒100-清燉羊肉爐 砂鍋魚頭 多人聚餐廳(人氣必吃推薦)
+2020-05-14 13:17 | INFO     | 0246 | 第15個店家: 珍美味海鮮熱炒100-清燉羊肉爐 砂鍋魚頭 多人聚餐廳(人氣必吃推薦) 的評論已經存過，已存的最新評論日期為2020/04/09
+2020-05-14 13:17 | INFO     | 0010 | 開始 find_tags:section-rating-term-list
+2020-05-14 13:17 | INFO     | 0280 | 已點擊"所有評論"，總共有:107 則評論
+2020-05-14 13:17 | INFO     | 0010 | 開始 find_tags:section-layout-flex-horizontal
+2020-05-14 13:17 | INFO     | 0286 | 點擊選擇排序的下拉式選單:True
+2020-05-14 13:17 | INFO     | 0010 | 開始 find_tags:action-menu-entry
+2020-05-14 13:17 | INFO     | 0298 | 開始找section-loading
+2020-05-14 13:17 | INFO     | 0309 | loading評論第1次
+2020-05-14 13:17 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:17 | INFO     | 0033 | 第1次重新抓tag:section-review-publish-date
+2020-05-14 13:17 | INFO     | 0033 | 第2次重新抓tag:section-review-publish-date
+2020-05-14 13:17 | INFO     | 0033 | 第3次重新抓tag:section-review-publish-date
+2020-05-14 13:17 | INFO     | 0033 | 第4次重新抓tag:section-review-publish-date
+2020-05-14 13:17 | INFO     | 0033 | 第5次重新抓tag:section-review-publish-date
+2020-05-14 13:17 | INFO     | 0033 | 第6次重新抓tag:section-review-publish-date
+2020-05-14 13:17 | INFO     | 0033 | 第7次重新抓tag:section-review-publish-date
+2020-05-14 13:17 | INFO     | 0033 | 第8次重新抓tag:section-review-publish-date
+2020-05-14 13:17 | INFO     | 0033 | 第9次重新抓tag:section-review-publish-date
+2020-05-14 13:17 | INFO     | 0335 | 最新已儲存日期：2020/04/09, 目前此筆評論日期：2020/02/14, loading displayed:True
+2020-05-14 13:17 | INFO     | 0340 | 目前最後一個評論日期：2020/02/14已 < 最新儲存日期:2020/04/09，不需再往下滑了
+2020-05-14 13:17 | INFO     | 0010 | 開始 find_tags:section-review-review-content
+2020-05-14 13:17 | INFO     | 0363 | 開始顯示所有評論數量:10
+2020-05-14 13:17 | INFO     | 0010 | 開始 find_tags:section-review-stars
+2020-05-14 13:17 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:18 | INFO     | 0402 | 只更新一週內的評論，超過的不更新，這個評論日期：2020/04/14
+2020-05-14 13:18 | INFO     | 0420 | 開始儲存review：./csv/熱炒/台北市/大安區/珍美味海鮮熱炒100-清燉羊肉爐 砂鍋魚頭 多人聚餐廳(人氣必吃推薦)_review.csv，總評論數：107，儲存評論筆數：0、空白評論筆數：0
+2020-05-14 13:18 | INFO     | 0010 | 開始 find_tags:ozj7Vb3wnYq__action-button-clickable
+2020-05-14 13:18 | INFO     | 0437 | 已點擊返回店家資訊
+2020-05-14 13:18 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 13:18 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 13:18 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 13:18 | INFO     | 0197 | === 點擊第16個店家: 大三鱻快炒店 ===
+2020-05-14 13:18 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 13:18 | INFO     | 0033 | 第1次重新抓tag:section-info-action-button
+2020-05-14 13:18 | INFO     | 0033 | 第2次重新抓tag:section-info-action-button
+2020-05-14 13:18 | INFO     | 0226 | 區：中山區大三鱻快炒店
+2020-05-14 13:18 | INFO     | 0246 | 第16個店家: 大三鱻快炒店 的評論已經存過，已存的最新評論日期為2020/05/09
+2020-05-14 13:18 | INFO     | 0010 | 開始 find_tags:section-rating-term-list
+2020-05-14 13:18 | INFO     | 0280 | 已點擊"所有評論"，總共有:40 則評論
+2020-05-14 13:18 | INFO     | 0010 | 開始 find_tags:section-layout-flex-horizontal
+2020-05-14 13:18 | INFO     | 0286 | 點擊選擇排序的下拉式選單:True
+2020-05-14 13:18 | INFO     | 0010 | 開始 find_tags:action-menu-entry
+2020-05-14 13:18 | INFO     | 0298 | 開始找section-loading
+2020-05-14 13:18 | INFO     | 0309 | loading評論第1次
+2020-05-14 13:18 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:18 | INFO     | 0335 | 最新已儲存日期：2020/05/09, 目前此筆評論日期：2019/12/14, loading displayed:True
+2020-05-14 13:18 | INFO     | 0340 | 目前最後一個評論日期：2019/12/14已 < 最新儲存日期:2020/05/09，不需再往下滑了
+2020-05-14 13:18 | INFO     | 0010 | 開始 find_tags:section-review-review-content
+2020-05-14 13:18 | INFO     | 0363 | 開始顯示所有評論數量:10
+2020-05-14 13:18 | INFO     | 0010 | 開始 find_tags:section-review-stars
+2020-05-14 13:18 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:18 | INFO     | 0397 | 這個評論日期：2020/04/30已 < 最新儲存日期：2020/05/09，擷取評論結束
+2020-05-14 13:18 | INFO     | 0420 | 開始儲存review：./csv/熱炒/台北市/中山區/大三鱻快炒店_review.csv，總評論數：40，儲存評論筆數：1、空白評論筆數：0
+2020-05-14 13:18 | INFO     | 0058 | 儲存 dataframe ->.csv，path:./csv/熱炒/台北市/中山區/大三鱻快炒店_review.csv
+2020-05-14 13:18 | INFO     | 0010 | 開始 find_tags:ozj7Vb3wnYq__action-button-clickable
+2020-05-14 13:19 | INFO     | 0437 | 已點擊返回店家資訊
+2020-05-14 13:19 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 13:19 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 13:19 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 13:19 | INFO     | 0101 | 原始店名含有特殊符號：新店活蝦大王/新店美食/新店餐廳/新店熱炒/新店川菜/新店活蝦/新店合菜，修正後店名新店活蝦大王[斜槓]新店美食[斜槓]新店餐廳[斜槓]新店熱炒[斜槓]新店川菜[斜槓]新店活蝦[斜槓]新店合菜
+2020-05-14 13:19 | INFO     | 0197 | === 點擊第17個店家: 新店活蝦大王[斜槓]新店美食[斜槓]新店餐廳[斜槓]新店熱炒[斜槓]新店川菜[斜槓]新店活蝦[斜槓]新店合菜 ===
+2020-05-14 13:19 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 13:19 | INFO     | 0208 | 231新北市新店區建國路200號 ，不是 台北市 跳過
+2020-05-14 13:19 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 13:19 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 13:19 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 13:19 | INFO     | 0197 | === 點擊第18個店家: 潮鮮平價海鮮熱炒 ===
+2020-05-14 13:19 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 13:19 | INFO     | 0226 | 區：松山區潮鮮平價海鮮熱炒
+2020-05-14 13:19 | INFO     | 0246 | 第18個店家: 潮鮮平價海鮮熱炒 的評論已經存過，已存的最新評論日期為2020/05/10
+2020-05-14 13:19 | INFO     | 0010 | 開始 find_tags:section-rating-term-list
+2020-05-14 13:19 | INFO     | 0280 | 已點擊"所有評論"，總共有:214 則評論
+2020-05-14 13:19 | INFO     | 0010 | 開始 find_tags:section-layout-flex-horizontal
+2020-05-14 13:19 | INFO     | 0286 | 點擊選擇排序的下拉式選單:True
+2020-05-14 13:19 | INFO     | 0010 | 開始 find_tags:action-menu-entry
+2020-05-14 13:19 | INFO     | 0298 | 開始找section-loading
+2020-05-14 13:19 | INFO     | 0309 | loading評論第1次
+2020-05-14 13:19 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:19 | INFO     | 0335 | 最新已儲存日期：2020/05/10, 目前此筆評論日期：2020/03/14, loading displayed:True
+2020-05-14 13:19 | INFO     | 0340 | 目前最後一個評論日期：2020/03/14已 < 最新儲存日期:2020/05/10，不需再往下滑了
+2020-05-14 13:19 | INFO     | 0010 | 開始 find_tags:section-review-review-content
+2020-05-14 13:19 | INFO     | 0363 | 開始顯示所有評論數量:10
+2020-05-14 13:19 | INFO     | 0010 | 開始 find_tags:section-review-stars
+2020-05-14 13:20 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:20 | INFO     | 0392 | 這個評論日期 == 最新儲存日期，且評論內容 == 最新儲存評論內容，擷取評論結束
+2020-05-14 13:20 | INFO     | 0420 | 開始儲存review：./csv/熱炒/台北市/松山區/潮鮮平價海鮮熱炒_review.csv，總評論數：214，儲存評論筆數：0、空白評論筆數：0
+2020-05-14 13:20 | INFO     | 0010 | 開始 find_tags:ozj7Vb3wnYq__action-button-clickable
+2020-05-14 13:20 | INFO     | 0437 | 已點擊返回店家資訊
+2020-05-14 13:20 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 13:20 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 13:20 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 13:20 | INFO     | 0197 | === 點擊第19個店家: 聚一聚熱炒 ===
+2020-05-14 13:20 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 13:20 | INFO     | 0208 | 235新北市中和區中山路二段50號 ，不是 台北市 跳過
+2020-05-14 13:20 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 13:20 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 13:20 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 13:20 | INFO     | 0197 | === 點擊第20個店家: 阿蘭姊熱炒小吃店 ===
+2020-05-14 13:20 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 13:20 | INFO     | 0208 | 231新北市新店區中正路408號 ，不是 台北市 跳過
+2020-05-14 13:20 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 13:20 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 13:20 | INFO     | 0448 | 目前這頁爬完了，換下一頁，目前在第3頁，已點過的店家數:14開始儲存店家list
+2020-05-14 13:20 | INFO     | 0058 | 儲存 dataframe ->.csv，path:./csv/熱炒/台北市/stores.csv
+2020-05-14 13:20 | INFO     | 0461 | 此搜尋中心非 台北市 的店家有16筆，跳出while，換個中心點重跑
+2020-05-14 13:20 | INFO     | 0030 | ('========= 產生url座標:', '@25,121.61,15z', '===========')
+2020-05-14 13:20 | INFO     | 0010 | 開始 find_tags:tactile-searchbox-input
+2020-05-14 13:21 | INFO     | 0134 | 輸入搜尋關鍵字:熱炒，點擊搜尋
+2020-05-14 13:21 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 13:21 | INFO     | 0163 | 進入第1頁, 店家數:20
+2020-05-14 13:21 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 13:21 | INFO     | 0197 | === 點擊第1個店家: 驛站熱炒 ===
+2020-05-14 13:21 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 13:21 | INFO     | 0033 | 第1次重新抓tag:section-info-action-button
+2020-05-14 13:21 | INFO     | 0226 | 區：文山區驛站熱炒
+2020-05-14 13:21 | INFO     | 0246 | 第1個店家: 驛站熱炒 的評論已經存過，已存的最新評論日期為2020/05/05
+2020-05-14 13:21 | INFO     | 0010 | 開始 find_tags:section-rating-term-list
+2020-05-14 13:21 | INFO     | 0280 | 已點擊"所有評論"，總共有:86 則評論
+2020-05-14 13:21 | INFO     | 0010 | 開始 find_tags:section-layout-flex-horizontal
+2020-05-14 13:21 | INFO     | 0286 | 點擊選擇排序的下拉式選單:True
+2020-05-14 13:21 | INFO     | 0010 | 開始 find_tags:action-menu-entry
+2020-05-14 13:21 | INFO     | 0298 | 開始找section-loading
+2020-05-14 13:21 | INFO     | 0309 | loading評論第1次
+2020-05-14 13:21 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:21 | INFO     | 0335 | 最新已儲存日期：2020/05/05, 目前此筆評論日期：2020/03/14, loading displayed:True
+2020-05-14 13:21 | INFO     | 0340 | 目前最後一個評論日期：2020/03/14已 < 最新儲存日期:2020/05/05，不需再往下滑了
+2020-05-14 13:21 | INFO     | 0010 | 開始 find_tags:section-review-review-content
+2020-05-14 13:21 | INFO     | 0363 | 開始顯示所有評論數量:10
+2020-05-14 13:21 | INFO     | 0010 | 開始 find_tags:section-review-stars
+2020-05-14 13:21 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:21 | INFO     | 0402 | 只更新一週內的評論，超過的不更新，這個評論日期：2020/05/07
+2020-05-14 13:21 | INFO     | 0420 | 開始儲存review：./csv/熱炒/台北市/文山區/驛站熱炒_review.csv，總評論數：86，儲存評論筆數：0、空白評論筆數：0
+2020-05-14 13:21 | INFO     | 0010 | 開始 find_tags:ozj7Vb3wnYq__action-button-clickable
+2020-05-14 13:22 | INFO     | 0437 | 已點擊返回店家資訊
+2020-05-14 13:22 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 13:22 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 13:22 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 13:22 | INFO     | 0197 | === 點擊第2個店家: 平價快炒 ===
+2020-05-14 13:22 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 13:22 | INFO     | 0226 | 區：大安區平價快炒
+2020-05-14 13:22 | INFO     | 0246 | 第2個店家: 平價快炒 的評論已經存過，已存的最新評論日期為2020/05/07
+2020-05-14 13:22 | INFO     | 0010 | 開始 find_tags:section-rating-term-list
+2020-05-14 13:22 | INFO     | 0280 | 已點擊"所有評論"，總共有:1,006 則評論
+2020-05-14 13:22 | INFO     | 0010 | 開始 find_tags:section-layout-flex-horizontal
+2020-05-14 13:22 | INFO     | 0286 | 點擊選擇排序的下拉式選單:True
+2020-05-14 13:22 | INFO     | 0010 | 開始 find_tags:action-menu-entry
+2020-05-14 13:22 | INFO     | 0298 | 開始找section-loading
+2020-05-14 13:22 | INFO     | 0309 | loading評論第1次
+2020-05-14 13:22 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:22 | INFO     | 0335 | 最新已儲存日期：2020/05/07, 目前此筆評論日期：2020/04/14, loading displayed:True
+2020-05-14 13:22 | INFO     | 0340 | 目前最後一個評論日期：2020/04/14已 < 最新儲存日期:2020/05/07，不需再往下滑了
+2020-05-14 13:22 | INFO     | 0010 | 開始 find_tags:section-review-review-content
+2020-05-14 13:22 | INFO     | 0363 | 開始顯示所有評論數量:10
+2020-05-14 13:22 | INFO     | 0010 | 開始 find_tags:section-review-stars
+2020-05-14 13:22 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:22 | INFO     | 0392 | 這個評論日期 == 最新儲存日期，且評論內容 == 最新儲存評論內容，擷取評論結束
+2020-05-14 13:22 | INFO     | 0420 | 開始儲存review：./csv/熱炒/台北市/大安區/平價快炒_review.csv，總評論數：1006，儲存評論筆數：0、空白評論筆數：0
+2020-05-14 13:22 | INFO     | 0010 | 開始 find_tags:ozj7Vb3wnYq__action-button-clickable
+2020-05-14 13:22 | INFO     | 0437 | 已點擊返回店家資訊
+2020-05-14 13:22 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 13:22 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 13:23 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 13:23 | INFO     | 0197 | === 點擊第3個店家: 滿漢熱炒 ===
+2020-05-14 13:23 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 13:23 | INFO     | 0226 | 區：信義區滿漢熱炒
+2020-05-14 13:23 | INFO     | 0246 | 第3個店家: 滿漢熱炒 的評論已經存過，已存的最新評論日期為2020/05/03
+2020-05-14 13:23 | INFO     | 0010 | 開始 find_tags:section-rating-term-list
+2020-05-14 13:23 | INFO     | 0280 | 已點擊"所有評論"，總共有:248 則評論
+2020-05-14 13:23 | INFO     | 0010 | 開始 find_tags:section-layout-flex-horizontal
+2020-05-14 13:23 | INFO     | 0286 | 點擊選擇排序的下拉式選單:True
+2020-05-14 13:23 | INFO     | 0010 | 開始 find_tags:action-menu-entry
+2020-05-14 13:23 | INFO     | 0298 | 開始找section-loading
+2020-05-14 13:23 | INFO     | 0309 | loading評論第1次
+2020-05-14 13:23 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:23 | INFO     | 0335 | 最新已儲存日期：2020/05/03, 目前此筆評論日期：2020/03/14, loading displayed:True
+2020-05-14 13:23 | INFO     | 0340 | 目前最後一個評論日期：2020/03/14已 < 最新儲存日期:2020/05/03，不需再往下滑了
+2020-05-14 13:23 | INFO     | 0010 | 開始 find_tags:section-review-review-content
+2020-05-14 13:23 | INFO     | 0363 | 開始顯示所有評論數量:10
+2020-05-14 13:23 | INFO     | 0010 | 開始 find_tags:section-review-stars
+2020-05-14 13:23 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:23 | INFO     | 0402 | 只更新一週內的評論，超過的不更新，這個評論日期：2020/05/07
+2020-05-14 13:23 | INFO     | 0420 | 開始儲存review：./csv/熱炒/台北市/信義區/滿漢熱炒_review.csv，總評論數：248，儲存評論筆數：0、空白評論筆數：0
+2020-05-14 13:23 | INFO     | 0010 | 開始 find_tags:ozj7Vb3wnYq__action-button-clickable
+2020-05-14 13:23 | INFO     | 0437 | 已點擊返回店家資訊
+2020-05-14 13:23 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 13:23 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 13:23 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 13:23 | INFO     | 0197 | === 點擊第4個店家: 豪香熱炒 ===
+2020-05-14 13:23 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 13:24 | INFO     | 0226 | 區：大安區豪香熱炒
+2020-05-14 13:24 | INFO     | 0246 | 第4個店家: 豪香熱炒 的評論已經存過，已存的最新評論日期為2020/05/08
+2020-05-14 13:24 | INFO     | 0010 | 開始 find_tags:section-rating-term-list
+2020-05-14 13:24 | INFO     | 0280 | 已點擊"所有評論"，總共有:301 則評論
+2020-05-14 13:24 | INFO     | 0010 | 開始 find_tags:section-layout-flex-horizontal
+2020-05-14 13:24 | INFO     | 0286 | 點擊選擇排序的下拉式選單:True
+2020-05-14 13:24 | INFO     | 0010 | 開始 find_tags:action-menu-entry
+2020-05-14 13:24 | INFO     | 0298 | 開始找section-loading
+2020-05-14 13:24 | INFO     | 0309 | loading評論第1次
+2020-05-14 13:24 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:24 | INFO     | 0335 | 最新已儲存日期：2020/05/08, 目前此筆評論日期：2020/03/14, loading displayed:True
+2020-05-14 13:24 | INFO     | 0340 | 目前最後一個評論日期：2020/03/14已 < 最新儲存日期:2020/05/08，不需再往下滑了
+2020-05-14 13:24 | INFO     | 0010 | 開始 find_tags:section-review-review-content
+2020-05-14 13:24 | INFO     | 0363 | 開始顯示所有評論數量:10
+2020-05-14 13:24 | INFO     | 0010 | 開始 find_tags:section-review-stars
+2020-05-14 13:24 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:24 | INFO     | 0397 | 這個評論日期：2020/05/07已 < 最新儲存日期：2020/05/08，擷取評論結束
+2020-05-14 13:24 | INFO     | 0420 | 開始儲存review：./csv/熱炒/台北市/大安區/豪香熱炒_review.csv，總評論數：301，儲存評論筆數：0、空白評論筆數：0
+2020-05-14 13:24 | INFO     | 0010 | 開始 find_tags:ozj7Vb3wnYq__action-button-clickable
+2020-05-14 13:24 | INFO     | 0437 | 已點擊返回店家資訊
+2020-05-14 13:24 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 13:24 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 13:24 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 13:24 | INFO     | 0197 | === 點擊第5個店家: 家常熱炒 ===
+2020-05-14 13:24 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 13:24 | INFO     | 0226 | 區：南港區家常熱炒
+2020-05-14 13:24 | INFO     | 0246 | 第5個店家: 家常熱炒 的評論已經存過，已存的最新評論日期為2020/04/13
+2020-05-14 13:24 | INFO     | 0010 | 開始 find_tags:section-rating-term-list
+2020-05-14 13:25 | INFO     | 0280 | 已點擊"所有評論"，總共有:37 則評論
+2020-05-14 13:25 | INFO     | 0010 | 開始 find_tags:section-layout-flex-horizontal
+2020-05-14 13:25 | INFO     | 0286 | 點擊選擇排序的下拉式選單:True
+2020-05-14 13:25 | INFO     | 0010 | 開始 find_tags:action-menu-entry
+2020-05-14 13:25 | INFO     | 0298 | 開始找section-loading
+2020-05-14 13:25 | INFO     | 0309 | loading評論第1次
+2020-05-14 13:25 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:25 | INFO     | 0335 | 最新已儲存日期：2020/04/13, 目前此筆評論日期：2020/02/14, loading displayed:True
+2020-05-14 13:25 | INFO     | 0340 | 目前最後一個評論日期：2020/02/14已 < 最新儲存日期:2020/04/13，不需再往下滑了
+2020-05-14 13:25 | INFO     | 0010 | 開始 find_tags:section-review-review-content
+2020-05-14 13:25 | INFO     | 0363 | 開始顯示所有評論數量:10
+2020-05-14 13:25 | INFO     | 0010 | 開始 find_tags:section-review-stars
+2020-05-14 13:25 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:25 | INFO     | 0402 | 只更新一週內的評論，超過的不更新，這個評論日期：2020/04/14
+2020-05-14 13:25 | INFO     | 0420 | 開始儲存review：./csv/熱炒/台北市/南港區/家常熱炒_review.csv，總評論數：37，儲存評論筆數：0、空白評論筆數：0
+2020-05-14 13:25 | INFO     | 0010 | 開始 find_tags:ozj7Vb3wnYq__action-button-clickable
+2020-05-14 13:25 | INFO     | 0437 | 已點擊返回店家資訊
+2020-05-14 13:25 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 13:25 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 13:25 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 13:25 | INFO     | 0197 | === 點擊第6個店家: 土狗幫熱炒燒烤餐廳 ===
+2020-05-14 13:25 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 13:25 | INFO     | 0033 | 第1次重新抓tag:section-info-action-button
+2020-05-14 13:25 | INFO     | 0226 | 區：大安區土狗幫熱炒燒烤餐廳
+2020-05-14 13:25 | INFO     | 0246 | 第6個店家: 土狗幫熱炒燒烤餐廳 的評論已經存過，已存的最新評論日期為2020/05/13
+2020-05-14 13:25 | INFO     | 0010 | 開始 find_tags:section-rating-term-list
+2020-05-14 13:25 | INFO     | 0280 | 已點擊"所有評論"，總共有:275 則評論
+2020-05-14 13:25 | INFO     | 0010 | 開始 find_tags:section-layout-flex-horizontal
+2020-05-14 13:26 | INFO     | 0286 | 點擊選擇排序的下拉式選單:True
+2020-05-14 13:26 | INFO     | 0010 | 開始 find_tags:action-menu-entry
+2020-05-14 13:26 | INFO     | 0298 | 開始找section-loading
+2020-05-14 13:26 | INFO     | 0309 | loading評論第1次
+2020-05-14 13:26 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:26 | INFO     | 0335 | 最新已儲存日期：2020/05/13, 目前此筆評論日期：2020/03/14, loading displayed:True
+2020-05-14 13:26 | INFO     | 0340 | 目前最後一個評論日期：2020/03/14已 < 最新儲存日期:2020/05/13，不需再往下滑了
+2020-05-14 13:26 | INFO     | 0010 | 開始 find_tags:section-review-review-content
+2020-05-14 13:26 | INFO     | 0363 | 開始顯示所有評論數量:10
+2020-05-14 13:26 | INFO     | 0010 | 開始 find_tags:section-review-stars
+2020-05-14 13:26 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:26 | INFO     | 0397 | 這個評論日期：2020/05/12已 < 最新儲存日期：2020/05/13，擷取評論結束
+2020-05-14 13:26 | INFO     | 0420 | 開始儲存review：./csv/熱炒/台北市/大安區/土狗幫熱炒燒烤餐廳_review.csv，總評論數：275，儲存評論筆數：0、空白評論筆數：0
+2020-05-14 13:26 | INFO     | 0010 | 開始 find_tags:ozj7Vb3wnYq__action-button-clickable
+2020-05-14 13:26 | INFO     | 0437 | 已點擊返回店家資訊
+2020-05-14 13:26 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 13:26 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 13:26 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 13:26 | INFO     | 0197 | === 點擊第7個店家: 33區熱炒 ===
+2020-05-14 13:26 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 13:26 | INFO     | 0226 | 區：中山區33區熱炒
+2020-05-14 13:26 | INFO     | 0246 | 第7個店家: 33區熱炒 的評論已經存過，已存的最新評論日期為2020/05/06
+2020-05-14 13:26 | INFO     | 0010 | 開始 find_tags:section-rating-term-list
+2020-05-14 13:26 | INFO     | 0280 | 已點擊"所有評論"，總共有:1,212 則評論
+2020-05-14 13:26 | INFO     | 0010 | 開始 find_tags:section-layout-flex-horizontal
+2020-05-14 13:26 | INFO     | 0286 | 點擊選擇排序的下拉式選單:True
+2020-05-14 13:26 | INFO     | 0010 | 開始 find_tags:action-menu-entry
+2020-05-14 13:26 | INFO     | 0298 | 開始找section-loading
+2020-05-14 13:27 | INFO     | 0309 | loading評論第1次
+2020-05-14 13:27 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:27 | INFO     | 0335 | 最新已儲存日期：2020/05/06, 目前此筆評論日期：2020/04/14, loading displayed:True
+2020-05-14 13:27 | INFO     | 0340 | 目前最後一個評論日期：2020/04/14已 < 最新儲存日期:2020/05/06，不需再往下滑了
+2020-05-14 13:27 | INFO     | 0010 | 開始 find_tags:section-review-review-content
+2020-05-14 13:27 | INFO     | 0363 | 開始顯示所有評論數量:10
+2020-05-14 13:27 | INFO     | 0010 | 開始 find_tags:section-review-stars
+2020-05-14 13:27 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:27 | INFO     | 0402 | 只更新一週內的評論，超過的不更新，這個評論日期：2020/05/07
+2020-05-14 13:27 | INFO     | 0420 | 開始儲存review：./csv/熱炒/台北市/中山區/33區熱炒_review.csv，總評論數：1212，儲存評論筆數：0、空白評論筆數：0
+2020-05-14 13:27 | INFO     | 0010 | 開始 find_tags:ozj7Vb3wnYq__action-button-clickable
+2020-05-14 13:27 | INFO     | 0437 | 已點擊返回店家資訊
+2020-05-14 13:27 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 13:27 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 13:27 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 13:27 | INFO     | 0197 | === 點擊第8個店家: Pocha 韓式熱炒 ===
+2020-05-14 13:27 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 13:27 | INFO     | 0226 | 區：大安區Pocha 韓式熱炒
+2020-05-14 13:27 | INFO     | 0246 | 第8個店家: Pocha 韓式熱炒 的評論已經存過，已存的最新評論日期為2020/05/13
+2020-05-14 13:27 | INFO     | 0010 | 開始 find_tags:section-rating-term-list
+2020-05-14 13:27 | INFO     | 0280 | 已點擊"所有評論"，總共有:947 則評論
+2020-05-14 13:27 | INFO     | 0010 | 開始 find_tags:section-layout-flex-horizontal
+2020-05-14 13:27 | INFO     | 0286 | 點擊選擇排序的下拉式選單:True
+2020-05-14 13:27 | INFO     | 0010 | 開始 find_tags:action-menu-entry
+2020-05-14 13:27 | INFO     | 0298 | 開始找section-loading
+2020-05-14 13:27 | INFO     | 0309 | loading評論第1次
+2020-05-14 13:27 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:28 | INFO     | 0335 | 最新已儲存日期：2020/05/13, 目前此筆評論日期：2020/04/23, loading displayed:True
+2020-05-14 13:28 | INFO     | 0340 | 目前最後一個評論日期：2020/04/23已 < 最新儲存日期:2020/05/13，不需再往下滑了
+2020-05-14 13:28 | INFO     | 0010 | 開始 find_tags:section-review-review-content
+2020-05-14 13:28 | INFO     | 0363 | 開始顯示所有評論數量:10
+2020-05-14 13:28 | INFO     | 0010 | 開始 find_tags:section-review-stars
+2020-05-14 13:28 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:28 | INFO     | 0392 | 這個評論日期 == 最新儲存日期，且評論內容 == 最新儲存評論內容，擷取評論結束
+2020-05-14 13:28 | INFO     | 0420 | 開始儲存review：./csv/熱炒/台北市/大安區/Pocha 韓式熱炒_review.csv，總評論數：947，儲存評論筆數：0、空白評論筆數：0
+2020-05-14 13:28 | INFO     | 0010 | 開始 find_tags:ozj7Vb3wnYq__action-button-clickable
+2020-05-14 13:28 | INFO     | 0437 | 已點擊返回店家資訊
+2020-05-14 13:28 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 13:28 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 13:28 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 13:28 | INFO     | 0197 | === 點擊第9個店家: 豪香熱炒 ===
+2020-05-14 13:28 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 13:28 | INFO     | 0226 | 區：大安區豪香熱炒
+2020-05-14 13:28 | INFO     | 0246 | 第9個店家: 豪香熱炒 的評論已經存過，已存的最新評論日期為2020/05/08
+2020-05-14 13:28 | INFO     | 0010 | 開始 find_tags:section-rating-term-list
+2020-05-14 13:28 | INFO     | 0280 | 已點擊"所有評論"，總共有:568 則評論
+2020-05-14 13:28 | INFO     | 0010 | 開始 find_tags:section-layout-flex-horizontal
+2020-05-14 13:28 | INFO     | 0286 | 點擊選擇排序的下拉式選單:True
+2020-05-14 13:28 | INFO     | 0010 | 開始 find_tags:action-menu-entry
+2020-05-14 13:28 | INFO     | 0298 | 開始找section-loading
+2020-05-14 13:28 | INFO     | 0309 | loading評論第1次
+2020-05-14 13:28 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:28 | INFO     | 0335 | 最新已儲存日期：2020/05/08, 目前此筆評論日期：2020/04/14, loading displayed:True
+2020-05-14 13:28 | INFO     | 0340 | 目前最後一個評論日期：2020/04/14已 < 最新儲存日期:2020/05/08，不需再往下滑了
+2020-05-14 13:28 | INFO     | 0010 | 開始 find_tags:section-review-review-content
+2020-05-14 13:29 | INFO     | 0363 | 開始顯示所有評論數量:10
+2020-05-14 13:29 | INFO     | 0010 | 開始 find_tags:section-review-stars
+2020-05-14 13:29 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:29 | INFO     | 0402 | 只更新一週內的評論，超過的不更新，這個評論日期：2020/05/14
+2020-05-14 13:29 | INFO     | 0420 | 開始儲存review：./csv/熱炒/台北市/大安區/豪香熱炒_review.csv，總評論數：568，儲存評論筆數：0、空白評論筆數：0
+2020-05-14 13:29 | INFO     | 0010 | 開始 find_tags:ozj7Vb3wnYq__action-button-clickable
+2020-05-14 13:29 | INFO     | 0437 | 已點擊返回店家資訊
+2020-05-14 13:29 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 13:29 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 13:29 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 13:29 | INFO     | 0197 | === 點擊第10個店家: 水中鮮100元快炒 ===
+2020-05-14 13:29 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 13:29 | INFO     | 0226 | 區：松山區水中鮮100元快炒
+2020-05-14 13:29 | INFO     | 0246 | 第10個店家: 水中鮮100元快炒 的評論已經存過，已存的最新評論日期為2020/05/09
+2020-05-14 13:29 | INFO     | 0010 | 開始 find_tags:section-rating-term-list
+2020-05-14 13:29 | INFO     | 0280 | 已點擊"所有評論"，總共有:238 則評論
+2020-05-14 13:29 | INFO     | 0010 | 開始 find_tags:section-layout-flex-horizontal
+2020-05-14 13:29 | INFO     | 0286 | 點擊選擇排序的下拉式選單:True
+2020-05-14 13:29 | INFO     | 0010 | 開始 find_tags:action-menu-entry
+2020-05-14 13:29 | INFO     | 0298 | 開始找section-loading
+2020-05-14 13:29 | INFO     | 0309 | loading評論第1次
+2020-05-14 13:29 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:29 | INFO     | 0335 | 最新已儲存日期：2020/05/09, 目前此筆評論日期：2020/03/14, loading displayed:True
+2020-05-14 13:29 | INFO     | 0340 | 目前最後一個評論日期：2020/03/14已 < 最新儲存日期:2020/05/09，不需再往下滑了
+2020-05-14 13:29 | INFO     | 0010 | 開始 find_tags:section-review-review-content
+2020-05-14 13:29 | INFO     | 0363 | 開始顯示所有評論數量:10
+2020-05-14 13:29 | INFO     | 0010 | 開始 find_tags:section-review-stars
+2020-05-14 13:29 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:30 | INFO     | 0397 | 這個評論日期：2020/04/30已 < 最新儲存日期：2020/05/09，擷取評論結束
+2020-05-14 13:30 | INFO     | 0420 | 開始儲存review：./csv/熱炒/台北市/松山區/水中鮮100元快炒_review.csv，總評論數：238，儲存評論筆數：0、空白評論筆數：0
+2020-05-14 13:30 | INFO     | 0010 | 開始 find_tags:ozj7Vb3wnYq__action-button-clickable
+2020-05-14 13:30 | INFO     | 0437 | 已點擊返回店家資訊
+2020-05-14 13:30 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 13:30 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 13:30 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 13:30 | INFO     | 0197 | === 點擊第11個店家: 好棒棒平價快炒 ===
+2020-05-14 13:30 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 13:30 | INFO     | 0226 | 區：大安區好棒棒平價快炒
+2020-05-14 13:30 | INFO     | 0246 | 第11個店家: 好棒棒平價快炒 的評論已經存過，已存的最新評論日期為2020/05/13
+2020-05-14 13:30 | INFO     | 0010 | 開始 find_tags:section-rating-term-list
+2020-05-14 13:30 | INFO     | 0280 | 已點擊"所有評論"，總共有:492 則評論
+2020-05-14 13:30 | INFO     | 0010 | 開始 find_tags:section-layout-flex-horizontal
+2020-05-14 13:30 | INFO     | 0286 | 點擊選擇排序的下拉式選單:True
+2020-05-14 13:30 | INFO     | 0010 | 開始 find_tags:action-menu-entry
+2020-05-14 13:30 | INFO     | 0298 | 開始找section-loading
+2020-05-14 13:30 | INFO     | 0309 | loading評論第1次
+2020-05-14 13:30 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:30 | INFO     | 0335 | 最新已儲存日期：2020/05/13, 目前此筆評論日期：2020/03/14, loading displayed:True
+2020-05-14 13:30 | INFO     | 0340 | 目前最後一個評論日期：2020/03/14已 < 最新儲存日期:2020/05/13，不需再往下滑了
+2020-05-14 13:30 | INFO     | 0010 | 開始 find_tags:section-review-review-content
+2020-05-14 13:30 | INFO     | 0363 | 開始顯示所有評論數量:10
+2020-05-14 13:30 | INFO     | 0010 | 開始 find_tags:section-review-stars
+2020-05-14 13:30 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:30 | INFO     | 0392 | 這個評論日期 == 最新儲存日期，且評論內容 == 最新儲存評論內容，擷取評論結束
+2020-05-14 13:30 | INFO     | 0420 | 開始儲存review：./csv/熱炒/台北市/大安區/好棒棒平價快炒_review.csv，總評論數：492，儲存評論筆數：0、空白評論筆數：0
+2020-05-14 13:30 | INFO     | 0010 | 開始 find_tags:ozj7Vb3wnYq__action-button-clickable
+2020-05-14 13:31 | INFO     | 0437 | 已點擊返回店家資訊
+2020-05-14 13:31 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 13:31 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 13:31 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 13:31 | INFO     | 0197 | === 點擊第12個店家: 品麟生猛活海鮮-平價快熱炒料理 團體聚餐推薦(人氣必吃) ===
+2020-05-14 13:31 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 13:31 | INFO     | 0226 | 區：松山區品麟生猛活海鮮-平價快熱炒料理 團體聚餐推薦(人氣必吃)
+2020-05-14 13:31 | INFO     | 0246 | 第12個店家: 品麟生猛活海鮮-平價快熱炒料理 團體聚餐推薦(人氣必吃) 的評論已經存過，已存的最新評論日期為2020/05/03
+2020-05-14 13:31 | INFO     | 0010 | 開始 find_tags:section-rating-term-list
+2020-05-14 13:31 | INFO     | 0280 | 已點擊"所有評論"，總共有:290 則評論
+2020-05-14 13:31 | INFO     | 0010 | 開始 find_tags:section-layout-flex-horizontal
+2020-05-14 13:31 | INFO     | 0286 | 點擊選擇排序的下拉式選單:True
+2020-05-14 13:31 | INFO     | 0010 | 開始 find_tags:action-menu-entry
+2020-05-14 13:31 | INFO     | 0298 | 開始找section-loading
+2020-05-14 13:31 | INFO     | 0309 | loading評論第1次
+2020-05-14 13:31 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:31 | INFO     | 0335 | 最新已儲存日期：2020/05/03, 目前此筆評論日期：2020/02/14, loading displayed:True
+2020-05-14 13:31 | INFO     | 0340 | 目前最後一個評論日期：2020/02/14已 < 最新儲存日期:2020/05/03，不需再往下滑了
+2020-05-14 13:31 | INFO     | 0010 | 開始 find_tags:section-review-review-content
+2020-05-14 13:31 | INFO     | 0363 | 開始顯示所有評論數量:10
+2020-05-14 13:31 | INFO     | 0010 | 開始 find_tags:section-review-stars
+2020-05-14 13:31 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:31 | INFO     | 0402 | 只更新一週內的評論，超過的不更新，這個評論日期：2020/05/07
+2020-05-14 13:31 | INFO     | 0420 | 開始儲存review：./csv/熱炒/台北市/松山區/品麟生猛活海鮮-平價快熱炒料理 團體聚餐推薦(人氣必吃)_review.csv，總評論數：290，儲存評論筆數：0、空白評論筆數：0
+2020-05-14 13:31 | INFO     | 0010 | 開始 find_tags:ozj7Vb3wnYq__action-button-clickable
+2020-05-14 13:31 | INFO     | 0437 | 已點擊返回店家資訊
+2020-05-14 13:31 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 13:31 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 13:32 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 13:32 | INFO     | 0197 | === 點擊第13個店家: 漁聚蚌熱炒.海鮮.燒烤 ===
+2020-05-14 13:32 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 13:32 | INFO     | 0226 | 區：松山區漁聚蚌熱炒.海鮮.燒烤
+2020-05-14 13:32 | INFO     | 0246 | 第13個店家: 漁聚蚌熱炒.海鮮.燒烤 的評論已經存過，已存的最新評論日期為2020/05/03
+2020-05-14 13:32 | INFO     | 0010 | 開始 find_tags:section-rating-term-list
+2020-05-14 13:32 | INFO     | 0280 | 已點擊"所有評論"，總共有:91 則評論
+2020-05-14 13:32 | INFO     | 0010 | 開始 find_tags:section-layout-flex-horizontal
+2020-05-14 13:32 | INFO     | 0286 | 點擊選擇排序的下拉式選單:True
+2020-05-14 13:32 | INFO     | 0010 | 開始 find_tags:action-menu-entry
+2020-05-14 13:32 | INFO     | 0298 | 開始找section-loading
+2020-05-14 13:32 | INFO     | 0309 | loading評論第1次
+2020-05-14 13:32 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:32 | INFO     | 0335 | 最新已儲存日期：2020/05/03, 目前此筆評論日期：2019/11/14, loading displayed:True
+2020-05-14 13:32 | INFO     | 0340 | 目前最後一個評論日期：2019/11/14已 < 最新儲存日期:2020/05/03，不需再往下滑了
+2020-05-14 13:32 | INFO     | 0010 | 開始 find_tags:section-review-review-content
+2020-05-14 13:32 | INFO     | 0363 | 開始顯示所有評論數量:10
+2020-05-14 13:32 | INFO     | 0010 | 開始 find_tags:section-review-stars
+2020-05-14 13:32 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:32 | INFO     | 0402 | 只更新一週內的評論，超過的不更新，這個評論日期：2020/05/07
+2020-05-14 13:32 | INFO     | 0420 | 開始儲存review：./csv/熱炒/台北市/松山區/漁聚蚌熱炒.海鮮.燒烤_review.csv，總評論數：91，儲存評論筆數：0、空白評論筆數：0
+2020-05-14 13:32 | INFO     | 0010 | 開始 find_tags:ozj7Vb3wnYq__action-button-clickable
+2020-05-14 13:32 | INFO     | 0437 | 已點擊返回店家資訊
+2020-05-14 13:32 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 13:32 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 13:32 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 13:33 | INFO     | 0197 | === 點擊第14個店家: 萬興熱炒 ===
+2020-05-14 13:33 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 13:33 | INFO     | 0226 | 區：文山區萬興熱炒
+2020-05-14 13:33 | INFO     | 0246 | 第14個店家: 萬興熱炒 的評論已經存過，已存的最新評論日期為2020/01/10
+2020-05-14 13:33 | INFO     | 0010 | 開始 find_tags:section-rating-term-list
+2020-05-14 13:33 | INFO     | 0280 | 已點擊"所有評論"，總共有:22 則評論
+2020-05-14 13:33 | INFO     | 0010 | 開始 find_tags:section-layout-flex-horizontal
+2020-05-14 13:33 | INFO     | 0286 | 點擊選擇排序的下拉式選單:True
+2020-05-14 13:33 | INFO     | 0010 | 開始 find_tags:action-menu-entry
+2020-05-14 13:33 | INFO     | 0298 | 開始找section-loading
+2020-05-14 13:33 | INFO     | 0309 | loading評論第1次
+2020-05-14 13:33 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:33 | INFO     | 0335 | 最新已儲存日期：2020/01/10, 目前此筆評論日期：2019/06/14, loading displayed:True
+2020-05-14 13:33 | INFO     | 0340 | 目前最後一個評論日期：2019/06/14已 < 最新儲存日期:2020/01/10，不需再往下滑了
+2020-05-14 13:33 | INFO     | 0010 | 開始 find_tags:section-review-review-content
+2020-05-14 13:33 | INFO     | 0363 | 開始顯示所有評論數量:10
+2020-05-14 13:33 | INFO     | 0010 | 開始 find_tags:section-review-stars
+2020-05-14 13:33 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:33 | INFO     | 0402 | 只更新一週內的評論，超過的不更新，這個評論日期：2020/02/14
+2020-05-14 13:33 | INFO     | 0420 | 開始儲存review：./csv/熱炒/台北市/文山區/萬興熱炒_review.csv，總評論數：22，儲存評論筆數：0、空白評論筆數：0
+2020-05-14 13:33 | INFO     | 0010 | 開始 find_tags:ozj7Vb3wnYq__action-button-clickable
+2020-05-14 13:33 | INFO     | 0437 | 已點擊返回店家資訊
+2020-05-14 13:33 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 13:33 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 13:33 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 13:33 | INFO     | 0197 | === 點擊第15個店家: 品鱻100元熱炒 ===
+2020-05-14 13:33 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 13:33 | INFO     | 0226 | 區：大安區品鱻100元熱炒
+2020-05-14 13:33 | INFO     | 0246 | 第15個店家: 品鱻100元熱炒 的評論已經存過，已存的最新評論日期為2020/05/11
+2020-05-14 13:33 | INFO     | 0010 | 開始 find_tags:section-rating-term-list
+2020-05-14 13:34 | INFO     | 0280 | 已點擊"所有評論"，總共有:3,010 則評論
+2020-05-14 13:34 | INFO     | 0010 | 開始 find_tags:section-layout-flex-horizontal
+2020-05-14 13:34 | INFO     | 0286 | 點擊選擇排序的下拉式選單:True
+2020-05-14 13:34 | INFO     | 0010 | 開始 find_tags:action-menu-entry
+2020-05-14 13:34 | INFO     | 0298 | 開始找section-loading
+2020-05-14 13:34 | INFO     | 0309 | loading評論第1次
+2020-05-14 13:34 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:34 | INFO     | 0335 | 最新已儲存日期：2020/05/11, 目前此筆評論日期：2020/04/30, loading displayed:True
+2020-05-14 13:34 | INFO     | 0340 | 目前最後一個評論日期：2020/04/30已 < 最新儲存日期:2020/05/11，不需再往下滑了
+2020-05-14 13:34 | INFO     | 0010 | 開始 find_tags:section-review-review-content
+2020-05-14 13:34 | INFO     | 0363 | 開始顯示所有評論數量:10
+2020-05-14 13:34 | INFO     | 0010 | 開始 find_tags:section-review-stars
+2020-05-14 13:34 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:34 | INFO     | 0392 | 這個評論日期 == 最新儲存日期，且評論內容 == 最新儲存評論內容，擷取評論結束
+2020-05-14 13:34 | INFO     | 0420 | 開始儲存review：./csv/熱炒/台北市/大安區/品鱻100元熱炒_review.csv，總評論數：3010，儲存評論筆數：0、空白評論筆數：2
+2020-05-14 13:34 | INFO     | 0010 | 開始 find_tags:ozj7Vb3wnYq__action-button-clickable
+2020-05-14 13:34 | INFO     | 0437 | 已點擊返回店家資訊
+2020-05-14 13:34 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 13:34 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 13:34 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 13:34 | INFO     | 0197 | === 點擊第16個店家: 大道創意料理快炒 ===
+2020-05-14 13:34 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 13:34 | INFO     | 0226 | 區：中山區大道創意料理快炒
+2020-05-14 13:34 | INFO     | 0246 | 第16個店家: 大道創意料理快炒 的評論已經存過，已存的最新評論日期為2020/05/12
+2020-05-14 13:34 | INFO     | 0010 | 開始 find_tags:section-rating-term-list
+2020-05-14 13:34 | INFO     | 0280 | 已點擊"所有評論"，總共有:376 則評論
+2020-05-14 13:34 | INFO     | 0010 | 開始 find_tags:section-layout-flex-horizontal
+2020-05-14 13:35 | INFO     | 0286 | 點擊選擇排序的下拉式選單:True
+2020-05-14 13:35 | INFO     | 0010 | 開始 find_tags:action-menu-entry
+2020-05-14 13:35 | INFO     | 0298 | 開始找section-loading
+2020-05-14 13:35 | INFO     | 0309 | loading評論第1次
+2020-05-14 13:35 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:35 | INFO     | 0335 | 最新已儲存日期：2020/05/12, 目前此筆評論日期：2020/03/14, loading displayed:True
+2020-05-14 13:35 | INFO     | 0340 | 目前最後一個評論日期：2020/03/14已 < 最新儲存日期:2020/05/12，不需再往下滑了
+2020-05-14 13:35 | INFO     | 0010 | 開始 find_tags:section-review-review-content
+2020-05-14 13:35 | INFO     | 0363 | 開始顯示所有評論數量:10
+2020-05-14 13:35 | INFO     | 0010 | 開始 find_tags:section-review-stars
+2020-05-14 13:35 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:35 | INFO     | 0392 | 這個評論日期 == 最新儲存日期，且評論內容 == 最新儲存評論內容，擷取評論結束
+2020-05-14 13:35 | INFO     | 0420 | 開始儲存review：./csv/熱炒/台北市/中山區/大道創意料理快炒_review.csv，總評論數：376，儲存評論筆數：0、空白評論筆數：0
+2020-05-14 13:35 | INFO     | 0010 | 開始 find_tags:ozj7Vb3wnYq__action-button-clickable
+2020-05-14 13:35 | INFO     | 0437 | 已點擊返回店家資訊
+2020-05-14 13:35 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 13:35 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 13:35 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 13:35 | INFO     | 0197 | === 點擊第17個店家: 鑫鱻熱炒店 ===
+2020-05-14 13:35 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 13:35 | INFO     | 0226 | 區：內湖區鑫鱻熱炒店
+2020-05-14 13:35 | INFO     | 0246 | 第17個店家: 鑫鱻熱炒店 的評論已經存過，已存的最新評論日期為2020/05/03
+2020-05-14 13:35 | INFO     | 0010 | 開始 find_tags:section-rating-term-list
+2020-05-14 13:35 | INFO     | 0280 | 已點擊"所有評論"，總共有:1,037 則評論
+2020-05-14 13:35 | INFO     | 0010 | 開始 find_tags:section-layout-flex-horizontal
+2020-05-14 13:35 | INFO     | 0286 | 點擊選擇排序的下拉式選單:True
+2020-05-14 13:35 | INFO     | 0010 | 開始 find_tags:action-menu-entry
+2020-05-14 13:35 | INFO     | 0298 | 開始找section-loading
+2020-05-14 13:36 | INFO     | 0309 | loading評論第1次
+2020-05-14 13:36 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:36 | INFO     | 0335 | 最新已儲存日期：2020/05/03, 目前此筆評論日期：2020/04/14, loading displayed:True
+2020-05-14 13:36 | INFO     | 0340 | 目前最後一個評論日期：2020/04/14已 < 最新儲存日期:2020/05/03，不需再往下滑了
+2020-05-14 13:36 | INFO     | 0010 | 開始 find_tags:section-review-review-content
+2020-05-14 13:36 | INFO     | 0363 | 開始顯示所有評論數量:10
+2020-05-14 13:36 | INFO     | 0010 | 開始 find_tags:section-review-stars
+2020-05-14 13:36 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:36 | INFO     | 0402 | 只更新一週內的評論，超過的不更新，這個評論日期：2020/05/07
+2020-05-14 13:36 | INFO     | 0420 | 開始儲存review：./csv/熱炒/台北市/內湖區/鑫鱻熱炒店_review.csv，總評論數：1037，儲存評論筆數：0、空白評論筆數：0
+2020-05-14 13:36 | INFO     | 0010 | 開始 find_tags:ozj7Vb3wnYq__action-button-clickable
+2020-05-14 13:36 | INFO     | 0437 | 已點擊返回店家資訊
+2020-05-14 13:36 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 13:36 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 13:36 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 13:36 | INFO     | 0197 | === 點擊第18個店家: 豪香熱炒 ===
+2020-05-14 13:36 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 13:36 | INFO     | 0226 | 區：松山區豪香熱炒
+2020-05-14 13:36 | INFO     | 0246 | 第18個店家: 豪香熱炒 的評論已經存過，已存的最新評論日期為2020/04/09
+2020-05-14 13:36 | INFO     | 0010 | 開始 find_tags:section-rating-term-list
+2020-05-14 13:36 | INFO     | 0280 | 已點擊"所有評論"，總共有:205 則評論
+2020-05-14 13:36 | INFO     | 0010 | 開始 find_tags:section-layout-flex-horizontal
+2020-05-14 13:36 | INFO     | 0286 | 點擊選擇排序的下拉式選單:True
+2020-05-14 13:36 | INFO     | 0010 | 開始 find_tags:action-menu-entry
+2020-05-14 13:36 | INFO     | 0298 | 開始找section-loading
+2020-05-14 13:36 | INFO     | 0309 | loading評論第1次
+2020-05-14 13:36 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:37 | INFO     | 0335 | 最新已儲存日期：2020/04/09, 目前此筆評論日期：2020/03/14, loading displayed:True
+2020-05-14 13:37 | INFO     | 0340 | 目前最後一個評論日期：2020/03/14已 < 最新儲存日期:2020/04/09，不需再往下滑了
+2020-05-14 13:37 | INFO     | 0010 | 開始 find_tags:section-review-review-content
+2020-05-14 13:37 | INFO     | 0363 | 開始顯示所有評論數量:10
+2020-05-14 13:37 | INFO     | 0010 | 開始 find_tags:section-review-stars
+2020-05-14 13:37 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:37 | INFO     | 0402 | 只更新一週內的評論，超過的不更新，這個評論日期：2020/04/14
+2020-05-14 13:37 | INFO     | 0420 | 開始儲存review：./csv/熱炒/台北市/松山區/豪香熱炒_review.csv，總評論數：205，儲存評論筆數：0、空白評論筆數：0
+2020-05-14 13:37 | INFO     | 0010 | 開始 find_tags:ozj7Vb3wnYq__action-button-clickable
+2020-05-14 13:37 | INFO     | 0437 | 已點擊返回店家資訊
+2020-05-14 13:37 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 13:37 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 13:37 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 13:37 | INFO     | 0197 | === 點擊第19個店家: 新榮平價熱炒 ===
+2020-05-14 13:37 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 13:37 | INFO     | 0226 | 區：文山區新榮平價熱炒
+2020-05-14 13:37 | INFO     | 0246 | 第19個店家: 新榮平價熱炒 的評論已經存過，已存的最新評論日期為2020/04/12
+2020-05-14 13:37 | INFO     | 0010 | 開始 find_tags:section-rating-term-list
+2020-05-14 13:37 | INFO     | 0280 | 已點擊"所有評論"，總共有:76 則評論
+2020-05-14 13:37 | INFO     | 0010 | 開始 find_tags:section-layout-flex-horizontal
+2020-05-14 13:37 | INFO     | 0286 | 點擊選擇排序的下拉式選單:True
+2020-05-14 13:37 | INFO     | 0010 | 開始 find_tags:action-menu-entry
+2020-05-14 13:37 | INFO     | 0298 | 開始找section-loading
+2020-05-14 13:37 | INFO     | 0309 | loading評論第1次
+2020-05-14 13:37 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:37 | INFO     | 0335 | 最新已儲存日期：2020/04/12, 目前此筆評論日期：2019/11/14, loading displayed:True
+2020-05-14 13:37 | INFO     | 0340 | 目前最後一個評論日期：2019/11/14已 < 最新儲存日期:2020/04/12，不需再往下滑了
+2020-05-14 13:37 | INFO     | 0010 | 開始 find_tags:section-review-review-content
+2020-05-14 13:38 | INFO     | 0363 | 開始顯示所有評論數量:10
+2020-05-14 13:38 | INFO     | 0010 | 開始 find_tags:section-review-stars
+2020-05-14 13:38 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:38 | INFO     | 0402 | 只更新一週內的評論，超過的不更新，這個評論日期：2020/04/14
+2020-05-14 13:38 | INFO     | 0420 | 開始儲存review：./csv/熱炒/台北市/文山區/新榮平價熱炒_review.csv，總評論數：76，儲存評論筆數：0、空白評論筆數：0
+2020-05-14 13:38 | INFO     | 0010 | 開始 find_tags:ozj7Vb3wnYq__action-button-clickable
+2020-05-14 13:38 | INFO     | 0437 | 已點擊返回店家資訊
+2020-05-14 13:38 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 13:38 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 13:38 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 13:38 | INFO     | 0197 | === 點擊第20個店家: 炒天下熱炒 ===
+2020-05-14 13:38 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 13:38 | INFO     | 0226 | 區：大安區炒天下熱炒
+2020-05-14 13:38 | INFO     | 0246 | 第20個店家: 炒天下熱炒 的評論已經存過，已存的最新評論日期為2020/05/10
+2020-05-14 13:38 | INFO     | 0010 | 開始 find_tags:section-rating-term-list
+2020-05-14 13:38 | INFO     | 0280 | 已點擊"所有評論"，總共有:241 則評論
+2020-05-14 13:38 | INFO     | 0010 | 開始 find_tags:section-layout-flex-horizontal
+2020-05-14 13:38 | INFO     | 0286 | 點擊選擇排序的下拉式選單:True
+2020-05-14 13:38 | INFO     | 0010 | 開始 find_tags:action-menu-entry
+2020-05-14 13:38 | INFO     | 0298 | 開始找section-loading
+2020-05-14 13:38 | INFO     | 0309 | loading評論第1次
+2020-05-14 13:38 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:38 | INFO     | 0335 | 最新已儲存日期：2020/05/10, 目前此筆評論日期：2020/03/14, loading displayed:True
+2020-05-14 13:38 | INFO     | 0340 | 目前最後一個評論日期：2020/03/14已 < 最新儲存日期:2020/05/10，不需再往下滑了
+2020-05-14 13:38 | INFO     | 0010 | 開始 find_tags:section-review-review-content
+2020-05-14 13:38 | INFO     | 0363 | 開始顯示所有評論數量:10
+2020-05-14 13:38 | INFO     | 0010 | 開始 find_tags:section-review-stars
+2020-05-14 13:39 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:39 | INFO     | 0392 | 這個評論日期 == 最新儲存日期，且評論內容 == 最新儲存評論內容，擷取評論結束
+2020-05-14 13:39 | INFO     | 0420 | 開始儲存review：./csv/熱炒/台北市/大安區/炒天下熱炒_review.csv，總評論數：241，儲存評論筆數：0、空白評論筆數：0
+2020-05-14 13:39 | INFO     | 0010 | 開始 find_tags:ozj7Vb3wnYq__action-button-clickable
+2020-05-14 13:39 | INFO     | 0437 | 已點擊返回店家資訊
+2020-05-14 13:39 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 13:39 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 13:39 | INFO     | 0448 | 目前這頁爬完了，換下一頁，目前在第1頁，已點過的店家數:20開始儲存店家list
+2020-05-14 13:39 | INFO     | 0469 | 已點擊下一頁
+2020-05-14 13:39 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 13:39 | INFO     | 0163 | 進入第2頁, 店家數:20
+2020-05-14 13:39 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 13:39 | INFO     | 0197 | === 點擊第1個店家: 炒天下熱炒 ===
+2020-05-14 13:39 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 13:39 | INFO     | 0226 | 區：大安區炒天下熱炒
+2020-05-14 13:39 | INFO     | 0246 | 第1個店家: 炒天下熱炒 的評論已經存過，已存的最新評論日期為2020/05/10
+2020-05-14 13:39 | INFO     | 0010 | 開始 find_tags:section-rating-term-list
+2020-05-14 13:39 | INFO     | 0280 | 已點擊"所有評論"，總共有:241 則評論
+2020-05-14 13:39 | INFO     | 0010 | 開始 find_tags:section-layout-flex-horizontal
+2020-05-14 13:39 | INFO     | 0286 | 點擊選擇排序的下拉式選單:True
+2020-05-14 13:39 | INFO     | 0010 | 開始 find_tags:action-menu-entry
+2020-05-14 13:39 | INFO     | 0298 | 開始找section-loading
+2020-05-14 13:39 | INFO     | 0309 | loading評論第1次
+2020-05-14 13:39 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:39 | INFO     | 0335 | 最新已儲存日期：2020/05/10, 目前此筆評論日期：2020/03/14, loading displayed:True
+2020-05-14 13:39 | INFO     | 0340 | 目前最後一個評論日期：2020/03/14已 < 最新儲存日期:2020/05/10，不需再往下滑了
+2020-05-14 13:39 | INFO     | 0010 | 開始 find_tags:section-review-review-content
+2020-05-14 13:39 | INFO     | 0363 | 開始顯示所有評論數量:10
+2020-05-14 13:39 | INFO     | 0010 | 開始 find_tags:section-review-stars
+2020-05-14 13:40 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:40 | INFO     | 0392 | 這個評論日期 == 最新儲存日期，且評論內容 == 最新儲存評論內容，擷取評論結束
+2020-05-14 13:40 | INFO     | 0420 | 開始儲存review：./csv/熱炒/台北市/大安區/炒天下熱炒_review.csv，總評論數：241，儲存評論筆數：0、空白評論筆數：0
+2020-05-14 13:40 | INFO     | 0010 | 開始 find_tags:ozj7Vb3wnYq__action-button-clickable
+2020-05-14 13:40 | INFO     | 0437 | 已點擊返回店家資訊
+2020-05-14 13:40 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 13:40 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 13:40 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 13:40 | INFO     | 0197 | === 點擊第2個店家: 嚐鮮樓精緻熱炒 ===
+2020-05-14 13:40 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 13:40 | INFO     | 0226 | 區：信義區嚐鮮樓精緻熱炒
+2020-05-14 13:40 | INFO     | 0246 | 第2個店家: 嚐鮮樓精緻熱炒 的評論已經存過，已存的最新評論日期為2020/04/09
+2020-05-14 13:40 | INFO     | 0010 | 開始 find_tags:section-rating-term-list
+2020-05-14 13:40 | INFO     | 0280 | 已點擊"所有評論"，總共有:204 則評論
+2020-05-14 13:40 | INFO     | 0010 | 開始 find_tags:section-layout-flex-horizontal
+2020-05-14 13:40 | INFO     | 0286 | 點擊選擇排序的下拉式選單:True
+2020-05-14 13:40 | INFO     | 0010 | 開始 find_tags:action-menu-entry
+2020-05-14 13:40 | INFO     | 0298 | 開始找section-loading
+2020-05-14 13:40 | INFO     | 0309 | loading評論第1次
+2020-05-14 13:40 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:40 | INFO     | 0335 | 最新已儲存日期：2020/04/09, 目前此筆評論日期：2020/03/14, loading displayed:True
+2020-05-14 13:40 | INFO     | 0340 | 目前最後一個評論日期：2020/03/14已 < 最新儲存日期:2020/04/09，不需再往下滑了
+2020-05-14 13:40 | INFO     | 0010 | 開始 find_tags:section-review-review-content
+2020-05-14 13:40 | INFO     | 0363 | 開始顯示所有評論數量:10
+2020-05-14 13:40 | INFO     | 0010 | 開始 find_tags:section-review-stars
+2020-05-14 13:40 | INFO     | 0010 | 開始 find_tags:section-review-publish-date
+2020-05-14 13:40 | INFO     | 0402 | 只更新一週內的評論，超過的不更新，這個評論日期：2020/05/07
+2020-05-14 13:40 | INFO     | 0420 | 開始儲存review：./csv/熱炒/台北市/信義區/嚐鮮樓精緻熱炒_review.csv，總評論數：204，儲存評論筆數：0、空白評論筆數：1
+2020-05-14 13:40 | INFO     | 0010 | 開始 find_tags:ozj7Vb3wnYq__action-button-clickable
+2020-05-14 13:41 | INFO     | 0437 | 已點擊返回店家資訊
+2020-05-14 13:41 | INFO     | 0010 | 開始 find_tags:section-back-to-list-button
+2020-05-14 13:41 | INFO     | 0444 | 已點擊返回搜尋列表
+2020-05-14 13:41 | INFO     | 0010 | 開始 find_tags:section-result
+2020-05-14 13:41 | INFO     | 0197 | === 點擊第3個店家: 金霸王熱炒・快炒100 健康店 ===
+2020-05-14 13:41 | INFO     | 0010 | 開始 find_tags:section-info-action-button
+2020-05-14 13:41 | INFO     | 0226 | 區：松山區金霸王熱炒・快炒100 健康店
+2020-05-14 13:41 | INFO     | 0246 | 第3個店家: 金霸王熱炒・快炒100 健康店 的評論已經存過，已存的最新評論日期為2020/05/10
+2020-05-14 13:41 | INFO     | 0010 | 開始 find_tags:section-rating-term-list
+2020-05-14 13:41 | INFO     | 0280 | 已點擊"所有評論"，總共有:350 則評論
+2020-05-14 13:41 | INFO     | 0010 | 開始 find_tags:section-layout-flex-horizontal
+2020-05-14 13:41 | INFO     | 0286 | 點擊選擇排序的下拉式選單:True
+2020-05-14 13:41 | INFO     | 0010 | 開始 find_tags:action-menu-entry
+2020-05-14 13:41 | INFO     | 0298 | 開始找section-loading
