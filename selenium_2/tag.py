@@ -26,7 +26,7 @@ for i in range(store_count):
 		print('這家店:', name, ',完全沒有評論，換下一家店')
 		continue
 	for index, row in df.iterrows():# id,name,date,star,text
-		print(row['id'], row['text'])
+		print('\n', str(row['id']) + '/' + str(len(df.index)), row['text'])
 		lst_tag.append(input('請標記情緒(a正面，b中性，c負):'))
 		lst_dish.append(input('請標記菜名(菜,情緒，每道菜依?隔開):'))
 
