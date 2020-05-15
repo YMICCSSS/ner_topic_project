@@ -1,11 +1,14 @@
 import pandas as pd
 import glob
 import os
+import numpy as np
 
 def tag(df):
+	curr_count = ''
 	if choose == 't':
 		for index, row in df.iterrows():# id,name,date,star,text
-			print('\n', str(row['id']) + '/' + str(len(df.index)), row['text'])
+			curr_count = str(row['id']) + '/' + str(len(df.index))
+			print('\n', curr_count, row['text'])
 			lst_tag.append(input('請標記情緒(a正面，b中性，c負):'))
 			lst_dish.append(input('請標記菜名(菜,情緒，每道菜依?隔開):'))
 		series_dish = pd.Series(lst_dish)
@@ -14,18 +17,21 @@ def tag(df):
 		df['dish'] = series_dish
 	elif choose == 'c':
 		for index, row in df.iterrows():# id,name,date,star,text,dish,tag
-			print('\n', str(row['id']) + '/' + str(len(df.index)), row['text'], row['tag'], row['dish'])
+			curr_count = str(row['id']) + '/' + str(len(df.index))
+			show_tag = '【' + str(row['tag']) + '】'
+			show_dish = '【' + str(row['dish']) + '】'
+			print('\n', curr_count , row['text'], show_tag, show_dish)
 			newtag = input('更新情緒(不更新按enter跳過):')
 			if newtag != '':
 				if newtag == 'n':
-					df.at[index, 'tag'] = None
+					df.at[index, 'tag'] = np.nan
 				else:
 					df.at[index, 'tag'] = newtag
 
 			newdish = input('更新菜名(不更新按enter跳過,空值輸入n):')
 			if newdish != '':
 				if newdish == 'n':
-					df.at[index, 'dish'] = None
+					df.at[index, 'dish'] = np.nan
 				else:
 					df.at[index, 'dish'] = newdish
 
