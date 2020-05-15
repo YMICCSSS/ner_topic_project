@@ -74,7 +74,7 @@ for i in range(store_count):
 	ans = input('繼續標註? q離開 n換下一家店：')
 
 	if ans  == 'q':
-		break
+		os._exit(0)
 	elif ans == 'n':
 		continue
 	if len(df.index) == 0:
