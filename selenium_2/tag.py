@@ -61,7 +61,7 @@ if choose == 't':
 elif choose == 'c':
 	files = glob.glob(path+'*_tag.csv')
 else:
-	os.exit()
+	os._exit(0)
 
 store_count = len(files)
 for i in range(store_count):
