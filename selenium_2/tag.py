@@ -27,9 +27,9 @@ def tag(df):
 				save_csv(df)
 		# print(df.dtypes)
 	elif choose == 'c':
+		df['tag'] = df['tag'].astype(str)  # 預設空的Series Type會是float64，要手動指定為str
+		df['dish'] = df['dish'].astype(str)
 		for index, row in df.iterrows():# id,name,date,star,text,dish,tag
-			df['tag'] = df['tag'].astype(str)  # 預設空的Series Type會是float64，要手動指定為str
-			df['dish'] = df['dish'].astype(str)
 			curr_count = str(row['id']) + '/' + str(len(df.index))
 			show_tag = '【' + str(row['tag']) + '】'
 			show_dish = '【' + str(row['dish']) + '】'
