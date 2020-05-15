@@ -27,29 +27,35 @@ def tag(df):
 				save_csv(df)
 		# print(df.dtypes)
 	elif choose == 'c':
+		jump = input('要跳到第幾筆(不跳按Enter):')
 		df['tag'] = df['tag'].astype(str)  # 預設空的Series Type會是float64，要手動指定為str
 		df['dish'] = df['dish'].astype(str)
+		if jump == '':
+			jump = 0
+		else:
+			jump = int(jump) - 1
 		for index, row in df.iterrows():# id,name,date,star,text,dish,tag
-			curr_count = str(row['id']) + '/' + str(len(df.index))
-			show_tag = '【' + str(row['tag']) + '】'
-			show_dish = '【' + str(row['dish']) + '】'
-			print('\n', curr_count , row['text'], show_tag, show_dish)
-			newtag = input('更新情緒(不更新按enter跳過):')
-			if newtag != '':
-				if newtag == 'n':
-					df.at[index, 'tag'] = np.nan
-				else:
-					df.at[index, 'tag'] = newtag
+			if index >= jump:
+				curr_count = str(row['id']) + '/' + str(len(df.index))
+				show_tag = '【' + str(row['tag']) + '】'
+				show_dish = '【' + str(row['dish']) + '】'
+				print('\n', curr_count , row['text'], show_tag, show_dish)
+				newtag = input('更新情緒(不更新按enter跳過):')
+				if newtag != '':
+					if newtag == 'n':
+						df.at[index, 'tag'] = np.nan
+					else:
+						df.at[index, 'tag'] = newtag
 
-			newdish = input('更新菜名(不更新按enter跳過,空值輸入n):')
-			if newdish != '':
-				if newdish == 'n':
-					df.at[index, 'dish'] = np.nan
-				else:
-					df.at[index, 'dish'] = newdish
-			if (row['id'] % save_num == 0):
-				print('每', save_num, '筆先存檔')
-				save_csv(df)
+				newdish = input('更新菜名(不更新按enter跳過,空值輸入n):')
+				if newdish != '':
+					if newdish == 'n':
+						df.at[index, 'dish'] = np.nan
+					else:
+						df.at[index, 'dish'] = newdish
+				if (row['id'] % save_num == 0):
+					print('每', save_num, '筆先存檔')
+					save_csv(df)
 
 district = input('請輸入你的行政區:')
 choose = input('請選擇要 t標記 or c檢查:')
