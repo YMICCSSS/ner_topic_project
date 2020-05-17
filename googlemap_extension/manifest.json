@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "menu extension",
+  "version": "1",
+  "description": "菜單推薦",
+  "browser_action": {
+    "default_icon": "img/dinner_2.png",
+    "default_title": "菜單推薦"
+  },
+  "background": {
+    "scripts": [
+      "background.js" 
+    ]
+  },
+  "permissions": [ "activeTab", "storage" ],
+  "options_page": "options.html",
+  "content_scripts" : [
+    {
+      "matches" : [ "https://www.google.com.tw/maps/*" ],
+      "run_at": "document_end",
+      "css": [ "css/all.css" ],
+      "js" : [ "1.9.1/jquery.min.js","jquery-ui-1.12.1/jquery-ui.js", "js/map.js" ]
+    }  
+  ]
+}
