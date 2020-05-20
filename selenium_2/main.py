@@ -20,10 +20,10 @@ def geturl():
     try:
         lst_location = []
         # ================== 搜尋中心點的經度、緯度 ================== 
-        latitude = 25.15      # 最南邊
-        latitude_max = 25.16  # 最北邊
-        longitude = 121.6     # 最西邊121.46
-        longitude_min = 121.6 # 最東邊121.46
+        latitude = 25          # 最南邊
+        latitude_max = 25.16   # 最北邊
+        longitude = 121.46     # 最西邊121.46
+        longitude_min = 121.46 # 最東邊121.46
         longitude_max = 121.62
         # ========================================================== 
         latitude_step = 0.03  # 緯度間隔
