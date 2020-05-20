@@ -11,22 +11,27 @@ driver = Chrome('./chromedriver')
 # 緯度0.03跳五次、經度0.05跳三次
 # 西南(25,    121.46)-->(25,   121.61)東南
 # 西北(25.16,,121.46)-->(25.16,121.61)東北
+# ================= 搜尋條件 =================
+city = '台北市'
+keyword = '古早味麵線'    # 關鍵字
+totalpage = 10      # 總共要下載到幾頁的資料
+# ============================================
 def geturl():
     lst_location = []
     # ================== 搜尋中心點的經度、緯度 ================== 
-    latitude = 25
-    latitude_max = 25.16
-    longitude = 121.46     # 121.46
-    longitude_min = 121.46 # 121.46
+    latitude = 25.15      # 最南邊
+    latitude_max = 25.16  # 最北邊
+    longitude = 121.6     # 最西邊121.46
+    longitude_min = 121.6 # 最東邊121.46
     longitude_max = 121.62
     # ========================================================== 
-    latitude_step = 0.03
-    longitude_step = 0.05
+    latitude_step = 0.03  # 緯度間隔
+    longitude_step = 0.05 # 經度間隔
     url_base = 'https://www.google.com.tw/maps/'
     lst_location = []
     while latitude < latitude_max: # 0, 0.03, 0.06, 0.09, 0.12, 0.15
         while longitude < longitude_max: # 45, 51, 56, 61
-            location = '@' + str(round(latitude,2)) + ',' + str(round(longitude,2)) + ',15z'
+            location = '@' + str(round(latitude,2)) + ',' + str(round(longitude,2)) + ',15z' # 經度,緯度,zoom縮放
             msg = '========= 產生url座標:', location, '==========='
             logger.info(msg)
             # print('========= 產生url座標:', location, '===========')
@@ -36,13 +41,9 @@ def geturl():
             yield url_new
         latitude += latitude_step
         longitude = longitude_min
+    logger.error('座標已全數跑完')
+    return ''
 
-# ================= 搜尋條件 =================
-# district = '中山區' # 這個區的餐廳才拿資料
-city = '台北市'
-keyword = '熱炒'    # 關鍵字
-totalpage = 10      # 總共要下載到幾頁的資料
-# ============================================
 # =========== global 所需變數 =================
 logger = create_logger(keyword+'/'+city)  # 在 logs 目錄下建立 tutorial 目錄
 logger.info('Start')
@@ -126,7 +127,7 @@ def start():
     # url = 'https://www.google.com.tw/maps/@25.03,121.5,15z'
     url = next(url_gen)
     driver.get(url)
-    time.sleep(2)  # 等待2秒
+    time.sleep(2) # 等待2秒
 
     input = find_tags(driver, dic_tag['input'], logger=logger)[0] # 找到搜尋欄的tag
     input.send_keys(keyword) # 寫入要搜尋的字
@@ -234,7 +235,7 @@ while True:
                                 back_list[0].click()
                                 msg = '已點擊返回搜尋列表'
                                 logger.info(msg)
-                                time.sleep((2))
+                                time.sleep(2)
                                 continue
                             else:
                                 saved_latest_date = df_cur.iloc[-1]['date']  # 最後一列的column'date'的值
@@ -320,7 +321,7 @@ while True:
                                             else:
                                                 msg = '無法載入新的評論，Chrome 掛掉了，放棄載入新的評論 ' + name
                                                 # print(msg)
-                                                logger.info(msg)
+                                                logger.error(msg)
                                                 bError = True # 正常來說，每下滑一次就會取得新的評論，
                                                 bfinal = True # 所以每下滑30次檢查一次，目前載入的評論數目會 > 已記錄的評論數才對
                                                 break         # 若沒大於，代表它一直往下滑，但卻沒有載入新的評論數-->瀏覽器掛掉了
@@ -342,13 +343,13 @@ while True:
                                             break
                                         if not loading[-1].is_displayed(): # 若元素沒有出現在畫面上，但仍要對它做動作，會出現錯誤"element not interactable”
                                             msg = 'loading[-1]還沒出現，等2秒'
-                                            logger.info(msg)
+                                            logger.error(msg)
                                             # print(msg)
                                             time.sleep(2)
                                             if not loading[-1].is_displayed():
                                                 msg = 'loading[-1]沒有顯示，放棄載入新的評論 ' + name
                                                 # print(msg)
-                                                logger.info(msg)
+                                                logger.error(msg)
                                                 break
                                         loading[-1].click()
 
@@ -439,7 +440,7 @@ while True:
                         msg = '已點擊返回搜尋列表'
                         # print(msg)
                         logger.info(msg)
-                        time.sleep((2))
+                        time.sleep(2)
             msg = '目前這頁爬完了，換下一頁，目前在第' + str(page) + '頁，已點過的店家數:' + str(count_store) + '開始儲存店家list'
             # print(msg)
             logger.info(msg)
