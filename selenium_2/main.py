@@ -21,18 +21,18 @@ def geturl():
         lst_location = []
         # ================== 搜尋中心點的經度、緯度 ================== 
         latitude = 25          # 最南邊
-        latitude_max = 25.16   # 最北邊
+        latitude_max = 25.15   # 最北邊
         longitude = 121.46     # 最西邊121.46
         longitude_min = 121.46 # 最東邊121.46
-        longitude_max = 121.62
+        longitude_max = 121.61
         # ========================================================== 
         latitude_step = 0.03  # 緯度間隔
         longitude_step = 0.05 # 經度間隔
         url_base = 'https://www.google.com.tw/maps/'
         restart_limit = ((latitude_max - latitude)//latitude_step) * ((longitude_max - longitude_min)//longitude_step) + 10
         lst_location = []
-        while latitude < latitude_max: # 0, 0.03, 0.06, 0.09, 0.12, 0.15
-            while longitude < longitude_max: # 45, 51, 56, 61
+        while latitude <= latitude_max: # 0, 0.03, 0.06, 0.09, 0.12, 0.15
+            while longitude <= longitude_max: # 45, 51, 56, 61
                 location = '@' + str(round(latitude,2)) + ',' + str(round(longitude,2)) + ',15z' # 經度,緯度,zoom縮放
                 msg = '========= 產生url座標:', location, '==========='
                 logger.info(msg)
