@@ -17,84 +17,65 @@ keyword = '古早味麵線'    # 關鍵字
 totalpage = 10      # 總共要下載到幾頁的資料
 # ============================================
 def geturl():
-    lst_location = []
-    # ================== 搜尋中心點的經度、緯度 ================== 
-    latitude = 25.15      # 最南邊
-    latitude_max = 25.16  # 最北邊
-    longitude = 121.6     # 最西邊121.46
-    longitude_min = 121.6 # 最東邊121.46
-    longitude_max = 121.62
-    # ========================================================== 
-    latitude_step = 0.03  # 緯度間隔
-    longitude_step = 0.05 # 經度間隔
-    url_base = 'https://www.google.com.tw/maps/'
-    lst_location = []
-    while latitude < latitude_max: # 0, 0.03, 0.06, 0.09, 0.12, 0.15
-        while longitude < longitude_max: # 45, 51, 56, 61
-            location = '@' + str(round(latitude,2)) + ',' + str(round(longitude,2)) + ',15z' # 經度,緯度,zoom縮放
-            msg = '========= 產生url座標:', location, '==========='
-            logger.info(msg)
-            # print('========= 產生url座標:', location, '===========')
-            lst_location.append(location)
-            url_new = url_base + location
-            longitude += longitude_step
-            yield url_new
-        latitude += latitude_step
-        longitude = longitude_min
-    logger.error('座標已全數跑完')
-    return ''
+    try:
+        lst_location = []
+        # ================== 搜尋中心點的經度、緯度 ================== 
+        latitude = 25.15      # 最南邊
+        latitude_max = 25.16  # 最北邊
+        longitude = 121.6     # 最西邊121.46
+        longitude_min = 121.6 # 最東邊121.46
+        longitude_max = 121.62
+        # ========================================================== 
+        latitude_step = 0.03  # 緯度間隔
+        longitude_step = 0.05 # 經度間隔
+        url_base = 'https://www.google.com.tw/maps/'
+        restart_limit = ((latitude_max - latitude)//latitude_step) * ((longitude_max - longitude_min)//longitude_step) + 10
+        lst_location = []
+        while latitude < latitude_max: # 0, 0.03, 0.06, 0.09, 0.12, 0.15
+            while longitude < longitude_max: # 45, 51, 56, 61
+                location = '@' + str(round(latitude,2)) + ',' + str(round(longitude,2)) + ',15z' # 經度,緯度,zoom縮放
+                msg = '========= 產生url座標:', location, '==========='
+                logger.info(msg)
+                # print('========= 產生url座標:', location, '===========')
+                lst_location.append(location)
+                url_new = url_base + location
+                longitude += longitude_step
+                yield url_new
+            latitude += latitude_step
+            longitude = longitude_min
+        logger.error('座標已全數跑完')
+        bComplete = True
+        return ''
+    except Exception as e:
+        logger.error(e)
 
 # =========== global 所需變數 =================
 logger = create_logger(keyword+'/'+city)  # 在 logs 目錄下建立 tutorial 目錄
 logger.info('Start')
 start_time = time.time()
-lst_store = []
-dic_store = {}
-lst_store_csv = []
 
-lst_review = []
-dic_review = {}
+lst_store = lst_store_csv = lst_review = []
+dic_store = dic_review = {}
+bfinal = bError = bComplete = False
+page = notcity_count = restart = restart_limit = 0
+district = folder = stores_path = url_location = ''
 
-bfinal = False
-bError = False
-page = 0
-notcity_count = 0
-restart = 0
-district = ''
-folder = ''
-stores_path = ''
 folder_key_city = './csv/'+ keyword + '/' + city + '/'
 if not os.path.exists(folder_key_city) :
     os.makedirs(folder_key_city)
 # ===========================================
 def reset_paras():
-    global page
-    global notcity_count
-    global bfinal
-    global bError
-    global district
-    global folder
-    global stores_path
+    global page, notcity_count
+    global bfinal, bError
+    global district, folder, stores_path
+    global lst_store, dic_store, lst_store_csv, lst_review, dic_review
 
-    global lst_store
-    global dic_store
-    global lst_store_csv
-    global lst_review
-    global dic_review
-
-    page = 0
-    notcity_count = 0
-    bfinal = False
-    bError = False
-    district = ''
-    folder = ''
-    stores_path = ''
-    lst_store = []
-    dic_store = {}
-    lst_store_csv = []
-
-    lst_review = []
-    dic_review = {}
+    district = folder = stores_path = ''
+    page = notcity_count = 0
+    bfinal = bError = False
+    lst_store = lst_store_csv = lst_review = []
+    dic_store = dic_review = {}
+    
 # 目前位置
 # mylocation = driver.find_elements_by_id('widget-mylocation')
 # print(len(mylocation))
@@ -123,9 +104,16 @@ dic_tag = {
 }
 
 # =============== Start =====================
-def start():
+def start(bError):
     # url = 'https://www.google.com.tw/maps/@25.03,121.5,15z'
-    url = next(url_gen)
+    global url_location
+    url = url_location
+
+    if not bError :         # 如果是因為Error重新啟動瀏覽器，不改變搜尋中心點
+        url = next(url_gen)     
+        url_location = url
+    else:
+        logger.info('不更新搜尋中心', url_location)
     driver.get(url)
     time.sleep(2) # 等待2秒
 
@@ -137,21 +125,23 @@ def start():
     time.sleep(5)
 
 url_gen = geturl()
-start()
+start(False) # 需要取得URL
 while True:
-    if bfinal and not bError: # 若不是error結束跳出的，代表真的搜尋完所有頁面，結束
-        print('bfinal and not bError，結束~~~~~~~~~')
-        break
-    elif bfinal and bError: # 若是error結束跳出的，將瀏覽器關閉、重開、變數reset，重新再搜尋
-        if restart > 15:
-            print('restart > 15，結束~~~~~~~~~~~~~')
+    if bfinal : 
+        if bComplete: # 跑完所有經緯度
+            logger.info('所有經緯度座標都跑完了，結束~~~~~~~~~')
             break
-        driver.close()
-        restart += 1
-        print('restart 第', restart, '次')
-        reset_paras()
-        driver = Chrome('./chromedriver')
-        start()
+        else:
+            # 【Error 或 頁數跑完要換下一個搜尋座標中心點】，都會將瀏覽器關閉、重開、變數reset，重新再搜尋
+            driver.close()
+            restart += 1
+            print('restart 第', restart, '次')
+            reset_paras()
+            driver = Chrome('./chromedriver')
+            start(bError) # 如果是因為Error重新啟動瀏覽器，不改變搜尋中心點
+            # if restart > 15:
+            #     print('restart > 15，結束~~~~~~~~~~~~~')
+            #     break
     while not bfinal:
         try:
             results = find_tags(driver, dic_tag['stores'], logger=logger)
@@ -297,8 +287,8 @@ while True:
                                     loading = driver.find_elements_by_class_name(dic_tag['loading']) # 找到loading tag點擊，就等於將滾輪往下滑，可以載入新的評論
                                     time.sleep(2)
                                     loading_count = 0 # 紀錄目前往下滑的loading次數
-                                    record_time = 0  # 每往下滑loading 30次，就儲存一次loading次數
-                                    record_date_count = 0 # 每往下滑loading 30次，就儲存一次目前取得的評論筆數
+                                    record_time = 0  # 每往下滑loading 20次，就儲存一次loading次數
+                                    record_date_count = 0 # 每往下滑loading 20次，就儲存一次目前取得的評論筆數
                                     while len(loading) != 0:
                                         loading_count += 1
                                         msg = 'loading評論第' + str(loading_count) + '次'
@@ -308,7 +298,7 @@ while True:
                                         time.sleep(2)
                                         lstdate = find_tags(driver, dic_tag['review_date'], logger=logger) # 取得目前載入的評論數目
 
-                                        if loading_count - record_time >= 30: # 目前loading次數 與 紀錄loading次數 相差 30次以上就更新紀錄
+                                        if loading_count - record_time >= 20: # 目前loading次數 與 紀錄loading次數 相差 20次以上就更新紀錄
                                             if len(lstdate) > record_date_count: # 目前載入的評論數 > 紀錄的評論數-->就更新紀錄的評論數
                                                 msg = '原本紀錄的loading次數:' + str(record_time) + ',更新為:' + str(loading_count)
                                                 # print(msg)
@@ -323,7 +313,7 @@ while True:
                                                 # print(msg)
                                                 logger.error(msg)
                                                 bError = True # 正常來說，每下滑一次就會取得新的評論，
-                                                bfinal = True # 所以每下滑30次檢查一次，目前載入的評論數目會 > 已記錄的評論數才對
+                                                bfinal = True # 所以每下滑20次檢查一次，目前載入的評論數目會 > 已記錄的評論數才對
                                                 break         # 若沒大於，代表它一直往下滑，但卻沒有載入新的評論數-->瀏覽器掛掉了
                                         loading_date = lstdate[-1].text
 
@@ -501,4 +491,4 @@ logger.info("花費時間，時:%02d, 分:%02d, 秒:%02d" % (h, m, s))
 # print(time.strftime("%H:%M:%S", total_time))
 # print('{:d}:{:02d}:{:02d}'.format(h, m, s)) # Python 3
 # print(f'{h:d}:{m:02d}:{s:02d}') # Python 3.6+
-# driver.close()
+driver.close()
