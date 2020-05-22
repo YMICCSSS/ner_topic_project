@@ -203,7 +203,7 @@ while True:
                             district = addrinfo.split(' ')[1] # 2GVC+6W 中正區 台北市
                             choose = True
                         elif '里 'in addrinfo or '區 ' in addrinfo:
-                            district = addrinfo.split(' ')[-1].replace('台北市', '') # 3G36+P4 永樂里 台北市大同區
+                            district = addrinfo.split(' ')[-1].replace(city, '') # 3G36+P4 永樂里 台北市大同區
                             choose = True
                     if choose:
                         folder = folder_key_city + district + '/' # 路徑為./csv/熱炒/stores.csv
@@ -346,7 +346,6 @@ while True:
                                     each_review = find_tags(driver, dic_tag['review_text'], logger=logger)
 
                                     msg = '開始顯示所有評論數量:' +  str(len(each_review))
-                                    # print(msg)
                                     logger.info(msg)
                                     print('=========================================')
 
@@ -376,22 +375,19 @@ while True:
                                         dic_review['text'] = review_text
                                         if saved_latest_date != '' and get_real_date(review_date) == saved_latest_date and review_text == saved_latest_review:
                                             msg = '這個評論日期 == 最新儲存日期，且評論內容 == 最新儲存評論內容，擷取評論結束'
-                                            # print(msg)
                                             logger.info(msg)
                                             break
                                         elif saved_latest_date != '' and get_real_date(review_date) < saved_latest_date:
                                             msg = '這個評論日期：' + get_real_date(review_date) + '已 < 最新儲存日期：' + saved_latest_date +'，擷取評論結束'
-                                            # print(msg)
                                             logger.info(msg)
                                             break
                                         elif saved_latest_date != '' and not '天' in review_date:
                                             msg = '只更新一週內的評論，超過的不更新，這個評論日期：' + get_real_date(review_date)
-                                            # print(msg)
                                             logger.info(msg)
                                             break
                                         elif review_text == '""':
                                             msg = '空白評論不儲存！'
-                                            # print(msg, end=',')
+                                            logger.info(msg)
                                             empty_review += 1
                                             continue
                                         lst_review.append(dic_review)
@@ -428,7 +424,6 @@ while True:
                         back_list = find_tags(driver, dic_tag['back_list'], logger=logger)
                         back_list[0].click()
                         msg = '已點擊返回搜尋列表'
-                        # print(msg)
                         logger.info(msg)
                         time.sleep(2)
             msg = '目前這頁爬完了，換下一頁，目前在第' + str(page) + '頁，已點過的店家數:' + str(count_store) + '開始儲存店家list'
@@ -488,7 +483,4 @@ m, s = divmod(total_time, 60)
 h, m = divmod(m, 60)
 print ("花費時間，時:%02d, 分:%02d, 秒:%02d" % (h, m, s))
 logger.info("花費時間，時:%02d, 分:%02d, 秒:%02d" % (h, m, s))
-# print(time.strftime("%H:%M:%S", total_time))
-# print('{:d}:{:02d}:{:02d}'.format(h, m, s)) # Python 3
-# print(f'{h:d}:{m:02d}:{s:02d}') # Python 3.6+
 driver.close()
