@@ -7,7 +7,6 @@ import pandas as pd
 
 def find_tags(driver, tagName, parent=None, logger=None):
     msg = '開始 find_tags:' + tagName
-    # print(msg)
     logger.info(msg)
     count = 1
     taglen = 0
@@ -21,8 +20,7 @@ def find_tags(driver, tagName, parent=None, logger=None):
         if count > 100:
             msg = '已經重新找100次tag了，放棄'
             logger.info(msg)
-            # print()
-            break
+            return tags
 
         time.sleep(1)
         if parent == None:
@@ -30,7 +28,6 @@ def find_tags(driver, tagName, parent=None, logger=None):
         else:
             tags = parent.find_elements_by_class_name(tagName) 
         msg = '第' + str(count) + '次重新抓tag:' + tagName
-        # print(msg)
         logger.info(msg)
         count += 1
     time.sleep(2)
@@ -42,14 +39,14 @@ def save_csv(path, lst, logger=None):
         return []
     lst.sort(key=lambda x: x['tmpid'], reverse=True)
     df = pd.DataFrame.from_dict(lst, orient='columns')
-    print('df_now:', df)
+    print('df_now:\n', df)
 
     df.insert(loc=0, column='id', value=range(1,len(df.index)+1)) # 插入'id'為第一行
     del df['tmpid']
 
     if os.path.exists(path): # 如果stores.csv已經存在了，合併新舊dataFrame
         df_ori = pd.read_csv(path, encoding='utf8')
-        print('df_ori:', df_ori)
+        # print('df_ori:', df_ori)
         saved_latest_id = int(df_ori.iloc[-1]['id']) # 最後一列的id欄位
         newrows = len(df.index)
         df['id'] = pd.Series(range(saved_latest_id + 1, saved_latest_id + newrows + 1))
@@ -57,8 +54,7 @@ def save_csv(path, lst, logger=None):
         # 店家清單的評論數量佔無法更新，想直接去更新資料庫
     msg = '儲存 dataframe ->.csv，path:' + path
     logger.info(msg)
-    # print()
-    print('df_saved:', df)
+    # print('df_saved:', df)
     df.to_csv(path, index=False, encoding="utf-8")
     return []
 
@@ -100,7 +96,6 @@ def checkName(name, logger=None):
             newname = newname.replace(mark, dic_mark[mark])
         msg = '原始店名含有特殊符號：' + name + '，修正後店名' + newname
         logger.info(msg)
-        # print(msg)
     return newname
     
 def get_road(addr):
