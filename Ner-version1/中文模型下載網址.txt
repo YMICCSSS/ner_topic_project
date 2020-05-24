@@ -1,0 +1,4 @@
+https://github.com/ymcui/Chinese-BERT-wwm
+
+進去後找到想用的中文模型，下載後解壓縮後，再將main中程式的
+BERTEmbedding 將後面第一個參數更換成解壓所檔名即可(要在同路徑)
