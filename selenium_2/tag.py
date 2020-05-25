@@ -57,9 +57,10 @@ def tag(df):
 					print('每', save_num, '筆先存檔')
 					save_csv(df)
 
+city = input('請輸入你的縣市:')
 district = input('請輸入你的行政區:')
 choose = input('請選擇要 t標記 or c檢查:')
-path = './csv/熱炒/台北市/' + district + '/'
+path = './csv/熱炒/' + city + '/' + district + '/'
 files = []
 
 if choose == 't':
