@@ -102,3 +102,9 @@ def get_road(addr):
     addr = re.sub(r"\b\d+..市..區", '', addr)
     addr = re.sub(r"..區..市\d+\b", '', addr)
     return addr
+
+def check_district_info(addrinfo):
+    if '區 ' in addrinfo or '鎮' in addrinfo or '鄉' in addrinfo or ('宜蘭市' in addrinfo):
+        return True
+    else:
+        return False

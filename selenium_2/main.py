@@ -3,7 +3,7 @@ from selenium.webdriver import Chrome
 import time
 import traceback, os
 import pandas as pd
-from all_fun import find_tags, save_csv, get_real_date, checkName, get_road
+from all_fun import find_tags, save_csv, get_real_date, checkName, get_road, check_district_info
 from logs.logger import create_logger
 driver = Chrome('./chromedriver')
 # driver = Firefox(executable_path = './geckodriver')
@@ -23,8 +23,8 @@ def geturl():
         latitude = 25          # 最南邊
         latitude_max = 25.15   # 最北邊
         longitude = 121.46     # 最西邊121.46
-        longitude_min = 121.46 # 最東邊121.46
-        longitude_max = 121.61
+        longitude_min = 121.46 # 最西邊121.46
+        longitude_max = 121.61 # 最東邊121.61
         # ========================================================== 
         latitude_step = 0.03  # 緯度間隔
         longitude_step = 0.05 # 經度間隔
@@ -199,10 +199,10 @@ while True:
                                 choose = False
                                 notcity_count += 1
                                 break
-                        elif '區 ' in addrinfo:
+                        elif check_district_info(addrinfo):
                             district = addrinfo.split(' ')[1] # 2GVC+6W 中正區 台北市
                             choose = True
-                        elif '里 'in addrinfo or '區 ' in addrinfo:
+                        elif '里 'in addrinfo or check_district_info(addrinfo):
                             district = addrinfo.split(' ')[-1].replace(city, '') # 3G36+P4 永樂里 台北市大同區
                             choose = True
                     if choose:
