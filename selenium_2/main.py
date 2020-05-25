@@ -23,8 +23,8 @@ def geturl():
         latitude = 25          # 最南邊
         latitude_max = 25.15   # 最北邊
         longitude = 121.46     # 最西邊121.46
-        longitude_min = 121.46 # 最東邊121.46
-        longitude_max = 121.61
+        longitude_min = 121.46 # 最西邊121.46
+        longitude_max = 121.61 # 最東邊121.61
         # ========================================================== 
         latitude_step = 0.03  # 緯度間隔
         longitude_step = 0.05 # 經度間隔
