@@ -63,8 +63,10 @@ choose = input('請選擇要 t標記 or c檢查:')
 path = './csv/熱炒/' + city + '/' + district + '/'
 files = []
 
-if choose == 't':
-	files = glob.glob(path+'*_review.csv')
+if choose == 't': # 只顯示還沒產出_tag.csv的店家
+	review_files = glob.glob(path+'*_review.csv')
+	tag_files = glob.glob(path+'*_tag.csv')
+	files = [i for i in review_files if not i.replace('_review', '_tag') in tag_files]
 elif choose == 'c':
 	files = glob.glob(path+'*_tag.csv')
 else:
@@ -74,7 +76,8 @@ store_count = len(files)
 for i in range(store_count):
 	file = files[i]
 	name = os.path.basename(file).split('_')[0]
-	df = pd.read_csv(file, encoding='utf8', engine='python')
+	print(file, name)
+	df = pd.read_csv(file, encoding='utf8')
 	lst_dish = []
 	lst_tag = []
 	print('======', str(i+1) + '/' + str(store_count), name, ',評論總共有', len(df.index), '筆 ======', end='  >>>')
