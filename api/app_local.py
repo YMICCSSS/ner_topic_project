@@ -79,11 +79,11 @@ def getdata(name, road):
 
     # ============ select =============
     tablename = 'stores'
-    para = "%" + road + "%"
+    # para = "%" + road + "%" # like寫法
 
     sql = '''
-    SELECT * from `{tablename}` where name = '{name}' and addr like '{para}'
-    '''.format(tablename=tablename, name=name, para=para)
+    SELECT * from `{tablename}` where name = '{name}' and road = '{road}'
+    '''.format(tablename=tablename, name=name, road=road)
 
     c.execute(sql)
     lst_columns = [i[0] for i in c.description]
