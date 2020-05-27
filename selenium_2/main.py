@@ -87,6 +87,7 @@ def reset_paras():
 dic_tag = {
     'input':'tactile-searchbox-input',
     'stores':'section-result',
+    'road':'section-result-location',
     'store_info':'section-info-action-button',
     'reviews_div':'section-rating-term-list',
     'allreviews':'widget-pane-link',
@@ -170,6 +171,7 @@ while True:
                     ad = results[i].find_elements_by_class_name('ad-badge')[0] # 會有多個廣告tag，只看第一個
                     name_ori = results[i].get_attribute(dic_tag['label'])
                     name = checkName(name_ori, logger=logger) # 若含有特殊符號，無法作為檔名儲存
+                    road = find_tags(results[i], dic_tag['road'], logger=logger)[0].text
                     pricetag = results[i].find_elements_by_class_name(dic_tag['price'])[0].get_attribute(dic_tag['label']) # 找到價錢tag
                     price = ''
                     if pricetag != None:
@@ -211,7 +213,7 @@ while True:
                         review_path = folder + name + '_review.csv' # 路徑為./csv/熱炒/行政區/店名_review.csv
                         if not os.path.exists(folder):
                             os.makedirs(folder)
-                        msg = '區：' + district + name
+                        msg = city + ', ' + district + ', ' + road + ', ' + name
                         logger.info(msg)
 
                         # ============== 若此店家已儲存過評論，取出目前已存的最後一筆評論日期、評論內容 =======================
@@ -243,7 +245,7 @@ while True:
                         dic_store['price'] = price
                         dic_store['city'] = city
                         dic_store['district'] = district
-                        dic_store['road'] = get_road(addr)
+                        dic_store['road'] = road
                         dic_store['addr'] = addr
                         try:
                             reviews_div = find_tags(driver, dic_tag['reviews_div'], logger=logger) # 先找到包住"所有評論"tag的框框，再找"所有評論"的tag，若此店家完全無評論就找不到"所有評論的tag"
