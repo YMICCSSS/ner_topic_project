@@ -1,23 +1,23 @@
-// document.getElementById("searchboxinput").onclick = function () {
-// 	var result = document.getElementsByClassName("section-result");
-// 	alert("ClassName 為 section-result 的物件共有"+result.length+"個");
-// 	for(var i=0; i<result.length; i++) {
-// 	   result[i].addEventListener("mouseover",function(e){});
-// 	};
-// };
 /// 做出來了!!  在元素生成之前先幫它加上事件，等它生成後就能直接用了
-var delay=500, setTimeoutConst; 
+
 // mouseenter、mouseleave，在鼠標滑到該元素時，不會對其子元素也發生監聽
 // mouseover、mouseout，   在鼠標滑到該元素時，會對其子元素也發生監聽
 // mouseover滑鼠放在上面多久就觸發幾次、改用mouseenter
 $('#pane').on('mouseenter', '.section-result', function(e){// 傳入function的第一個參數是event物件
   var data_index = this.getAttribute('data-result-index'); // this, 目前的元素
   var store_name = this.getAttribute('aria-label');
+  var road_tag = this.getElementsByClassName("section-result-location")[0];
+  // alert(road.innerText + '---' + road.textContent + '---' + road.innerHTML) # 路名
   // this.setAttribute('id', 'storeid_'+data_index);
+  road = road_tag.innerText
   storeid = 'storeid_' + data_index;
   tag = '<h1><a id="' + storeid + '" href="#" title="" >風險評估表</a></h1>';
+
   if (document.getElementById(storeid) === null){
-    storeinfo = test_fun(data_index, store_name); // API，從資料庫取得圖片URL
+    start = new Date().getTime()
+    storeinfo = test_fun(data_index, store_name, road); // API，從資料庫取得圖片URL
+    end =  new Date().getTime()
+    alert('取回資料花費時間：' + (end - start) / 1000 + "sec");
     var imgurl = 'https://i.imgur.com/MoqLWVl.png'; // 若資料庫沒此店家的圖片URL，預設顯示"無資料"圖片
     var parsedObj = JSON.parse(storeinfo); // 將JSON字串剖析為 JavaScript 物件
     if (parsedObj.img){ 
@@ -28,26 +28,16 @@ $('#pane').on('mouseenter', '.section-result', function(e){// 傳入function的�
       content: '<img src="' + imgurl + '" />' 
     });
   };
-
-  // mouseenter要等500ms後才執行裡面Function
-  // 若在500ms內就將滑鼠移開，就會觸發mouseleave事件，直接將原本設的Timeout清除掉-->不會執行timeout設的function
-  // 效果是"要將滑鼠停在框框內500ms才會觸發function，否則不會"
-  setTimeoutConst = window.setTimeout(function(e){ 
-       // alert("第" + data_index + '筆,' + store_name);   
-     }, delay);   
 });
-$('#pane').on('mouseleave', '.section-result', function(e){// 傳入function的第一個參數是event物件
-  clearTimeout(setTimeoutConst);
-});
-
+// $('#pane').on('mouseleave', '.section-result', function(e){// 傳入function的第一個參數是event物件
+//   clearTimeout(setTimeoutConst);
+// });
 
 var url_route = 'https://database-api-tibame.herokuapp.com/' // route 沒有設定允許CROS，所以呼叫會錯誤
 var url_api = 'https://database-api-tibame.herokuapp.com/api'
-// var url_local = 'https://bd35a204.ngrok.io'
-// var url_api_local = 'https://bd35a204.ngrok.io/api'
+// url_api = 'https://81f8b917.ngrok.io/api'
 
-// 要如何以店家中文名稱當作Key找到資料?????
-function test_fun(storeid, store_name) {
+function test_fun(storeid, name, road) {
   var storeinfo;
   $.ajax({
     // $.ajax 方法預設是async:true 啟動非同步方法，就是不會等 $.ajax 執行完成才return ，
@@ -55,13 +45,12 @@ function test_fun(storeid, store_name) {
       async: false, // 採用同步的方法來請求，需等請求得到回應後才return，將async設成false
       type: 'GET',
       url: url_api,
-      data:"storeid=" + storeid,
+      data:"name=" + name + '&road=' + road,
       // dataType: "json", // 若不指定類型，回傳的會是一個string
       // crossDomain:true,
       success: function(msg) {
         storeinfo = msg;
         // s = "第" + storeid + '筆,' + store_name + '\n' + msg
-        // alert(s);
         // alert(msg); // typeof msg是string
       },
       error: function (jqXHR, textStatus, errorThrown) {
@@ -72,6 +61,18 @@ function test_fun(storeid, store_name) {
   });
   return storeinfo;
 }
+
+
+
+// 以下為測試用
+// var delay=500, setTimeoutConst; 
+  // mouseenter要等500ms後才執行裡面Function
+  // 若在500ms內就將滑鼠移開，就會觸發mouseleave事件，直接將原本設的Timeout清除掉-->不會執行timeout設的function
+  // 效果是"要將滑鼠停在框框內500ms才會觸發function，否則不會"
+  // setTimeoutConst = window.setTimeout(function(e){ 
+  //      // alert("第" + data_index + '筆,' + store_name);   
+  //    }, delay); 
+
 function test_return_json(e){
   $.ajax({
     type: "GET",
