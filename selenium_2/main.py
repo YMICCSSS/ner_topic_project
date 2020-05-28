@@ -375,6 +375,7 @@ while True:
                                         # print('第' + str(k + 1), 'date:', get_real_date(review_date) == saved_latest_date, 'review:', review_text == saved_latest_review)
                                         # print('第' + str(k + 1) + '筆:', '日期:', review_date, '星等:', review_star, '評論:',review_text)
                                         dic_review['text'] = review_text
+                                        dic_review['dish'] = ''
                                         if saved_latest_date != '' and get_real_date(review_date) == saved_latest_date and review_text == saved_latest_review:
                                             msg = '這個評論日期 == 最新儲存日期，且評論內容 == 最新儲存評論內容，擷取評論結束'
                                             logger.info(msg)
@@ -409,7 +410,7 @@ while True:
                             msg = '這個店家完全沒有評論, 仍要存檔, ' +  name + review_path
                             # print(msg)
                             logger.info(msg)
-                            df_empty = pd.DataFrame(columns=['id','date','star','text'])
+                            df_empty = pd.DataFrame(columns=['id','date','star','text','dish'])
                             df_empty.to_csv(review_path, index=False, encoding="utf-8") # 無評論店家存空白.csv檔案，仍要有column名稱
                             lst_store = save_csv(stores_path, lst_store, logger=logger)  # 儲存後回傳空的list
                             bError = True
