@@ -14,14 +14,24 @@ engine = create_engine('mysql+pymysql://tibame:tibame2020@34.66.10.69:3306/Store
 #建立pymysql物件，使我們可以用pymysql操作資料庫
 db = pymysql.connect("34.66.10.69","tibame","tibame2020","Store_db" )
 cursor = db.cursor()
+
 ##助教說資料庫存取次數少一點比較好所以先建一個字典,如果mysql語法有用{}，{}一定要加引號''才讀得到
-number = "select `stores_id`,`name` from `stores`"
+#建立一個店家名稱加上區域的名稱來判斷是否是唯一的店家，用在之後評論家上sotre_id
+number = "select `stores_id`,`name`,`district` from `stores`"
 cursor.execute(number)
 data = cursor.fetchall()
-#建立店家名稱對id的字典
-data ={j:i for i,j in data}
-print(data)
+print(data[0])
+print(data[0][0])
+# 創建店家清單字典
+data= {data[i][1]+data[i][2]:data[i][0] for i in range(len(data))}
 
+data2=[]
+#建立一個論目前有的storeid的字典
+number2 = "select distinct `stores_id` from `reviews`"
+cursor.execute(number2)
+data2 = cursor.fetchall()
+#創建已有的評論中不重複的store_id的字典
+data2= [data2[i][0] for i in range(len(data2))]
 
 #取出資料夾中，各區的名子
 x = os.listdir("台北市")
@@ -46,16 +56,21 @@ for i,write in enumerate(zonename):
         #讀取到這個檔案在Mysql中的id,並加到所有評論中的store_id欄位
         i = i.replace("_review.csv","")
         print(i)
-        print(i in data)
-        if (i in data) == True:
-            print("店家id ",data[i])
-            df["stores_id"] = [data[i]]*len(df)
+        print(i+write in data)
+        if (i+write in data) == True:
+            print("店家id ",data[i+write])
+            df["stores_id"] = [data[i+write]]*len(df)
             df = df.drop(['id'], axis=1)
             print(df)
-        # df = df.rename(columns={"id": "stores_id"})
-        # 將新建的DataFrame儲存為MySQL中的資料表，不儲存index列,如果存在就追加
-            df.to_sql('reviews', engine, if_exists='append',index= False)
-            print(write+" "+i+" "+"寫入成功")
+
+            #如果店家清單的store_id ，存在於現有評論的store_id中，這筆csv才寫入資料庫
+            if not (data[i+write] in data2) ==True :
+            # df = df.rename(columns={"id": "stores_id"})->改名備用程式
+            # 將新建的DataFrame儲存為MySQL中的資料表，不儲存index列,如果存在就追加
+                df.to_sql('reviews', engine, if_exists='append',index= False)
+                print(write+" "+i+" "+"寫入成功")
+            else:
+                print("這家重複不寫入")
         else:
             continue
 
