@@ -1,2 +1,4 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+bert_model.ckpt filter=lfs diff=lfs merge=lfs -text
+rbt3_model.rar filter=lfs diff=lfs merge=lfs -text

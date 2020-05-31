@@ -3,7 +3,7 @@ from selenium.webdriver import Chrome
 import time
 import traceback, os
 import pandas as pd
-from all_fun import find_tags, save_csv, get_real_date, checkName, get_road
+from all_fun import find_tags, save_csv, get_real_date, checkName, get_road, check_district_info
 from logs.logger import create_logger
 driver = Chrome('./chromedriver')
 # driver = Firefox(executable_path = './geckodriver')
@@ -23,8 +23,8 @@ def geturl():
         latitude = 25          # 最南邊
         latitude_max = 25.15   # 最北邊
         longitude = 121.46     # 最西邊121.46
-        longitude_min = 121.46 # 最東邊121.46
-        longitude_max = 121.61
+        longitude_min = 121.46 # 最西邊121.46
+        longitude_max = 121.61 # 最東邊121.61
         # ========================================================== 
         latitude_step = 0.03  # 緯度間隔
         longitude_step = 0.05 # 經度間隔
@@ -87,6 +87,7 @@ def reset_paras():
 dic_tag = {
     'input':'tactile-searchbox-input',
     'stores':'section-result',
+    'road':'section-result-location',
     'store_info':'section-info-action-button',
     'reviews_div':'section-rating-term-list',
     'allreviews':'widget-pane-link',
@@ -170,6 +171,7 @@ while True:
                     ad = results[i].find_elements_by_class_name('ad-badge')[0] # 會有多個廣告tag，只看第一個
                     name_ori = results[i].get_attribute(dic_tag['label'])
                     name = checkName(name_ori, logger=logger) # 若含有特殊符號，無法作為檔名儲存
+                    road = find_tags(results[i], dic_tag['road'], logger=logger)[0].text
                     pricetag = results[i].find_elements_by_class_name(dic_tag['price'])[0].get_attribute(dic_tag['label']) # 找到價錢tag
                     price = ''
                     if pricetag != None:
@@ -199,10 +201,10 @@ while True:
                                 choose = False
                                 notcity_count += 1
                                 break
-                        elif '區 ' in addrinfo:
+                        elif check_district_info(addrinfo):
                             district = addrinfo.split(' ')[1] # 2GVC+6W 中正區 台北市
                             choose = True
-                        elif '里 'in addrinfo or '區 ' in addrinfo:
+                        elif '里 'in addrinfo or check_district_info(addrinfo):
                             district = addrinfo.split(' ')[-1].replace(city, '') # 3G36+P4 永樂里 台北市大同區
                             choose = True
                     if choose:
@@ -211,7 +213,7 @@ while True:
                         review_path = folder + name + '_review.csv' # 路徑為./csv/熱炒/行政區/店名_review.csv
                         if not os.path.exists(folder):
                             os.makedirs(folder)
-                        msg = '區：' + district + name
+                        msg = city + ', ' + district + ', ' + road + ', ' + name
                         logger.info(msg)
 
                         # ============== 若此店家已儲存過評論，取出目前已存的最後一筆評論日期、評論內容 =======================
@@ -243,7 +245,7 @@ while True:
                         dic_store['price'] = price
                         dic_store['city'] = city
                         dic_store['district'] = district
-                        dic_store['road'] = get_road(addr)
+                        dic_store['road'] = road
                         dic_store['addr'] = addr
                         try:
                             reviews_div = find_tags(driver, dic_tag['reviews_div'], logger=logger) # 先找到包住"所有評論"tag的框框，再找"所有評論"的tag，若此店家完全無評論就找不到"所有評論的tag"
@@ -373,6 +375,7 @@ while True:
                                         # print('第' + str(k + 1), 'date:', get_real_date(review_date) == saved_latest_date, 'review:', review_text == saved_latest_review)
                                         # print('第' + str(k + 1) + '筆:', '日期:', review_date, '星等:', review_star, '評論:',review_text)
                                         dic_review['text'] = review_text
+                                        dic_review['dish'] = ''
                                         if saved_latest_date != '' and get_real_date(review_date) == saved_latest_date and review_text == saved_latest_review:
                                             msg = '這個評論日期 == 最新儲存日期，且評論內容 == 最新儲存評論內容，擷取評論結束'
                                             logger.info(msg)
@@ -407,7 +410,7 @@ while True:
                             msg = '這個店家完全沒有評論, 仍要存檔, ' +  name + review_path
                             # print(msg)
                             logger.info(msg)
-                            df_empty = pd.DataFrame(columns=['id','date','star','text'])
+                            df_empty = pd.DataFrame(columns=['id','date','star','text','dish'])
                             df_empty.to_csv(review_path, index=False, encoding="utf-8") # 無評論店家存空白.csv檔案，仍要有column名稱
                             lst_store = save_csv(stores_path, lst_store, logger=logger)  # 儲存後回傳空的list
                             bError = True
