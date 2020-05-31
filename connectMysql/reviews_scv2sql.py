@@ -63,7 +63,7 @@ for i,write in enumerate(zonename):
             df = df.drop(['id'], axis=1)
             print(df)
 
-            #如果店家清單的store_id ，存在於現有評論的store_id中，這筆csv才寫入資料庫
+            #如果店家清單的store_id ，不存在於現有評論的store_id中，這筆csv才寫入資料庫
             if not (data[i+write] in data2) ==True :
             # df = df.rename(columns={"id": "stores_id"})->改名備用程式
             # 將新建的DataFrame儲存為MySQL中的資料表，不儲存index列,如果存在就追加

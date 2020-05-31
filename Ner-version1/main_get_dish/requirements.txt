@@ -1,4 +1,3 @@
 pandas
 kashgari
-keras
 tensorflow==1.15.0
