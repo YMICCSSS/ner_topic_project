@@ -1,0 +1,6 @@
+torch==1.5.0
+transformers
+pandas
+sys
+configparser
+os
